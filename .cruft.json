@@ -1,0 +1,19 @@
+{
+    "template": "https://github.com/escaped/cookiecutter-pypackage.git",
+    "commit": "296fc14ff90b7d09f95f49ced2a605974106d697",
+    "context": {
+        "cookiecutter": {
+            "author": "Alexander Frenzel",
+            "author_email": "alex@relatedworks.com",
+            "github_username": "escaped",
+            "project_name": "routor",
+            "project_slug": "routor",
+            "short_description": "Simple osm routing engine.",
+            "version": "0.1.0",
+            "line_length": "88",
+            "uses_django": "n",
+            "_template": "https://github.com/escaped/cookiecutter-pypackage.git"
+        }
+    },
+    "directory": null
+}
