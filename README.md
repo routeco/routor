@@ -10,7 +10,7 @@ Simple osm routing engine.
 
 ## Requirements
 
-* Python 3.6.1 or newer
+* Python 3.8.0 or newer
 
 ## Installation
 

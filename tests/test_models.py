@@ -1,5 +1,6 @@
 import networkx
 import pytest
+from pydantic import ValidationError
 
 from routor import exceptions, models
 
@@ -9,22 +10,24 @@ EDGE_END_ID = 305910
 
 
 @pytest.mark.parametrize(
-    ("lat_key", "lng_key"),
+    ("key", "value"),
     (
-        ("y", "x"),
-        ("latitude", "longitude"),
+        ("latitude", -300),
+        ("longitude", -300),
     ),
 )
-def test_location(lat_key, lng_key) -> None:
+def test_location__validation(key: str, value: float) -> None:
     """
-    Make sure we can initialise a location using aliases.
+    Make sure GPS coordinates are validated.
     """
-    latitude = 51.500427
-    longitude = -2.6741088
+    data = {
+        "latitude": 51.500427,
+        "longitude": -2.6741088,
+    }
+    data[key] = value  # invalidate a a value
 
-    location = models.Location(**{lat_key: latitude, lng_key: longitude})
-    assert location.latitude == latitude
-    assert location.longitude == longitude
+    with pytest.raises(ValidationError):
+        models.Location(**data)
 
 
 def test_node__from_graph(graph: networkx.DiGraph) -> None:

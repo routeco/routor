@@ -63,9 +63,14 @@ def test_main(graph_path: Path):
 
     result = runner.invoke(main, [str(graph_path), origin, destination, "travel_time"])
     assert result.exit_code == 0
-    assert json.loads(result.output) == {
+
+    data = json.loads(result.output)
+    expected_data = {
         "costs": 46.20,
-        "travel_time": 46.20,
         "length": 1449.67,
-        "path": EXPECTED_PATH,
+        "travel_time": 46.20,
+        "path": [
+            {"latitude": point[0], "longitude": point[1]} for point in EXPECTED_PATH
+        ],
     }
+    assert json.dumps(data, sort_keys=True) == json.dumps(expected_data, sort_keys=True)

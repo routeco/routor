@@ -1,17 +1,26 @@
-from typing import Any
+from typing import Any, List
 
 import networkx
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, validator
 
 from routor import exceptions
 
 
 class Location(BaseModel):
-    latitude: float = Field(alias="y")
-    longitude: float = Field(alias="x")
+    latitude: float  # alias: y
+    longitude: float  # alias: x
 
-    class Config:
-        allow_population_by_field_name = True
+    @validator("latitude")
+    def validate_latitude(cls, value: float) -> float:
+        if -90 > value or value > 90:
+            raise ValueError("Latitude must be between -90 and 90")
+        return value
+
+    @validator("longitude")
+    def validate_longitude(cls, value: float) -> float:
+        if -180 > value or value > 180:
+            raise ValueError("Longitude must be between -180 and 180")
+        return value
 
 
 class Node(Location):
@@ -30,6 +39,8 @@ class Node(Location):
 
         return cls(
             node_id=node_id,
+            latitude=node_data["y"],
+            longitude=node_data["x"],
             **node_data,
         )
 
@@ -60,3 +71,10 @@ class Edge(BaseModel):
             raise exceptions.EdgeDoesNotExist() from error
 
         return cls(start=start, end=end, **edge_data)
+
+
+class Route(BaseModel):
+    costs: float
+    length: float
+    travel_time: float
+    path: List[Location]
