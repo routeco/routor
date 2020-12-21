@@ -18,6 +18,26 @@ Simple osm routing engine.
 pip install routor
 ```
 
+## Usage
+
+### CLI
+
+Use the integrated cli to calculate a route.
+
+```text
+$ python -m routor --help
+Usage: python -m routor [OPTIONS] MAP ORIGIN DESTINATION [travel_time|length]
+
+  Calculate a shortest path.
+
+  MAP Path to an OSM file. Format: .osm.xml
+  ORIGIN GPS location. Format: latitude,longitude
+  DESTINATION GPS location. Format: latitude,longitude
+
+Options:
+  --help  Show this message and exit.
+```
+
 ## Development
 
 This project uses [poetry](https://poetry.eustace.io/) for packaging and

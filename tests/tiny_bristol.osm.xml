@@ -1,0 +1,1189 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osm version="0.6" generator="Osmosis 0.48.1">
+  <node id="127498" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4970863" lon="-2.6832676">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="305903" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4992678" lon="-2.6791965">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="305905" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4989541" lon="-2.6798183">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="305907" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4973375" lon="-2.6828411">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="305910" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4966991" lon="-2.6839023">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="331760" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4983788" lon="-2.6806332">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="331761" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4987464" lon="-2.6794473">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="331775" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.499665" lon="-2.6739949">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="331782" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4999424" lon="-2.6861824">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="331786" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4993081" lon="-2.6783377">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="21029782" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4991271" lon="-2.6754226">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="21029783" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4994798" lon="-2.6741659">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="21029784" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.5000958" lon="-2.673914">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="21029785" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.5005879" lon="-2.6743164">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="21029786" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.5007989" lon="-2.6755743">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="21029787" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4991331" lon="-2.6751891">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="21029796" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.5000388" lon="-2.6872479">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="21029797" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.500169" lon="-2.6882804">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="21029798" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.5003498" lon="-2.6891594">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="31463717" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4997862" lon="-2.6838926">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="31463728" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.5000566" lon="-2.6863126">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="31463731" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4996335" lon="-2.6808334">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="31463733" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4996864" lon="-2.6799817">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="31463734" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4998158" lon="-2.6792882">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="991949107" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4959588" lon="-2.6849442">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="991949113" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4962214" lon="-2.6845834">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="1468922197" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4996599" lon="-2.6823824">
+    <tag k="highway" v="motorway_junction"/>
+  </node>
+  <node id="1468922198" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4994456" lon="-2.6800409">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="1591662562" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4991721" lon="-2.6763069">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="1591662563" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4991941" lon="-2.6747517">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="1591662567" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4993387" lon="-2.6743712">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="1591662579" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4998636" lon="-2.6739152">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="1591662581" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.5003573" lon="-2.6740456">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="1591662583" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.5007085" lon="-2.6759668">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="1591662585" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.5007484" lon="-2.6746896">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="1591662587" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.5008198" lon="-2.6751174">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="1759524452" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4998729" lon="-2.6853261">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="1759524459" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4998453" lon="-2.6844029">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="1953103655" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4986057" lon="-2.6799943">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="2104842643" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4981773" lon="-2.6810912">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="2104842644" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4984845" lon="-2.6803554">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="2104842646" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4988114" lon="-2.6791197">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="2104842648" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4988572" lon="-2.6788089">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="2104842650" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4986901" lon="-2.6796876">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="2106389512" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.5008211" lon="-2.675273">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="2106389513" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4991449" lon="-2.675861">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="2106389514" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.5007602" lon="-2.6757798">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="2106389515" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.5001762" lon="-2.6739405">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="2106389517" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4992383" lon="-2.674607">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="2106389518" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.5008187" lon="-2.6754124">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="2106389519" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.49957" lon="-2.6740695">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="2106389520" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.5001678" lon="-2.6771543">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="2106389521" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4991554" lon="-2.6749678">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="2106389522" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4994118" lon="-2.674251">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="2106389523" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.500427" lon="-2.6741088">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="2106389524" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4992842" lon="-2.6744903">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="2106389525" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.5007817" lon="-2.6748145">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="2106389527" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.500805" lon="-2.6749644">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="2106389528" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.5006969" lon="-2.6745408">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="2106389529" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.5006484" lon="-2.6761387">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="2106389530" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4997755" lon="-2.6739402">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="2106389531" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4999821" lon="-2.6739001">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="2106389532" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.5002679" lon="-2.6739825">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="2106389533" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.5005061" lon="-2.6741985">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="2106389534" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.5006426" lon="-2.6744183">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="2106393624" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.5000134" lon="-2.6859838">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="2106393630" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4996144" lon="-2.6812735">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="2106393640" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4995741" lon="-2.6814815">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="2106393642" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4996611" lon="-2.6802373">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="2106393646" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.499646" lon="-2.6805059">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="2106393648" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.499745" lon="-2.6796148">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="2106393654" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4997238" lon="-2.6781119">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="2106398106" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.499997" lon="-2.6868072">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="2106398108" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.5001198" lon="-2.687929">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="2106398111" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.500233" lon="-2.6886483">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="2106398113" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.5001162" lon="-2.6865814">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="2106398117" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.5002841" lon="-2.6888863">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="2106411818" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4999292" lon="-2.6852883">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="2106411820" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4998288" lon="-2.684775">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="2983641842" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.4980328" lon="-2.6816171">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="4129955400" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.5004147" lon="-2.6893007">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="4129955401" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.5005479" lon="-2.6883779">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="4129955403" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.5003776" lon="-2.6874043">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="4129955404" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.5004731" lon="-2.6877477">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="4129955405" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.5004731" lon="-2.6890861">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="4129955406" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.5005316" lon="-2.6881152">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="4129955407" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.5001709" lon="-2.686766">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="4129955411" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.5005466" lon="-2.6886087">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="4129955413" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.5005029" lon="-2.6879032">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="4129955414" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.5002628" lon="-2.6870611">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="4129955415" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.5004244" lon="-2.6875625">
+    <tag k="highway" v="nan"/>
+  </node>
+  <node id="4129955417" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1" lat="51.5005166" lon="-2.6888823">
+    <tag k="highway" v="nan"/>
+  </node>
+  <way id="0" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="331782"/>
+    <nd ref="1759524452"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="2"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="97.4"/>
+    <tag k="original_osmid" v="4002534"/>
+  </way>
+  <way id="1" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="2106389512"/>
+    <nd ref="2106389518"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="268.4"/>
+    <tag k="original_osmid" v="4002537"/>
+  </way>
+  <way id="2" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="2106389513"/>
+    <nd ref="21029782"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="93.7"/>
+    <tag k="original_osmid" v="4002537"/>
+  </way>
+  <way id="3" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="127498"/>
+    <nd ref="305910"/>
+    <tag k="highway" v="motorway"/>
+    <tag k="lanes" v="4"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="225.6"/>
+    <tag k="original_osmid" v="132609687"/>
+  </way>
+  <way id="4" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="2106389514"/>
+    <nd ref="1591662583"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="246.1"/>
+    <tag k="original_osmid" v="4002537"/>
+  </way>
+  <way id="5" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="2106389515"/>
+    <nd ref="2106389532"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="344.1"/>
+    <tag k="original_osmid" v="4002537"/>
+  </way>
+  <way id="6" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="2106389517"/>
+    <nd ref="2106389524"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="57.7"/>
+    <tag k="original_osmid" v="4002537"/>
+  </way>
+  <way id="7" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="2106389518"/>
+    <nd ref="21029786"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="258.9"/>
+    <tag k="original_osmid" v="4002537"/>
+  </way>
+  <way id="8" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="2106389519"/>
+    <nd ref="331775"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="26.1"/>
+    <tag k="original_osmid" v="4002537"/>
+  </way>
+  <way id="9" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="2106389520"/>
+    <nd ref="2106393654"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="233.3"/>
+    <tag k="original_osmid" v="4002537"/>
+  </way>
+  <way id="10" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="331786"/>
+    <nd ref="1591662562"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="96.1"/>
+    <tag k="original_osmid" v="4002537"/>
+  </way>
+  <way id="11" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="2106389522"/>
+    <nd ref="21029783"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="37.9"/>
+    <tag k="original_osmid" v="4002537"/>
+  </way>
+  <way id="12" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="2106389523"/>
+    <nd ref="2106389533"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="324.8"/>
+    <tag k="original_osmid" v="4002537"/>
+  </way>
+  <way id="13" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="2106389524"/>
+    <nd ref="1591662567"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="53.7"/>
+    <tag k="original_osmid" v="4002537"/>
+  </way>
+  <way id="14" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="2106389525"/>
+    <nd ref="2106389527"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="284.0"/>
+    <tag k="original_osmid" v="4002537"/>
+  </way>
+  <way id="15" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="2106389521"/>
+    <nd ref="1591662563"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="74.0"/>
+    <tag k="original_osmid" v="4002537"/>
+  </way>
+  <way id="16" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="2106389527"/>
+    <nd ref="1591662587"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="278.8"/>
+    <tag k="original_osmid" v="4002537"/>
+  </way>
+  <way id="17" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="2106389528"/>
+    <nd ref="1591662585"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="299.1"/>
+    <tag k="original_osmid" v="4002537"/>
+  </way>
+  <way id="18" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="2106389529"/>
+    <nd ref="2106389520"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="232.8"/>
+    <tag k="original_osmid" v="4002537"/>
+  </way>
+  <way id="19" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="2106389530"/>
+    <nd ref="1591662579"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="10.0"/>
+    <tag k="original_osmid" v="4002537"/>
+  </way>
+  <way id="20" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="2106389531"/>
+    <nd ref="21029784"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="355.6"/>
+    <tag k="original_osmid" v="4002537"/>
+  </way>
+  <way id="21" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="2106389532"/>
+    <nd ref="1591662581"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="336.3"/>
+    <tag k="original_osmid" v="4002537"/>
+  </way>
+  <way id="22" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="2106389533"/>
+    <nd ref="21029785"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="318.1"/>
+    <tag k="original_osmid" v="4002537"/>
+  </way>
+  <way id="23" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="2106389534"/>
+    <nd ref="2106389528"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="305.5"/>
+    <tag k="original_osmid" v="4002537"/>
+  </way>
+  <way id="24" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="2106393630"/>
+    <nd ref="31463731"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="2"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="86.0"/>
+    <tag k="original_osmid" v="4873069"/>
+  </way>
+  <way id="25" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="2106393624"/>
+    <nd ref="2106411818"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="2"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="101.0"/>
+    <tag k="original_osmid" v="4873067"/>
+  </way>
+  <way id="26" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="31463717"/>
+    <nd ref="1468922197"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="4"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="97.7"/>
+    <tag k="original_osmid" v="133451913"/>
+  </way>
+  <way id="27" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="1953103655"/>
+    <nd ref="2104842644"/>
+    <tag k="highway" v="motorway"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="241.7"/>
+    <tag k="original_osmid" v="4314741"/>
+  </way>
+  <way id="28" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="2106393640"/>
+    <nd ref="1468922198"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="2"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="98.2"/>
+    <tag k="original_osmid" v="133451914"/>
+  </way>
+  <way id="29" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="2106393642"/>
+    <nd ref="31463733"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="2"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="81.0"/>
+    <tag k="original_osmid" v="4873069"/>
+  </way>
+  <way id="30" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="2106411818"/>
+    <nd ref="1759524459"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="2"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="98.7"/>
+    <tag k="original_osmid" v="4873067"/>
+  </way>
+  <way id="31" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="2106411820"/>
+    <nd ref="31463717"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="2"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="94.4"/>
+    <tag k="original_osmid" v="4002534"/>
+  </way>
+  <way id="32" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="2106393646"/>
+    <nd ref="2106393642"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="2"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="84.8"/>
+    <tag k="original_osmid" v="4873069"/>
+  </way>
+  <way id="33" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="2106393648"/>
+    <nd ref="31463734"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="2"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="70.8"/>
+    <tag k="original_osmid" v="4873069"/>
+  </way>
+  <way id="34" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="31463728"/>
+    <nd ref="2106393624"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="2"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="101.9"/>
+    <tag k="original_osmid" v="4873067"/>
+  </way>
+  <way id="35" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="31463731"/>
+    <nd ref="2106393646"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="2"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="86.5"/>
+    <tag k="original_osmid" v="4873069"/>
+  </way>
+  <way id="36" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="31463733"/>
+    <nd ref="2106393648"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="2"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="75.6"/>
+    <tag k="original_osmid" v="4873069"/>
+  </way>
+  <way id="37" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="2106393654"/>
+    <nd ref="305903"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="236.0"/>
+    <tag k="original_osmid" v="4002537"/>
+  </way>
+  <way id="38" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="991949113"/>
+    <nd ref="991949107"/>
+    <tag k="highway" v="motorway"/>
+    <tag k="lanes" v="4"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="220.5"/>
+    <tag k="original_osmid" v="85525225"/>
+  </way>
+  <way id="39" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="4129955400"/>
+    <nd ref="4129955405"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="2"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="66.4"/>
+    <tag k="original_osmid" v="4873066"/>
+  </way>
+  <way id="40" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="4129955401"/>
+    <nd ref="4129955406"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="2"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="95.7"/>
+    <tag k="original_osmid" v="4873066"/>
+  </way>
+  <way id="41" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="4129955403"/>
+    <nd ref="4129955414"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="2"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="118.3"/>
+    <tag k="original_osmid" v="4873067"/>
+  </way>
+  <way id="42" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="4129955404"/>
+    <nd ref="4129955415"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="2"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="112.9"/>
+    <tag k="original_osmid" v="4873067"/>
+  </way>
+  <way id="43" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="4129955405"/>
+    <nd ref="4129955417"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="2"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="71.1"/>
+    <tag k="original_osmid" v="4873066"/>
+  </way>
+  <way id="44" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="4129955406"/>
+    <nd ref="4129955413"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="2"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="102.3"/>
+    <tag k="original_osmid" v="4873066"/>
+  </way>
+  <way id="45" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="4129955407"/>
+    <nd ref="2106398113"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="2"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="115.5"/>
+    <tag k="original_osmid" v="4873067"/>
+  </way>
+  <way id="46" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="4129955411"/>
+    <nd ref="4129955401"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="2"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="89.5"/>
+    <tag k="original_osmid" v="4873066"/>
+  </way>
+  <way id="47" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="4129955413"/>
+    <nd ref="4129955404"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="2"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="107.1"/>
+    <tag k="original_osmid" v="4873066"/>
+  </way>
+  <way id="48" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="4129955414"/>
+    <nd ref="4129955407"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="2"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="116.6"/>
+    <tag k="original_osmid" v="4873067"/>
+  </way>
+  <way id="49" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="4129955415"/>
+    <nd ref="4129955403"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="2"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="115.4"/>
+    <tag k="original_osmid" v="4873067"/>
+  </way>
+  <way id="50" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="1468922197"/>
+    <nd ref="2106393630"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="2"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="93.8"/>
+    <tag k="original_osmid" v="4873069"/>
+  </way>
+  <way id="51" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="1468922197"/>
+    <nd ref="2106393640"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="2"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="98.7"/>
+    <tag k="original_osmid" v="133451914"/>
+  </way>
+  <way id="52" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="4129955417"/>
+    <nd ref="4129955411"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="2"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="80.0"/>
+    <tag k="original_osmid" v="4873066"/>
+  </way>
+  <way id="53" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="1468922198"/>
+    <nd ref="331786"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="2"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="97.4"/>
+    <tag k="original_osmid" v="4323945"/>
+  </way>
+  <way id="54" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="1759524452"/>
+    <nd ref="2106411820"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="2"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="97.3"/>
+    <tag k="original_osmid" v="4002534"/>
+  </way>
+  <way id="55" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="1759524459"/>
+    <nd ref="31463717"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="2"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="100.5"/>
+    <tag k="original_osmid" v="4873067"/>
+  </way>
+  <way id="56" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="2104842643"/>
+    <nd ref="305907"/>
+    <tag k="highway" v="motorway"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="232.4"/>
+    <tag k="original_osmid" v="4314741"/>
+  </way>
+  <way id="57" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="2104842644"/>
+    <nd ref="331760"/>
+    <tag k="highway" v="motorway"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="238.6"/>
+    <tag k="original_osmid" v="4314741"/>
+  </way>
+  <way id="58" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="1591662583"/>
+    <nd ref="2106389529"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="240.7"/>
+    <tag k="original_osmid" v="4002537"/>
+  </way>
+  <way id="59" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="2104842646"/>
+    <nd ref="331761"/>
+    <tag k="highway" v="motorway"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="252.3"/>
+    <tag k="original_osmid" v="4314741"/>
+  </way>
+  <way id="60" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="21029783"/>
+    <nd ref="2106389519"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="33.6"/>
+    <tag k="original_osmid" v="4002537"/>
+  </way>
+  <way id="61" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="2104842648"/>
+    <nd ref="2104842646"/>
+    <tag k="highway" v="motorway"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="256.7"/>
+    <tag k="original_osmid" v="4314741"/>
+  </way>
+  <way id="62" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="21029785"/>
+    <nd ref="2106389534"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="310.8"/>
+    <tag k="original_osmid" v="4002537"/>
+  </way>
+  <way id="63" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="2104842650"/>
+    <nd ref="1953103655"/>
+    <tag k="highway" v="motorway"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="246.2"/>
+    <tag k="original_osmid" v="4314741"/>
+  </way>
+  <way id="64" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="21029786"/>
+    <nd ref="2106389514"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="253.2"/>
+    <tag k="original_osmid" v="4002537"/>
+  </way>
+  <way id="65" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="21029784"/>
+    <nd ref="2106389515"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="348.4"/>
+    <tag k="original_osmid" v="4002537"/>
+  </way>
+  <way id="66" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="21029787"/>
+    <nd ref="2106389521"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="80.8"/>
+    <tag k="original_osmid" v="4002537"/>
+  </way>
+  <way id="67" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="2106398106"/>
+    <nd ref="331782"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="2"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="98.0"/>
+    <tag k="original_osmid" v="4002534"/>
+  </way>
+  <way id="68" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="21029782"/>
+    <nd ref="21029787"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="87.6"/>
+    <tag k="original_osmid" v="4002537"/>
+  </way>
+  <way id="69" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="2106398108"/>
+    <nd ref="21029796"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="2"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="100.8"/>
+    <tag k="original_osmid" v="4002534"/>
+  </way>
+  <way id="70" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="2106398113"/>
+    <nd ref="31463728"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="2"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="109.6"/>
+    <tag k="original_osmid" v="4873067"/>
+  </way>
+  <way id="71" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="2106398111"/>
+    <nd ref="21029797"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="2"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="105.6"/>
+    <tag k="original_osmid" v="4002534"/>
+  </way>
+  <way id="72" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="21029796"/>
+    <nd ref="2106398106"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="2"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="98.7"/>
+    <tag k="original_osmid" v="4002534"/>
+  </way>
+  <way id="73" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="21029797"/>
+    <nd ref="2106398108"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="2"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="102.7"/>
+    <tag k="original_osmid" v="4002534"/>
+  </way>
+  <way id="74" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="2106398117"/>
+    <nd ref="2106398111"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="2"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="109.0"/>
+    <tag k="original_osmid" v="4002534"/>
+  </way>
+  <way id="75" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="21029798"/>
+    <nd ref="2106398117"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="2"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="111.1"/>
+    <tag k="original_osmid" v="4002534"/>
+  </way>
+  <way id="76" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="1591662562"/>
+    <nd ref="2106389513"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="95.6"/>
+    <tag k="original_osmid" v="4002537"/>
+  </way>
+  <way id="77" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="1591662563"/>
+    <nd ref="2106389517"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="63.9"/>
+    <tag k="original_osmid" v="4002537"/>
+  </way>
+  <way id="78" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="1591662567"/>
+    <nd ref="2106389522"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="45.7"/>
+    <tag k="original_osmid" v="4002537"/>
+  </way>
+  <way id="79" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="305903"/>
+    <nd ref="305905"/>
+    <tag k="highway" v="motorway"/>
+    <tag k="lanes" v="4"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="231.0"/>
+    <tag k="original_osmid" v="132609687"/>
+  </way>
+  <way id="80" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="331760"/>
+    <nd ref="2104842643"/>
+    <tag k="highway" v="motorway"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="234.8"/>
+    <tag k="original_osmid" v="4314741"/>
+  </way>
+  <way id="81" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="305905"/>
+    <nd ref="2983641842"/>
+    <tag k="highway" v="motorway"/>
+    <tag k="lanes" v="4"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="230.6"/>
+    <tag k="original_osmid" v="132609687"/>
+  </way>
+  <way id="82" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="2983641842"/>
+    <nd ref="305907"/>
+    <tag k="highway" v="motorway"/>
+    <tag k="lanes" v="4"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="227.6"/>
+    <tag k="original_osmid" v="132609687"/>
+  </way>
+  <way id="83" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="305907"/>
+    <nd ref="127498"/>
+    <tag k="highway" v="motorway"/>
+    <tag k="lanes" v="4"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="226.6"/>
+    <tag k="original_osmid" v="132609687"/>
+  </way>
+  <way id="84" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="331761"/>
+    <nd ref="2104842650"/>
+    <tag k="highway" v="motorway"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="249.4"/>
+    <tag k="original_osmid" v="4314741"/>
+  </way>
+  <way id="85" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="1591662579"/>
+    <nd ref="2106389531"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="4.5"/>
+    <tag k="original_osmid" v="4002537"/>
+  </way>
+  <way id="86" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="305910"/>
+    <nd ref="991949113"/>
+    <tag k="highway" v="motorway"/>
+    <tag k="lanes" v="4"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="221.6"/>
+    <tag k="original_osmid" v="132609687"/>
+  </way>
+  <way id="87" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="1591662581"/>
+    <nd ref="2106389523"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="330.6"/>
+    <tag k="original_osmid" v="4002537"/>
+  </way>
+  <way id="88" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="1591662585"/>
+    <nd ref="2106389525"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="293.2"/>
+    <tag k="original_osmid" v="4002537"/>
+  </way>
+  <way id="89" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="1591662587"/>
+    <nd ref="2106389512"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="270.8"/>
+    <tag k="original_osmid" v="4002537"/>
+  </way>
+  <way id="90" version="1" timestamp="2017-01-01T00:00:00Z" uid="1" user="osmnx" changeset="1">
+    <nd ref="331775"/>
+    <nd ref="2106389530"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="lanes" v="1"/>
+    <tag k="maxspeed" v="70 mph"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bearing" v="17.1"/>
+    <tag k="original_osmid" v="4002537"/>
+  </way>
+</osm>
