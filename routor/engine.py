@@ -1,5 +1,5 @@
 from pathlib import Path
-from typing import Any, Callable, List, Optional, Tuple
+from typing import Any, List, Optional, Tuple
 
 import networkx
 import osmnx
@@ -8,8 +8,7 @@ from networkx_astar_path import astar_path
 
 from . import exceptions, models
 from .utils.graph import load_map
-
-WeightFunction = Callable[[Optional[models.Edge], models.Edge], float]
+from .weights import WeightFunction
 
 
 class Engine:

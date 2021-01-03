@@ -12,7 +12,7 @@ from .utils.click import LocationParamType
 @click.argument('map', type=click.Path(exists=True, dir_okay=False))
 @click.argument('origin', type=LocationParamType())
 @click.argument('destination', type=LocationParamType())
-@click.argument('weight', type=click.Choice(weights.__all__))
+@click.argument('weight', type=click.Choice(weights.get_function_names()))
 def main(
     map: Path, origin: models.Location, destination: models.Location, weight: str
 ) -> None:
