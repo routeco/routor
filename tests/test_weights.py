@@ -37,7 +37,7 @@ def test_register() -> None:
 @pytest.mark.parametrize(
     ("func_name", "expected_value"), (("travel_time", 2.0), ("length", 61.516))
 )
-def test_travel_time(
+def test_weight_by_attr(
     graph: networkx.DiGraph, func_name: str, expected_value: float
 ) -> None:
     """
