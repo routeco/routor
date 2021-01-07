@@ -9,12 +9,12 @@ from .utils.click import LocationParamType
 
 
 @click.command()
-@click.argument('map', type=click.Path(exists=True, dir_okay=False))
+@click.argument('map_path', type=click.Path(exists=True, dir_okay=False))
 @click.argument('origin', type=LocationParamType())
 @click.argument('destination', type=LocationParamType())
 @click.argument('weight', type=click.Choice(weights.get_function_names()))
 def main(
-    map: Path, origin: models.Location, destination: models.Location, weight: str
+    map_path: Path, origin: models.Location, destination: models.Location, weight: str
 ) -> None:
     """
     Calculate a shortest path.
@@ -26,7 +26,7 @@ def main(
     """
     weight_func = getattr(weights, weight)
 
-    engine = Engine(map)
+    engine = Engine(map_path)
     origin_node = engine.get_closest_node(origin)
     destination_node = engine.get_closest_node(destination)
 

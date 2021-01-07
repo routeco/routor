@@ -14,8 +14,8 @@ from .weights import WeightFunction
 class Engine:
     graph: networkx.DiGraph
 
-    def __init__(self, map: Path) -> None:
-        self.graph = load_map(map)
+    def __init__(self, map_path: Path) -> None:
+        self.graph = load_map(map_path)
 
         # add additional attributes
         osmnx.bearing.add_edge_bearings(self.graph)
