@@ -38,6 +38,49 @@ Options:
   --help  Show this message and exit.
 ```
 
+### Web API
+
+#### Configuration
+
+The configuration is either read from a `.env` file or the environment.
+Before you are able to run the server, you have to set the variables mentioned in [routor/api/config.py](routor/api/config.py).
+
+#### Run the API
+
+The api is served using [uvicorn](https://www.uvicorn.org/).
+To start the server run
+
+```sh
+uvicorn routor.api:app
+```
+
+The API will be available at http://127.0.0.1:8000 and the docs at http://127.0.0.1:8000/docs.
+
+#### Register a new weight function
+
+Existing weight functions are defined in [routor/weights.py](routor/weights.py).
+To add a new weight functon, you have to create a new project and add `routor` as dependency.
+Create a new file, eg. `main.py` and add the following content, which will become the entrypoint for `uvicorn`.
+
+```python
+# main.py
+from typing import Optional
+
+from routor.api.main import app  # noqa
+from routor.weights import register
+from routor import models
+
+
+def my_weight_func(prev_edge: Optional[models.Edge], edge: models.Edge) -> float:
+    ...
+    return ...
+
+
+register(my_weight_func, "weight_func")
+```
+
+Start the server with `uvicorn main:app` and the weight function will be available as `weight_func` when calling the api.
+
 ## Development
 
 This project uses [poetry](https://poetry.eustace.io/) for packaging and

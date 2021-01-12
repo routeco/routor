@@ -4,7 +4,7 @@ from pathlib import Path
 import click
 
 from . import models, weights
-from .engine import Engine
+from .engine import route
 from .utils.click import LocationParamType
 
 
@@ -24,22 +24,6 @@ def main(
     ORIGIN GPS location. Format: latitude,longitude
     DESTINATION GPS location. Format: latitude,longitude
     """
-    weight_func = getattr(weights, weight)
+    data = route(map_path, origin, destination, weight)
 
-    engine = Engine(map_path)
-    origin_node = engine.get_closest_node(origin)
-    destination_node = engine.get_closest_node(destination)
-
-    path = engine.route(origin_node, destination_node, weight=weight_func)
-    costs = engine.costs_for_path(path, weight=weight_func)
-    length = engine.length_of_path(path)
-    travel_time = engine.travel_time_of_path(path)
-
-    data = {
-        "costs": round(costs, 2),
-        "length": round(length, 2),
-        "travel_time": round(travel_time, 2),
-        "path": [(node.latitude, node.longitude) for node in path],
-    }
-
-    print(json.dumps(data, indent=2))
+    print(json.dumps(data.dict(), indent=2))

@@ -1,9 +1,9 @@
 from routor import models, weights
 from routor.engine import Engine
 
-ORIGIN_LOCATION = models.Location(y=51.4996612, x=-2.6823825)
+ORIGIN_LOCATION = models.Location(latitude=51.4996612, longitude=-2.6823825)
 ORIGN_NODE_ID = 1468922197
-DESTINATION_LOCATION = models.Location(y=51.4973375, x=-2.682841)
+DESTINATION_LOCATION = models.Location(latitude=51.4973375, longitude=-2.682841)
 DESTINATION_NODE_ID = 305907
 
 PATH = [
