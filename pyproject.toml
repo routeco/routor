@@ -35,7 +35,6 @@ packages = [
 [tool.poetry.dependencies]
 click = "^7.1.2"
 fastapi = "^0.63.0"
-importlib-metadata = "^2.1.1"
 more-itertools = "^8.6.0"
 networkx = "^2.5"
 networkx-astar-path = "^1.0.1"

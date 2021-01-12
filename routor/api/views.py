@@ -1,4 +1,3 @@
-from importlib.metadata import version  # type: ignore
 from typing import List
 
 from fastapi import FastAPI
@@ -10,14 +9,6 @@ from . import models
 from .settings import settings
 
 app = FastAPI()
-
-
-@app.get("/version", response_model=models.VersionResponse)
-def read_version() -> models.VersionResponse:
-    """
-    Return the package version of routor.
-    """
-    return models.VersionResponse(version=version("routor"))
 
 
 @app.get("/weights", response_model=List[str])

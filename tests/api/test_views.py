@@ -13,18 +13,6 @@ def fixture_client(monkeypatch, graph_path: str) -> TestClient:
     return client
 
 
-def test_read_version(client: TestClient) -> None:
-    """
-    Make sure the current app version is accessable.
-    """
-    response = client.get("/version")
-    assert response.status_code == 200
-
-    data = response.json()
-    assert "version" in data
-    assert isinstance(data["version"], str)
-
-
 def test_read_weights(mocker, client: TestClient) -> None:
     """
     Test that availale weight functions are returned.
