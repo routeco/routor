@@ -6,7 +6,7 @@ from .. import engine
 from .. import models as engine_models
 from .. import weights
 from . import models
-from .settings import settings
+from .config import settings
 
 app = FastAPI()
 
