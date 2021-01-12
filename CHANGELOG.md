@@ -10,5 +10,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 * basic routing CLI
+* basic API
 
 [Unreleased]: https://github.com/escaped/routor/tree/master
