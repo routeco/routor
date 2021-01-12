@@ -9,12 +9,12 @@ from .utils.click import LocationParamType
 
 
 @click.command()
-@click.argument('map', type=click.Path(exists=True, dir_okay=False))
+@click.argument('map_path', type=click.Path(exists=True, dir_okay=False))
 @click.argument('origin', type=LocationParamType())
 @click.argument('destination', type=LocationParamType())
 @click.argument('weight', type=click.Choice(weights.get_function_names()))
 def main(
-    map: Path, origin: models.Location, destination: models.Location, weight: str
+    map_path: Path, origin: models.Location, destination: models.Location, weight: str
 ) -> None:
     """
     Calculate a shortest path.
@@ -24,6 +24,6 @@ def main(
     ORIGIN GPS location. Format: latitude,longitude
     DESTINATION GPS location. Format: latitude,longitude
     """
-    data = route(map, origin, destination, weight)
+    data = route(map_path, origin, destination, weight)
 
     print(json.dumps(data.dict(), indent=2))

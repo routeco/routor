@@ -14,8 +14,8 @@ from .weights import WeightFunction
 class Engine:
     graph: networkx.DiGraph
 
-    def __init__(self, map: Path) -> None:
-        self.graph = load_map(map)
+    def __init__(self, map_path: Path) -> None:
+        self.graph = load_map(map_path)
 
         # add additional attributes
         osmnx.bearing.add_edge_bearings(self.graph)
@@ -101,14 +101,14 @@ class Engine:
 
 
 def route(
-    map: Path, origin: models.Location, destination: models.Location, weight: str
+    map_path: Path, origin: models.Location, destination: models.Location, weight: str
 ) -> models.Route:
     """
     Calculate a shortest path.
     """
     weight_func = weights.get_function(weight)
 
-    engine = Engine(map)
+    engine = Engine(map_path)
     origin_node = engine.get_closest_node(origin)
     destination_node = engine.get_closest_node(destination)
 

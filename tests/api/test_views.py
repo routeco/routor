@@ -6,7 +6,7 @@ from routor import engine, models, weights
 
 @pytest.fixture(name="client")
 def fixture_client(monkeypatch, graph_path: str) -> TestClient:
-    monkeypatch.setenv("map_path", graph_path)
+    monkeypatch.setenv("map_path", str(graph_path))
     from routor.api.views import app  # late import to monkeypatch the settings
 
     client = TestClient(app)

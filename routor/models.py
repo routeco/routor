@@ -11,13 +11,13 @@ class Location(BaseModel):
     longitude: float  # alias: x
 
     @validator("latitude")
-    def validate_latitude(cls, value: float) -> float:
+    def validate_latitude(cls, value: float) -> float:  # noqa: N805
         if -90 > value or value > 90:
             raise ValueError("Latitude must be between -90 and 90")
         return value
 
     @validator("longitude")
-    def validate_longitude(cls, value: float) -> float:
+    def validate_longitude(cls, value: float) -> float:  # noqa: N805
         if -180 > value or value > 180:
             raise ValueError("Longitude must be between -180 and 180")
         return value
