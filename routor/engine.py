@@ -27,7 +27,7 @@ class Engine:
         )
 
     @timeit
-    def route(
+    def find_path(
         self, origin: models.Node, destination: models.Node, weight: WeightFunction
     ) -> List[models.Node]:
         """
@@ -58,6 +58,32 @@ class Engine:
         )
         logger.info(f"Found path with {len(path)} items.")
         return [models.Node.from_graph(self.graph, node_id) for node_id in path]
+
+    @timeit
+    def route(
+        self,
+        origin: models.Location,
+        destination: models.Location,
+        weight: WeightFunction,
+    ) -> models.Route:
+        """
+        Calculate a shortest path.
+        """
+        origin_node = self.get_closest_node(origin)
+        destination_node = self.get_closest_node(destination)
+
+        path = self.find_path(origin_node, destination_node, weight=weight)
+        costs = self.costs_for_path(path, weight=weight)
+        length = self.length_of_path(path)
+        travel_time = self.travel_time_of_path(path)
+
+        route = models.Route(
+            costs=round(costs, 2),
+            length=round(length, 2),
+            travel_time=round(travel_time, 2),
+            path=[models.Location(**node.dict()) for node in path],
+        )
+        return route
 
     @timeit
     def costs_for_path(self, path: List[models.Node], weight: WeightFunction) -> float:
@@ -113,30 +139,3 @@ class Engine:
         node = models.Node.from_graph(self.graph, node_id)
         logger.info(f"Found closest node for {location} is {node.osm_id}")
         return node
-
-
-def route(
-    map_path: Path,
-    origin: models.Location,
-    destination: models.Location,
-    weight_func: WeightFunction,
-) -> models.Route:
-    """
-    Calculate a shortest path.
-    """
-    engine = Engine(map_path)
-    origin_node = engine.get_closest_node(origin)
-    destination_node = engine.get_closest_node(destination)
-
-    path = engine.route(origin_node, destination_node, weight=weight_func)
-    costs = engine.costs_for_path(path, weight=weight_func)
-    length = engine.length_of_path(path)
-    travel_time = engine.travel_time_of_path(path)
-
-    route = models.Route(
-        costs=round(costs, 2),
-        length=round(length, 2),
-        travel_time=round(travel_time, 2),
-        path=[models.Location(**node.dict()) for node in path],
-    )
-    return route

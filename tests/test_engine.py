@@ -63,14 +63,14 @@ def test_get_closest_node(engine: Engine) -> None:
     assert node.node_id == ORIGN_NODE_ID
 
 
-def test_route(engine: Engine) -> None:
+def test_find_path(engine: Engine) -> None:
     """
     Make sure we calculate a proper path.
     """
     origin = engine.get_closest_node(ORIGIN_LOCATION)
     destination = engine.get_closest_node(DESTINATION_LOCATION)
 
-    path = engine.route(origin, destination, weight=weights.travel_time)
+    path = engine.find_path(origin, destination, weight=weights.travel_time)
     node_ids = [node.node_id for node in path]
     assert node_ids == PATH
 
@@ -83,7 +83,7 @@ def test_route__weight_func(mocker, engine: Engine) -> None:
     origin = engine.get_closest_node(ORIGIN_LOCATION)
     destination = engine.get_closest_node(DESTINATION_LOCATION)
 
-    engine.route(origin, destination, weight=weights.travel_time)
+    engine.find_path(origin, destination, weight=weights.travel_time)
     assert weights.travel_time.call_count > len(PATH)  # type: ignore
 
 
@@ -93,7 +93,7 @@ def test_costs_for_path(engine: Engine) -> None:
     """
     origin = engine.get_closest_node(ORIGIN_LOCATION)
     destination = engine.get_closest_node(DESTINATION_LOCATION)
-    path = engine.route(origin, destination, weight=weights.travel_time)
+    path = engine.find_path(origin, destination, weight=weights.travel_time)
 
     costs = engine.costs_for_path(path, weight=weights.travel_time)
     assert costs == 46.199999999999996
@@ -105,7 +105,7 @@ def test_length_of_path(engine: Engine) -> None:
     """
     origin = engine.get_closest_node(ORIGIN_LOCATION)
     destination = engine.get_closest_node(DESTINATION_LOCATION)
-    path = engine.route(origin, destination, weight=weights.travel_time)
+    path = engine.find_path(origin, destination, weight=weights.travel_time)
 
     length = engine.length_of_path(path)
     assert length == 1449.668  # meters
@@ -117,7 +117,7 @@ def test_travel_time_of_path(engine: Engine) -> None:
     """
     origin = engine.get_closest_node(ORIGIN_LOCATION)
     destination = engine.get_closest_node(DESTINATION_LOCATION)
-    path = engine.route(origin, destination, weight=weights.travel_time)
+    path = engine.find_path(origin, destination, weight=weights.travel_time)
 
     length = engine.travel_time_of_path(path)
     assert length == 46.199999999999996  # seconds

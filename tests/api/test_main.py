@@ -19,7 +19,6 @@ def test_read_weights(mocker, client: TestClient) -> None:
 @pytest.mark.parametrize(("weight", "weight_func"), weights.WEIGHT_FUNCTIONS.items())
 def test_read_route(
     mocker,
-    graph_path: str,
     client: TestClient,
     weight: str,
     weight_func: weights.WeightFunction,
@@ -38,7 +37,9 @@ def test_read_route(
             {"latitude": 50.1, "longitude": -2.1},
         ],
     }
-    mocker.patch.object(engine, "route", return_value=models.Route(**expected_data))
+    mocker.patch.object(
+        engine.Engine, "route", return_value=models.Route(**expected_data)
+    )
 
     response = client.get(
         "/route",
@@ -49,5 +50,5 @@ def test_read_route(
         },
     )
     assert response.status_code == 200, response.content
-    engine.route.assert_called_with(graph_path, origin, destination, weight_func)  # type: ignore
+    engine.Engine.route.assert_called_with(origin, destination, weight_func)  # type: ignore
     assert response.json() == expected_data

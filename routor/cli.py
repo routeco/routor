@@ -5,7 +5,8 @@ from typing import Optional
 
 import click
 
-from . import engine, models
+from . import models
+from .engine import Engine
 from .utils import graph as graph_utils
 from .utils.click import LocationParamType
 
@@ -72,6 +73,7 @@ def route(
     weight_func = getattr(module, func_name)
 
     # do routing
-    data = engine.route(map_path, origin, destination, weight_func)
+    engine = Engine(map_path)
+    data = engine.route(origin, destination, weight_func)
 
     print(json.dumps(data.dict(), indent=2))
