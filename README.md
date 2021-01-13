@@ -83,6 +83,25 @@ register(my_weight_func, "weight_func")
 
 Start the server with `uvicorn main:app` and the weight function will be available as `weight_func` when calling the api.
 
+### As library
+
+You can also use the engine as a library.
+To calculate a route from A to B you can do
+
+```python
+from routor.engine import Engine
+from routor import models, weights
+
+...
+map_path = Path(...)
+engine = Engine(map_path)
+
+origin = models.Location(latitude=51.47967237816338, longitude=-2.6174926757812496)
+destination = models.Location(latitude=51.45422084861252, longitude=-2.564105987548828)
+
+route = engine.route(origin, destination, weights.length)  # shortest distance
+```
+
 ## Development
 
 This project uses [poetry](https://poetry.eustace.io/) for packaging and
