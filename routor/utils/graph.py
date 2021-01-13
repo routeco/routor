@@ -1,4 +1,5 @@
 import copy
+import logging
 from pathlib import Path
 from typing import Tuple
 
@@ -6,7 +7,12 @@ import networkx
 import osmnx
 from osmnx.graph import graph_from_xml
 
+from .debug import timeit
 
+logger = logging.getLogger()
+
+
+@timeit
 def load_map(map_path: Path) -> networkx.DiGraph:
     """
     Load graph from a .osm.xml file.
@@ -32,10 +38,12 @@ def is_twoway(edge: Tuple[int, int, dict]) -> bool:
     return not is_oneway(edge)
 
 
+@timeit
 def convert_to_oneways(graph: networkx.DiGraph) -> networkx.DiGraph:
     """
     Convert all two ways to two one ways and reset osmids.
     """
+    logger.info("Converting two ways to one ways")
     graph = graph.copy()  # create a new graph
 
     # rewrite osmid
@@ -66,7 +74,9 @@ def convert_to_oneways(graph: networkx.DiGraph) -> networkx.DiGraph:
     return graph
 
 
+@timeit
 def download_graph(location: str, as_oneways: bool = False) -> networkx.DiGraph:
+    logger.info(f"Download map for {location}")
     osmnx.utils.config(all_oneway=True)
 
     graph = osmnx.graph_from_place(
@@ -82,10 +92,12 @@ def download_graph(location: str, as_oneways: bool = False) -> networkx.DiGraph:
     return graph
 
 
+@timeit
 def save_graph(graph: networkx.DiGraph, target: Path) -> None:
     """
     Save graph as .osm.xml file.
     """
+    logger.info("Saving graph as {target}.")
     osmnx.save_graph_xml(
         graph,
         filepath=str(target),

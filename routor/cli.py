@@ -1,6 +1,7 @@
 import json
 import logging
 from pathlib import Path
+from typing import Optional
 
 import click
 
@@ -8,19 +9,28 @@ from . import engine, models, weights
 from .utils import graph as graph_utils
 from .utils.click import LocationParamType
 
-logging.basicConfig(level=logging.DEBUG)
+
+def set_log_level(log_level: Optional[str]) -> None:
+    if log_level:
+        level = getattr(logging, log_level)
+        logging.basicConfig(level=level)
 
 
 @click.group()
-def main():
+def main() -> None:
     pass
 
 
 @main.command()
+@click.option('--log-level', type=click.Choice(["INFO", "DEBUG"]), default="INFO")
 @click.argument('location', type=str)
 @click.argument('target', type=click.Path(exists=False, dir_okay=False))
 @click.argument('as_oneways', type=bool, default=True)
-def download(location: str, target: Path, as_oneways: bool) -> None:
+def download(
+    location: str, target: Path, as_oneways: bool, log_level: Optional[str]
+) -> None:
+    set_log_level(log_level)
+
     print(f"Download map for: {location}")
     graph = graph_utils.download_graph(location, as_oneways=as_oneways)
     graph_utils.save_graph(graph, target)
@@ -28,12 +38,17 @@ def download(location: str, target: Path, as_oneways: bool) -> None:
 
 
 @main.command()
+@click.option('--log-level', type=click.Choice(["INFO", "DEBUG"]), default="INFO")
 @click.argument('map_path', type=click.Path(exists=True, dir_okay=False))
 @click.argument('origin', type=LocationParamType())
 @click.argument('destination', type=LocationParamType())
 @click.argument('weight', type=click.Choice(weights.get_function_names()))
 def route(
-    map_path: Path, origin: models.Location, destination: models.Location, weight: str
+    map_path: Path,
+    origin: models.Location,
+    destination: models.Location,
+    weight: str,
+    log_level: Optional[str],
 ) -> None:
     """
     Calculate a shortest path.
@@ -43,6 +58,8 @@ def route(
     ORIGIN GPS location. Format: latitude,longitude
     DESTINATION GPS location. Format: latitude,longitude
     """
+    set_log_level(log_level)
+
     data = engine.route(map_path, origin, destination, weight)
 
     print(json.dumps(data.dict(), indent=2))

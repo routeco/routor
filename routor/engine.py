@@ -1,3 +1,4 @@
+import logging
 from pathlib import Path
 from typing import Any, List, Optional, Tuple
 
@@ -7,21 +8,32 @@ from more_itertools import pairwise
 from networkx_astar_path import astar_path
 
 from . import exceptions, models, weights
+from .utils.debug import timeit
 from .utils.graph import load_map
 from .weights import WeightFunction
+
+logger = logging.getLogger()
 
 
 class Engine:
     graph: networkx.DiGraph
 
+    @timeit
     def __init__(self, map_path: Path) -> None:
+        logger.info("Initialise engine")
         self.graph = load_map(map_path)
+        logger.info(
+            f"Map loaded (edges: {len(self.graph.edges)}, nodes: {len(self.graph.nodes)})"
+        )
 
         # add additional attributes
+        logger.info("Enhance map with additional attributes")
         osmnx.bearing.add_edge_bearings(self.graph)
         osmnx.speed.add_edge_speeds(self.graph, hwy_speeds=None, fallback=30)
         osmnx.speed.add_edge_travel_times(self.graph)
+        logger.info("finished initialising")
 
+    @timeit
     def route(
         self, origin: models.Node, destination: models.Node, weight: WeightFunction
     ) -> List[models.Node]:
@@ -45,11 +57,16 @@ class Engine:
 
             return weight(prev_edge, edge)
 
+        logger.info(
+            f"Calculating path from {origin.osm_id} to {destination.osm_id} with {weight}"
+        )
         path = astar_path(
             self.graph, origin.node_id, destination.node_id, weight=_weight_wrapper
         )
+        logger.info(f"Found path with {len(path)} items.")
         return [models.Node.from_graph(self.graph, node_id) for node_id in path]
 
+    @timeit
     def costs_for_path(self, path: List[models.Node], weight: WeightFunction) -> float:
         """
         Calculate the costs for a given path.
@@ -68,6 +85,7 @@ class Engine:
 
         return costs
 
+    @timeit
     def length_of_path(self, path: List[models.Node]) -> float:
         """
         Calculate the length of a given path.
@@ -79,6 +97,7 @@ class Engine:
 
         return sum(edge.length for edge in edges)
 
+    @timeit
     def travel_time_of_path(self, path: List[models.Node]) -> float:
         """
         Calculate the travel time of a given path.
@@ -90,6 +109,7 @@ class Engine:
 
         return sum(edge.travel_time for edge in edges)
 
+    @timeit
     def get_closest_node(self, location: models.Location) -> models.Node:
         """
         Get the closest node to a GPS location.
@@ -97,7 +117,9 @@ class Engine:
         node_id = osmnx.get_nearest_node(
             self.graph, (location.latitude, location.longitude)
         )
-        return models.Node.from_graph(self.graph, node_id)
+        node = models.Node.from_graph(self.graph, node_id)
+        logger.info(f"Found closest node for {location} is {node.osm_id}")
+        return node
 
 
 def route(
@@ -107,6 +129,7 @@ def route(
     Calculate a shortest path.
     """
     weight_func = weights.get_function(weight)
+    logger.debug(f"Found weight function for '{weight}'")
 
     engine = Engine(map_path)
     origin_node = engine.get_closest_node(origin)
