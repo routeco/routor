@@ -22,20 +22,22 @@ pip install routor
 
 ### CLI
 
-Use the integrated cli to calculate a route.
+The CLI offers multiple commands, use `routor --help` to find out more.
 
-```text
-$ python -m routor --help
-Usage: python -m routor [OPTIONS] MAP ORIGIN DESTINATION [travel_time|length]
+#### Download map
 
-  Calculate a shortest path.
+Downloads a compatible map from OSM, eg.
 
-  MAP Path to an OSM file. Format: .osm.xml
-  ORIGIN GPS location. Format: latitude,longitude
-  DESTINATION GPS location. Format: latitude,longitude
+```sh
+routor download "Bristol, England" ./bristol.osm.xml
+```
 
-Options:
-  --help  Show this message and exit.
+#### Calculate route
+
+Determine the optimal route between two points using the given weight function and print the route as `JSON` to `stdout`.
+
+```sh
+routor -- ./bristol.osm.xml  "51.47967237816338,-2.6174926757812496" "51.45422084861252,-2.564105987548828" length
 ```
 
 ### Web API
