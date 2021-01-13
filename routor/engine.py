@@ -26,13 +26,6 @@ class Engine:
             f"Map loaded (edges: {len(self.graph.edges)}, nodes: {len(self.graph.nodes)})"
         )
 
-        # add additional attributes
-        logger.info("Enhance map with additional attributes")
-        osmnx.bearing.add_edge_bearings(self.graph)
-        osmnx.speed.add_edge_speeds(self.graph, hwy_speeds=None, fallback=30)
-        osmnx.speed.add_edge_travel_times(self.graph)
-        logger.info("finished initialising")
-
     @timeit
     def route(
         self, origin: models.Node, destination: models.Node, weight: WeightFunction

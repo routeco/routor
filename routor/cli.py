@@ -57,7 +57,7 @@ def route(
     Calculate a shortest path.
 
     \b
-    MAP Path to an OSM file. Format: .osm.xml
+    MAP Path to an OSM graphml file. Format: .graphml
     ORIGIN GPS location. Format: latitude,longitude
     DESTINATION GPS location. Format: latitude,longitude
     WEIGHT Module path to weight function, eg. "routor.weights.length"

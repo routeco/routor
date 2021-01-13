@@ -5,7 +5,6 @@ from typing import Tuple
 
 import networkx
 import osmnx
-from osmnx.graph import graph_from_xml
 
 from .debug import timeit
 
@@ -15,10 +14,10 @@ logger = logging.getLogger()
 @timeit
 def load_map(map_path: Path) -> networkx.DiGraph:
     """
-    Load graph from a .osm.xml file.
+    Load graph from a .graphml file.
     """
-    graph = graph_from_xml(
-        map_path, bidirectional=False, simplify=False, retain_all=False
+    graph = osmnx.io.load_graphml(
+        map_path,
     )
     return graph
 
@@ -77,8 +76,23 @@ def convert_to_oneways(graph: networkx.DiGraph) -> networkx.DiGraph:
 @timeit
 def download_graph(location: str, as_oneways: bool = False) -> networkx.DiGraph:
     logger.info(f"Download map for {location}")
-    osmnx.utils.config(all_oneway=True)
-
+    # set attributs/tags which should be downloaded from osm
+    osmnx.config(
+        useful_tags_node=list(
+            set(
+                osmnx.settings.useful_tags_node
+                + osmnx.settings.osm_xml_node_attrs
+                + osmnx.settings.osm_xml_node_tags
+            )
+        ),
+        useful_tags_way=list(
+            set(
+                osmnx.settings.useful_tags_way
+                + osmnx.settings.osm_xml_way_attrs
+                + osmnx.settings.osm_xml_way_tags
+            )
+        ),
+    )
     graph = osmnx.graph_from_place(
         location,
         network_type="drive",
@@ -88,18 +102,24 @@ def download_graph(location: str, as_oneways: bool = False) -> networkx.DiGraph:
     )
 
     if as_oneways:
-        return convert_to_oneways(graph)
+        graph = convert_to_oneways(graph)
+
+    # add additional attributes
+    logger.info("Enhance map with additional attributes")
+    osmnx.bearing.add_edge_bearings(graph)
+    osmnx.speed.add_edge_speeds(graph, hwy_speeds=None, fallback=30)
+    osmnx.speed.add_edge_travel_times(graph)
+
     return graph
 
 
 @timeit
 def save_graph(graph: networkx.DiGraph, target: Path) -> None:
     """
-    Save graph as .osm.xml file.
+    Save graph as .graphml file.
     """
     logger.info("Saving graph as {target}.")
-    osmnx.save_graph_xml(
+    osmnx.save_graphml(
         graph,
         filepath=str(target),
-        merge_edges=False,
     )
