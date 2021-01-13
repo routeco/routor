@@ -59,9 +59,9 @@ class Engine:
             for start, end in pairwise(path)
         )
 
-        costs: float = None  # type: ignore
-        for prev_edge, edge in pairwise(edges):
-            if costs is None:
+        costs: float = 0
+        for index, (prev_edge, edge) in enumerate(pairwise(edges)):
+            if index == 0:
                 costs = weight(None, prev_edge)
 
             costs += weight(prev_edge, edge)
