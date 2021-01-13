@@ -3,7 +3,7 @@ from pathlib import Path
 
 from click.testing import CliRunner
 
-from routor.cli import main
+from routor import cli
 
 from . import test_engine
 
@@ -61,7 +61,9 @@ def test_main(graph_path: Path):
     origin = f"{test_engine.ORIGIN_LOCATION.latitude},{test_engine.ORIGIN_LOCATION.longitude}"
     destination = f"{test_engine.DESTINATION_LOCATION.latitude},{test_engine.DESTINATION_LOCATION.longitude}"
 
-    result = runner.invoke(main, [str(graph_path), origin, destination, "travel_time"])
+    result = runner.invoke(
+        cli.route, [str(graph_path), origin, destination, "travel_time"]
+    )
     assert result.exit_code == 0
 
     data = json.loads(result.output)
