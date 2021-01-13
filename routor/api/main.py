@@ -26,5 +26,7 @@ def read_route(
     """
     Calculate a route from A to B.
     """
-    route = engine.route(settings.map_path, data.origin, data.destination, data.weight)
+    weight_func = weights.get_function(data.weight)
+
+    route = engine.route(settings.map_path, data.origin, data.destination, weight_func)
     return route

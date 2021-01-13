@@ -7,7 +7,7 @@ import osmnx
 from more_itertools import pairwise
 from networkx_astar_path import astar_path
 
-from . import exceptions, models, weights
+from . import exceptions, models
 from .utils.debug import timeit
 from .utils.graph import load_map
 from .weights import WeightFunction
@@ -123,14 +123,14 @@ class Engine:
 
 
 def route(
-    map_path: Path, origin: models.Location, destination: models.Location, weight: str
+    map_path: Path,
+    origin: models.Location,
+    destination: models.Location,
+    weight_func: WeightFunction,
 ) -> models.Route:
     """
     Calculate a shortest path.
     """
-    weight_func = weights.get_function(weight)
-    logger.debug(f"Found weight function for '{weight}'")
-
     engine = Engine(map_path)
     origin_node = engine.get_closest_node(origin)
     destination_node = engine.get_closest_node(destination)

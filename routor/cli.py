@@ -5,7 +5,7 @@ from typing import Optional
 
 import click
 
-from . import engine, models, weights
+from . import engine, models
 from .utils import graph as graph_utils
 from .utils.click import LocationParamType
 
@@ -29,6 +29,9 @@ def main() -> None:
 def download(
     location: str, target: Path, as_oneways: bool, log_level: Optional[str]
 ) -> None:
+    """
+    Download a compatible map.
+    """
     set_log_level(log_level)
 
     print(f"Download map for: {location}")
@@ -42,7 +45,7 @@ def download(
 @click.argument('map_path', type=click.Path(exists=True, dir_okay=False))
 @click.argument('origin', type=LocationParamType())
 @click.argument('destination', type=LocationParamType())
-@click.argument('weight', type=click.Choice(weights.get_function_names()))
+@click.argument('weight', type=str)
 def route(
     map_path: Path,
     origin: models.Location,
@@ -57,9 +60,18 @@ def route(
     MAP Path to an OSM file. Format: .osm.xml
     ORIGIN GPS location. Format: latitude,longitude
     DESTINATION GPS location. Format: latitude,longitude
+    WEIGHT Module path to weight function, eg. "routor.weights.length"
     """
     set_log_level(log_level)
 
-    data = engine.route(map_path, origin, destination, weight)
+    # load weight function
+    from importlib import import_module
+
+    module_path, func_name = weight.rsplit('.', 1)
+    module = import_module(module_path)
+    weight_func = getattr(module, func_name)
+
+    # do routing
+    data = engine.route(map_path, origin, destination, weight_func)
 
     print(json.dumps(data.dict(), indent=2))

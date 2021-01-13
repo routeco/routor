@@ -16,8 +16,14 @@ def test_read_weights(mocker, client: TestClient) -> None:
     assert response.json() == expected_weights
 
 
-@pytest.mark.parametrize("weight", ("travel_time", "length"))
-def test_read_route(mocker, graph_path: str, client: TestClient, weight: str) -> None:
+@pytest.mark.parametrize(("weight", "weight_func"), weights.WEIGHT_FUNCTIONS.items())
+def test_read_route(
+    mocker,
+    graph_path: str,
+    client: TestClient,
+    weight: str,
+    weight_func: weights.WeightFunction,
+) -> None:
     """
     Test if a proper route from A to B and its metadata is returned.
     """
@@ -43,5 +49,5 @@ def test_read_route(mocker, graph_path: str, client: TestClient, weight: str) ->
         },
     )
     assert response.status_code == 200, response.content
-    engine.route.assert_called_with(graph_path, origin, destination, weight)  # type: ignore
+    engine.route.assert_called_with(graph_path, origin, destination, weight_func)  # type: ignore
     assert response.json() == expected_data

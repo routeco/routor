@@ -37,7 +37,7 @@ routor download "Bristol, England" ./bristol.osm.xml
 Determine the optimal route between two points using the given weight function and print the route as `JSON` to `stdout`.
 
 ```sh
-routor -- ./bristol.osm.xml  "51.47967237816338,-2.6174926757812496" "51.45422084861252,-2.564105987548828" length
+routor -- ./bristol.osm.xml  "51.47967237816338,-2.6174926757812496" "51.45422084861252,-2.564105987548828" "routor.weights.length"
 ```
 
 ### Web API
