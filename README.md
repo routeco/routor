@@ -102,6 +102,16 @@ destination = models.Location(latitude=51.45422084861252, longitude=-2.564105987
 route = engine.route(origin, destination, weights.length)  # shortest distance
 ```
 
+## Available weight-functions
+
+### `"length"` / `routor.weights.length`
+
+Calculates the shortest path from A to B, only the length of an edge is taken into account.
+
+### `"travel_time"` / `routor.weight.travel_time`
+
+Calculates the fastest route based on [travel time](https://osmnx.readthedocs.io/en/stable/osmnx.html#osmnx.speed.add_edge_travel_times).
+
 ## Development
 
 This project uses [poetry](https://poetry.eustace.io/) for packaging and
