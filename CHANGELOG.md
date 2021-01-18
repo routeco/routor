@@ -7,9 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.0] - 2020-01-18
+
 ### Added
 
 * basic routing CLI
 * basic API
 
 [Unreleased]: https://github.com/escaped/routor/tree/master
+[0.1.0]: https://github.com/escaped/routor/tree/0.1.0
