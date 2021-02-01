@@ -17,6 +17,52 @@ def test_load_map(graph_path: Path, graph: networkx.Graph) -> None:
     assert list(graph.edges) == list(expected_graph.edges)
 
 
+def test_tag_roundabout_nodes() -> None:
+    """
+    Make sure nodes are tagged as roundabout as well.
+    """
+    graph = networkx.DiGraph()
+    graph.add_edge(0, 1)  # go in
+    graph.add_edge(1, 2, junction="roundabout")  # roundabout
+    graph.add_edge(2, 3, junction="roundabout")  # roundabout
+    graph.add_edge(3, 1, junction="roundabout")  # roundabout
+    graph.add_edge(2, 4)  # get out
+
+    graph_utils.tag_roundabout_nodes(graph)
+
+    assert graph.nodes[0] == {}
+    assert graph.nodes[4] == {}
+    # everything else is part of the roundabout
+    assert graph.nodes[1] == {"junction": "roundabout"}
+    assert graph.nodes[2] == {"junction": "roundabout"}
+    assert graph.nodes[3] == {"junction": "roundabout"}
+
+
+def test_tag_roundabout_nodes__keep_circular() -> None:
+    """
+    Make sure nodes tagged with junction=circular are not retagged.
+    """
+    graph = networkx.DiGraph()
+    graph.add_node(1, junction="circular")
+    graph.add_node(2, junction="circular")
+    graph.add_node(3, junction="circular")
+
+    graph.add_edge(0, 1)  # go in
+    graph.add_edge(1, 2, junction="roundabout")  # roundabout
+    graph.add_edge(2, 3, junction="roundabout")  # roundabout
+    graph.add_edge(3, 1, junction="roundabout")  # roundabout
+    graph.add_edge(2, 4)  # get out
+
+    graph_utils.tag_roundabout_nodes(graph)
+
+    assert graph.nodes[0] == {}
+    assert graph.nodes[4] == {}
+    # do not overwrite junction type circular
+    assert graph.nodes[1] == {"junction": "circular"}
+    assert graph.nodes[2] == {"junction": "circular"}
+    assert graph.nodes[3] == {"junction": "circular"}
+
+
 @pytest.mark.default_cassette("download_nailsea.yaml")
 @pytest.mark.vcr
 def test_download_graph() -> None:
@@ -34,12 +80,15 @@ def test_download_graph() -> None:
         "name",
         "maxspeed",
         "length",
+        "junction",
         "oneway",
         "bearing",
         "speed_kph",
         "travel_time",
     }.difference(edges.columns.tolist())
-    assert not {"y", "x", "highway", "street_count"}.difference(nodes.columns.tolist())
+    assert not {"y", "x", "highway", "junction", "street_count"}.difference(
+        nodes.columns.tolist()
+    )
 
 
 @pytest.mark.default_cassette("download_nailsea.yaml")

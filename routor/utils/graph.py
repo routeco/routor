@@ -34,6 +34,7 @@ def osmnx_config(
         osmnx.settings.useful_tags_node
         + osmnx.settings.osm_xml_node_attrs
         + osmnx.settings.osm_xml_node_tags
+        + ["junction"]  # additional useful tags
         + ["street_count"]  # custom enhancements
         + node_tags
     )
@@ -41,6 +42,7 @@ def osmnx_config(
         osmnx.settings.useful_tags_way
         + osmnx.settings.osm_xml_way_attrs
         + osmnx.settings.osm_xml_way_tags
+        + ["junction"]  # additional useful tags
         + ["bearing", "speed_kph", "travel_time"]  # custom enhancements
         + edge_tags
     )
@@ -65,6 +67,36 @@ def osmnx_config(
 
 
 @timeit
+def tag_roundabout_nodes(graph: networkx.DiGraph) -> None:
+    """
+    Tag nodes within a roundabout as junction=roundabout.
+
+    Not every node within a roundabout is always tagged accordingly. Let's fix that.
+    More information:
+    * https://wiki.openstreetmap.org/wiki/Key:junction
+    * https://wiki.openstreetmap.org/wiki/Tag:junction%3Droundabout
+    """
+    for u, v, edge_data in graph.edges(data=True):
+        if edge_data.get("junction", None) != "roundabout":
+            continue
+
+        for node_id in (u, v):
+            node_data = graph.nodes[node_id]
+            if node_data.get("junction", None) == "circular":
+                # no need to do anything as this is a "roundabout"
+                # https://wiki.openstreetmap.org/wiki/Tag:junction%3Dcircular?
+                continue
+
+            if "junction" in node_data:
+                logger.warning(
+                    "Node %s was already tagged with `junction='%s'`.",
+                    node_id,
+                    node_data["junction"],
+                )
+            node_data["junction"] = "roundabout"
+
+
+@timeit
 def download_graph(
     location: str,
     node_tags: Optional[List[str]] = None,
@@ -85,6 +117,8 @@ def download_graph(
 
     # add additional attributes
     logger.info("Enhance map with additional attributes")
+    logger.info("> Tag node as roundabout")
+    tag_roundabout_nodes(graph)
     logger.info("> Adding street count to nodes")
     for node_id, street_count in osmnx.utils_graph.count_streets_per_node(
         graph
