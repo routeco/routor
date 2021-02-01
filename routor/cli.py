@@ -44,12 +44,10 @@ def download(
     """
     set_log_level(log_level)
 
-    print(f"Download map for: {location}")
     graph = graph_utils.download_graph(
         location, node_tags=list(node_tags), edge_tags=list(edge_tags)
     )
     graph_utils.save_graph(graph, target)
-    print(f"Graph saved as {target}")
 
 
 @main.command()
