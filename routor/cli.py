@@ -1,7 +1,7 @@
 import json
 import logging
 from pathlib import Path
-from typing import Optional
+from typing import Optional, Tuple
 
 import click
 
@@ -24,11 +24,20 @@ def main() -> None:
 
 @main.command()
 @click.option('--log-level', type=click.Choice(["INFO", "DEBUG"]), default="INFO")
+@click.option(
+    '-n', '--node-tags', multiple=True, type=str, help="Additional node tags to fetch."
+)
+@click.option(
+    '-e', '--edge-tags', multiple=True, type=str, help="Additional edge tags to fetch."
+)
 @click.argument('location', type=str)
 @click.argument('target', type=click.Path(exists=False, dir_okay=False))
-@click.argument('as_oneways', type=bool, default=True)
 def download(
-    location: str, target: Path, as_oneways: bool, log_level: Optional[str]
+    location: str,
+    target: Path,
+    log_level: Optional[str],
+    node_tags: Tuple[str],
+    edge_tags: Tuple[str],
 ) -> None:
     """
     Download a compatible map.
@@ -36,7 +45,9 @@ def download(
     set_log_level(log_level)
 
     print(f"Download map for: {location}")
-    graph = graph_utils.download_graph(location, as_oneways=as_oneways)
+    graph = graph_utils.download_graph(
+        location, node_tags=list(node_tags), edge_tags=list(edge_tags)
+    )
     graph_utils.save_graph(graph, target)
     print(f"Graph saved as {target}")
 
