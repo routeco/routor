@@ -105,7 +105,7 @@ def save_graph(graph: networkx.DiGraph, target: Path) -> None:
     """
     Save graph as .graphml file.
     """
-    logger.info("Saving graph as {target}.")
+    logger.info(f"Saving graph as {target.absolute()}.")
     osmnx.save_graphml(
         graph,
         filepath=str(target),
