@@ -120,18 +120,22 @@ def download_graph(
     logger.info("Enhance map with additional attributes")
     logger.info("> Tag node as roundabout")
     tag_roundabout_nodes(graph)
+
     logger.info("> Adding street count to nodes")
-    for node_id, street_count in osmnx.utils_graph.count_streets_per_node(
-        graph
-    ).items():
+    street_count_data = osmnx.utils_graph.count_streets_per_node(graph)
+    for node_id, street_count in street_count_data.items():
         graph.nodes[node_id]["street_count"] = street_count
+
     if api_key:
         logger.info("> Adding elevation")
         osmnx.add_node_elevations(graph, api_key, precision=5)
+
     logger.info("> Adding bearing")
     osmnx.bearing.add_edge_bearings(graph)
+
     logger.info("> Adding edge speeds")
     osmnx.speed.add_edge_speeds(graph, hwy_speeds=None, fallback=30)
+
     logger.info("> Adding travel time")
     osmnx.speed.add_edge_travel_times(graph)
 
