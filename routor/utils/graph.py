@@ -27,7 +27,7 @@ def osmnx_config(
     node_tags: List[str], edge_tags: List[str]
 ) -> Generator[None, None, None]:
     """
-    Prepare osmnx for downloading a data.
+    Prepare osmnx config for downloading data.
     """
     # aggregate default tags
     useful_node_tags = set(
