@@ -15,7 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-* dropped unused oneway convertion
+* dropped unused oneway conversion
 
 ## [0.1.0] - 2020-01-18
 
