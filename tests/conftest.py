@@ -16,6 +16,14 @@ def vcr_cassette_dir() -> str:
     return str(tests_dir / "cassettes")
 
 
+@pytest.fixture(autouse=True, scope="session")
+def vcr_config():
+    """
+    Filter the google API key.
+    """
+    return {"filter_query_parameters": ["key"]}
+
+
 @pytest.fixture()
 def graph_path() -> Path:
     """

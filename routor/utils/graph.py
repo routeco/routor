@@ -87,7 +87,7 @@ def tag_roundabout_nodes(graph: networkx.DiGraph) -> None:
                 # https://wiki.openstreetmap.org/wiki/Tag:junction%3Dcircular?
                 continue
 
-            if "junction" in node_data:
+            if "junction" in node_data and node_data["junction"] != "roundabout":
                 logger.warning(
                     "Node %s was already tagged with `junction='%s'`.",
                     node_id,
@@ -101,6 +101,7 @@ def download_graph(
     location: str,
     node_tags: Optional[List[str]] = None,
     edge_tags: Optional[List[str]] = None,
+    api_key: Optional[str] = None,
 ) -> networkx.DiGraph:
     """
     Download map from OSM.
@@ -124,6 +125,9 @@ def download_graph(
         graph
     ).items():
         graph.nodes[node_id]["street_count"] = street_count
+    if api_key:
+        logger.info("> Adding elevation")
+        osmnx.add_node_elevations(graph, api_key, precision=5)
     logger.info("> Adding bearing")
     osmnx.bearing.add_edge_bearings(graph)
     logger.info("> Adding edge speeds")

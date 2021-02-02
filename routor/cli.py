@@ -25,6 +25,12 @@ def main() -> None:
 @main.command()
 @click.option('--log-level', type=click.Choice(["INFO", "DEBUG"]), default="INFO")
 @click.option(
+    '--api-key',
+    type=str,
+    default=None,
+    help="Google API key to add elevation to nodes.",
+)
+@click.option(
     '-n', '--node-tags', multiple=True, type=str, help="Additional node tags to fetch."
 )
 @click.option(
@@ -38,6 +44,7 @@ def download(
     log_level: Optional[str],
     node_tags: Tuple[str],
     edge_tags: Tuple[str],
+    api_key: Optional[str] = None,
 ) -> None:
     """
     Download a compatible map.
@@ -45,7 +52,7 @@ def download(
     set_log_level(log_level)
 
     graph = graph_utils.download_graph(
-        location, node_tags=list(node_tags), edge_tags=list(edge_tags)
+        location, node_tags=list(node_tags), edge_tags=list(edge_tags), api_key=api_key
     )
     graph_utils.save_graph(graph, target)
 

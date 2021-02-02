@@ -117,3 +117,16 @@ def test_download_graph__custom_edge_tags(tag: str) -> None:
     )
     _, edges = osmnx.utils_graph.graph_to_gdfs(graph)
     assert tag in edges.columns.tolist()
+
+
+@pytest.mark.default_cassette("download_nailsea.yaml")
+@pytest.mark.vcr("download_nailsea_elevation.yaml")
+def test_download_graph__add_elevation() -> None:
+    """
+    Make sure elevation is attached once an Google API key has been provided.
+    """
+    graph = graph_utils.download_graph(
+        "Nailsea, North Somerset, England", api_key="some_random_api_key"
+    )
+    nodes, _ = osmnx.utils_graph.graph_to_gdfs(graph)
+    assert "elevation" in nodes.columns.tolist()
