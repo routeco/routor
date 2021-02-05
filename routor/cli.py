@@ -28,7 +28,7 @@ def main() -> None:
     '--api-key',
     type=str,
     default=None,
-    help="Google API key to add elevation to nodes.",
+    help="Google API key to add elevation to nodes and grades to edges.",
 )
 @click.option(
     '-n', '--node-tags', multiple=True, type=str, help="Additional node tags to fetch."
