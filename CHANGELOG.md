@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+* Download did not work, since the internal click API does not return a proper object
+
 ## [0.2.0] - 2021-02-05
 
 ### Added
