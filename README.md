@@ -6,7 +6,7 @@
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/routor?style=flat-square)
 ![PyPI - License](https://img.shields.io/pypi/l/routor?style=flat-square)
 
-Simple osm routing engine.
+Simple routing engine for OpenStreetMaps with easy to customize profiles/weight-functions. 
 
 ## Requirements
 
