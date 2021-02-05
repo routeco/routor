@@ -41,6 +41,7 @@ def test_node__from_graph(graph: networkx.DiGraph) -> None:
     assert node.osm_id == node_data["osmid"]
     assert node.latitude == node_data["y"]
     assert node.longitude == node_data["x"]
+    assert node.elevation == 11.25945
 
 
 def test_edge__from_graph(graph: networkx.DiGraph) -> None:
@@ -56,6 +57,7 @@ def test_edge__from_graph(graph: networkx.DiGraph) -> None:
     assert edge.oneway is True
     assert edge.length == 61.516
     assert edge.travel_time == 2.0
+    assert edge.grade == 0.0
 
 
 def test_edge__from_graph__invalid_node(graph: networkx.DiGraph) -> None:
@@ -84,3 +86,28 @@ def test_edge__from_nodes(graph: networkx.DiGraph) -> None:
     assert edge.oneway is True
     assert edge.length == 61.516
     assert edge.travel_time == 2.0
+    assert edge.grade == 0.0
+
+
+def test_node__extra_tags(graph: networkx.DiGraph) -> None:
+    """
+    Make sure that extra attributes are attached to the node as well.
+    """
+
+    node_id, node_data = next(iter(graph.nodes(data=True)))
+    node_data["extra"] = "foo"
+
+    node = models.Node.from_graph(graph, node_id)
+    assert getattr(node, "extra", None) == "foo"
+
+
+def test_edge__extra_tags(graph: networkx.DiGraph) -> None:
+    """
+    Make sure that extra attributes are attached to the edge as well.
+    """
+
+    start_id, end_id, edge_data = next(iter(graph.edges(data=True)))
+    edge_data["extra"] = "foo"
+
+    edge = models.Edge.from_graph(graph, start_id, end_id)
+    assert getattr(edge, "extra", None) == "foo"

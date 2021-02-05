@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+* Edge/Node will be populated with all tags/attributes defined (use `getattr()` with a default value to retrieve them)
+* Added Optional bearing/grade to models
+
 ## [0.2.1] - 2021-02-05
 
 ### Fixed

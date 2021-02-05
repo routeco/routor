@@ -1,7 +1,7 @@
-from typing import Any, List
+from typing import Any, List, Optional
 
 import networkx
-from pydantic import BaseModel, Field, validator
+from pydantic import BaseModel, Extra, Field, validator
 
 from routor import exceptions
 
@@ -26,9 +26,13 @@ class Location(BaseModel):
 class Node(Location):
     node_id: int
     osm_id: int = Field(alias="osmid")
+    street_count: int
+
+    elevation: Optional[float] = None  # only set if an API key was set during download
 
     class Config:
         allow_population_by_field_name = True
+        extra = Extra.allow
 
     @classmethod
     def from_graph(cls, graph: networkx.Graph, node_id: int) -> "Node":
@@ -51,11 +55,15 @@ class Edge(BaseModel):
     osm_id: int = Field(alias="osmid")
     oneway: bool
     length: float
+    bearing: float
     travel_time: float
     geometry: Any  # TODO
 
+    grade: Optional[float] = None  # only if elevation is present
+
     class Config:
         allow_population_by_field_name = True
+        extra = Extra.allow
 
     @classmethod
     def from_graph(cls, graph: networkx.Graph, start_id: int, end_id: int) -> "Edge":

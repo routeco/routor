@@ -1,1622 +1,1992 @@
 <?xml version='1.0' encoding='utf-8'?>
 <graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
-  <key attr.name="bridge" attr.type="string" for="edge" id="d20" />
-  <key attr.name="travel_time" attr.type="string" for="edge" id="d19" />
-  <key attr.name="speed_kph" attr.type="string" for="edge" id="d18" />
-  <key attr.name="bearing" attr.type="string" for="edge" id="d17" />
-  <key attr.name="original_osmid" attr.type="string" for="edge" id="d16" />
-  <key attr.name="length" attr.type="string" for="edge" id="d15" />
-  <key attr.name="maxspeed" attr.type="string" for="edge" id="d14" />
-  <key attr.name="lanes" attr.type="string" for="edge" id="d13" />
-  <key attr.name="ref" attr.type="string" for="edge" id="d12" />
-  <key attr.name="oneway" attr.type="string" for="edge" id="d11" />
-  <key attr.name="highway" attr.type="string" for="edge" id="d10" />
-  <key attr.name="osmid" attr.type="string" for="edge" id="d9" />
-  <key attr.name="ref" attr.type="string" for="node" id="d8" />
-  <key attr.name="highway" attr.type="string" for="node" id="d7" />
-  <key attr.name="osmid" attr.type="string" for="node" id="d6" />
-  <key attr.name="x" attr.type="string" for="node" id="d5" />
-  <key attr.name="y" attr.type="string" for="node" id="d4" />
-  <key attr.name="streets_per_node" attr.type="string" for="graph" id="d3" />
-  <key attr.name="crs" attr.type="string" for="graph" id="d2" />
-  <key attr.name="created_with" attr.type="string" for="graph" id="d1" />
-  <key attr.name="created_date" attr.type="string" for="graph" id="d0" />
+  <key id="d24" for="edge" attr.name="bridge" attr.type="string" />
+  <key id="d23" for="edge" attr.name="grade_abs" attr.type="string" />
+  <key id="d22" for="edge" attr.name="grade" attr.type="string" />
+  <key id="d21" for="edge" attr.name="travel_time" attr.type="string" />
+  <key id="d20" for="edge" attr.name="speed_kph" attr.type="string" />
+  <key id="d19" for="edge" attr.name="bearing" attr.type="string" />
+  <key id="d18" for="edge" attr.name="original_osmid" attr.type="string" />
+  <key id="d17" for="edge" attr.name="length" attr.type="string" />
+  <key id="d16" for="edge" attr.name="maxspeed" attr.type="string" />
+  <key id="d15" for="edge" attr.name="lanes" attr.type="string" />
+  <key id="d14" for="edge" attr.name="ref" attr.type="string" />
+  <key id="d13" for="edge" attr.name="oneway" attr.type="string" />
+  <key id="d12" for="edge" attr.name="highway" attr.type="string" />
+  <key id="d11" for="edge" attr.name="osmid" attr.type="string" />
+  <key id="d10" for="node" attr.name="ref" attr.type="string" />
+  <key id="d9" for="node" attr.name="highway" attr.type="string" />
+  <key id="d8" for="node" attr.name="elevation" attr.type="string" />
+  <key id="d7" for="node" attr.name="street_count" attr.type="string" />
+  <key id="d6" for="node" attr.name="osmid" attr.type="string" />
+  <key id="d5" for="node" attr.name="x" attr.type="string" />
+  <key id="d4" for="node" attr.name="y" attr.type="string" />
+  <key id="d3" for="graph" attr.name="streets_per_node" attr.type="string" />
+  <key id="d2" for="graph" attr.name="crs" attr.type="string" />
+  <key id="d1" for="graph" attr.name="created_with" attr.type="string" />
+  <key id="d0" for="graph" attr.name="created_date" attr.type="string" />
   <graph edgedefault="directed">
     <node id="331782">
       <data key="d4">51.4999424</data>
       <data key="d5">-2.6861824</data>
       <data key="d6">331782</data>
+      <data key="d7">2</data>
+      <data key="d8">8.51975</data>
     </node>
     <node id="2106389512">
       <data key="d4">51.5008211</data>
       <data key="d5">-2.675273</data>
       <data key="d6">2106389512</data>
+      <data key="d7">2</data>
+      <data key="d8">7.34647</data>
     </node>
     <node id="2106389513">
       <data key="d4">51.4991449</data>
       <data key="d5">-2.675861</data>
       <data key="d6">2106389513</data>
+      <data key="d7">2</data>
+      <data key="d8">10.46996</data>
     </node>
     <node id="127498">
       <data key="d4">51.4970863</data>
       <data key="d5">-2.6832676</data>
       <data key="d6">127498</data>
+      <data key="d7">2</data>
+      <data key="d8">11.25945</data>
     </node>
     <node id="2106389514">
       <data key="d4">51.5007602</data>
       <data key="d5">-2.6757798</data>
       <data key="d6">2106389514</data>
+      <data key="d7">2</data>
+      <data key="d8">7.4309</data>
     </node>
     <node id="2106389515">
       <data key="d4">51.5001762</data>
       <data key="d5">-2.6739405</data>
       <data key="d6">2106389515</data>
+      <data key="d7">2</data>
+      <data key="d8">7.89442</data>
     </node>
     <node id="2106389517">
       <data key="d4">51.4992383</data>
       <data key="d5">-2.674607</data>
       <data key="d6">2106389517</data>
+      <data key="d7">2</data>
+      <data key="d8">8.80667</data>
     </node>
     <node id="2106389518">
       <data key="d4">51.5008187</data>
       <data key="d5">-2.6754124</data>
       <data key="d6">2106389518</data>
+      <data key="d7">2</data>
+      <data key="d8">7.58202</data>
     </node>
     <node id="2106389519">
       <data key="d4">51.49957</data>
       <data key="d5">-2.6740695</data>
       <data key="d6">2106389519</data>
+      <data key="d7">2</data>
+      <data key="d8">8.06299</data>
     </node>
     <node id="2106389520">
       <data key="d4">51.5001678</data>
       <data key="d5">-2.6771543</data>
       <data key="d6">2106389520</data>
+      <data key="d7">2</data>
+      <data key="d8">7.83738</data>
     </node>
     <node id="331786">
       <data key="d4">51.4993081</data>
       <data key="d5">-2.6783377</data>
       <data key="d6">331786</data>
+      <data key="d7">2</data>
+      <data key="d8">10.71599</data>
     </node>
     <node id="2106389522">
       <data key="d4">51.4994118</data>
       <data key="d5">-2.674251</data>
       <data key="d6">2106389522</data>
+      <data key="d7">2</data>
+      <data key="d8">8.19193</data>
     </node>
     <node id="2106389523">
       <data key="d4">51.500427</data>
       <data key="d5">-2.6741088</data>
       <data key="d6">2106389523</data>
+      <data key="d7">2</data>
+      <data key="d8">7.69108</data>
     </node>
     <node id="2106389524">
       <data key="d4">51.4992842</data>
       <data key="d5">-2.6744903</data>
       <data key="d6">2106389524</data>
+      <data key="d7">2</data>
+      <data key="d8">8.49432</data>
     </node>
     <node id="2106389525">
       <data key="d4">51.5007817</data>
       <data key="d5">-2.6748145</data>
       <data key="d6">2106389525</data>
+      <data key="d7">2</data>
+      <data key="d8">7.28536</data>
     </node>
     <node id="2106389521">
       <data key="d4">51.4991554</data>
       <data key="d5">-2.6749678</data>
       <data key="d6">2106389521</data>
+      <data key="d7">2</data>
+      <data key="d8">9.44533</data>
     </node>
     <node id="2106389527">
       <data key="d4">51.500805</data>
       <data key="d5">-2.6749644</data>
       <data key="d6">2106389527</data>
+      <data key="d7">2</data>
+      <data key="d8">7.46091</data>
     </node>
     <node id="2106389528">
       <data key="d4">51.5006969</data>
       <data key="d5">-2.6745408</data>
       <data key="d6">2106389528</data>
+      <data key="d7">2</data>
+      <data key="d8">7.52215</data>
     </node>
     <node id="2106389529">
       <data key="d4">51.5006484</data>
       <data key="d5">-2.6761387</data>
       <data key="d6">2106389529</data>
+      <data key="d7">2</data>
+      <data key="d8">7.46606</data>
     </node>
     <node id="2106389530">
       <data key="d4">51.4997755</data>
       <data key="d5">-2.6739402</data>
       <data key="d6">2106389530</data>
+      <data key="d7">2</data>
+      <data key="d8">7.94213</data>
     </node>
     <node id="2106389531">
       <data key="d4">51.4999821</data>
       <data key="d5">-2.6739001</data>
       <data key="d6">2106389531</data>
+      <data key="d7">2</data>
+      <data key="d8">7.84611</data>
     </node>
     <node id="2106389532">
       <data key="d4">51.5002679</data>
       <data key="d5">-2.6739825</data>
       <data key="d6">2106389532</data>
+      <data key="d7">2</data>
+      <data key="d8">7.9425</data>
     </node>
     <node id="2106389533">
       <data key="d4">51.5005061</data>
       <data key="d5">-2.6741985</data>
       <data key="d6">2106389533</data>
+      <data key="d7">2</data>
+      <data key="d8">7.88943</data>
     </node>
     <node id="2106389534">
       <data key="d4">51.5006426</data>
       <data key="d5">-2.6744183</data>
       <data key="d6">2106389534</data>
+      <data key="d7">2</data>
+      <data key="d8">7.67907</data>
     </node>
     <node id="2106393630">
       <data key="d4">51.4996144</data>
       <data key="d5">-2.6812735</data>
       <data key="d6">2106393630</data>
+      <data key="d7">2</data>
+      <data key="d8">12.85496</data>
     </node>
     <node id="2106393624">
       <data key="d4">51.5000134</data>
       <data key="d5">-2.6859838</data>
       <data key="d6">2106393624</data>
+      <data key="d7">2</data>
+      <data key="d8">8.57012</data>
     </node>
     <node id="2106393640">
       <data key="d4">51.4995741</data>
       <data key="d5">-2.6814815</data>
       <data key="d6">2106393640</data>
+      <data key="d7">2</data>
+      <data key="d8">12.12123</data>
     </node>
     <node id="2106393642">
       <data key="d4">51.4996611</data>
       <data key="d5">-2.6802373</data>
       <data key="d6">2106393642</data>
+      <data key="d7">2</data>
+      <data key="d8">13.09133</data>
     </node>
     <node id="2106393646">
       <data key="d4">51.499646</data>
       <data key="d5">-2.6805059</data>
       <data key="d6">2106393646</data>
+      <data key="d7">2</data>
+      <data key="d8">13.21492</data>
     </node>
     <node id="2106393648">
       <data key="d4">51.499745</data>
       <data key="d5">-2.6796148</data>
       <data key="d6">2106393648</data>
+      <data key="d7">2</data>
+      <data key="d8">12.64796</data>
     </node>
     <node id="2106393654">
       <data key="d4">51.4997238</data>
       <data key="d5">-2.6781119</data>
       <data key="d6">2106393654</data>
+      <data key="d7">2</data>
+      <data key="d8">9.00605</data>
     </node>
     <node id="4129955400">
       <data key="d4">51.5004147</data>
       <data key="d5">-2.6893007</data>
       <data key="d6">4129955400</data>
+      <data key="d7">1</data>
+      <data key="d8">9.17266</data>
     </node>
     <node id="4129955401">
       <data key="d4">51.5005479</data>
       <data key="d5">-2.6883779</data>
       <data key="d6">4129955401</data>
+      <data key="d7">2</data>
+      <data key="d8">9.18141</data>
     </node>
     <node id="4129955403">
       <data key="d4">51.5003776</data>
       <data key="d5">-2.6874043</data>
       <data key="d6">4129955403</data>
+      <data key="d7">2</data>
+      <data key="d8">9.11063</data>
     </node>
     <node id="4129955404">
       <data key="d4">51.5004731</data>
       <data key="d5">-2.6877477</data>
       <data key="d6">4129955404</data>
+      <data key="d7">2</data>
+      <data key="d8">9.22919</data>
     </node>
     <node id="4129955405">
       <data key="d4">51.5004731</data>
       <data key="d5">-2.6890861</data>
       <data key="d6">4129955405</data>
+      <data key="d7">2</data>
+      <data key="d8">9.05438</data>
     </node>
     <node id="4129955406">
       <data key="d4">51.5005316</data>
       <data key="d5">-2.6881152</data>
       <data key="d6">4129955406</data>
+      <data key="d7">2</data>
+      <data key="d8">9.22897</data>
     </node>
     <node id="4129955407">
       <data key="d4">51.5001709</data>
       <data key="d5">-2.686766</data>
       <data key="d6">4129955407</data>
+      <data key="d7">2</data>
+      <data key="d8">9.27426</data>
     </node>
     <node id="4129955411">
       <data key="d4">51.5005466</data>
       <data key="d5">-2.6886087</data>
       <data key="d6">4129955411</data>
+      <data key="d7">2</data>
+      <data key="d8">9.12549</data>
     </node>
     <node id="4129955413">
       <data key="d4">51.5005029</data>
       <data key="d5">-2.6879032</data>
       <data key="d6">4129955413</data>
+      <data key="d7">2</data>
+      <data key="d8">9.24363</data>
     </node>
     <node id="4129955414">
       <data key="d4">51.5002628</data>
       <data key="d5">-2.6870611</data>
       <data key="d6">4129955414</data>
+      <data key="d7">2</data>
+      <data key="d8">9.08449</data>
     </node>
     <node id="4129955415">
       <data key="d4">51.5004244</data>
       <data key="d5">-2.6875625</data>
       <data key="d6">4129955415</data>
+      <data key="d7">2</data>
+      <data key="d8">9.1717</data>
     </node>
     <node id="4129955417">
       <data key="d4">51.5005166</data>
       <data key="d5">-2.6888823</data>
       <data key="d6">4129955417</data>
+      <data key="d7">2</data>
+      <data key="d8">9.06362</data>
     </node>
     <node id="1759524452">
       <data key="d4">51.4998729</data>
       <data key="d5">-2.6853261</data>
       <data key="d6">1759524452</data>
+      <data key="d7">2</data>
+      <data key="d8">8.17187</data>
     </node>
     <node id="1759524459">
       <data key="d4">51.4998453</data>
       <data key="d5">-2.6844029</data>
       <data key="d6">1759524459</data>
+      <data key="d7">2</data>
+      <data key="d8">8.63392</data>
     </node>
     <node id="305903">
       <data key="d4">51.4992678</data>
       <data key="d5">-2.6791965</data>
       <data key="d6">305903</data>
+      <data key="d7">2</data>
+      <data key="d8">10.05892</data>
     </node>
     <node id="305905">
       <data key="d4">51.4989541</data>
       <data key="d5">-2.6798183</data>
       <data key="d6">305905</data>
+      <data key="d7">2</data>
+      <data key="d8">7.8799</data>
     </node>
     <node id="2983641842">
       <data key="d4">51.4980328</data>
       <data key="d5">-2.6816171</data>
       <data key="d6">2983641842</data>
+      <data key="d7">2</data>
+      <data key="d8">9.70568</data>
     </node>
     <node id="305907">
       <data key="d4">51.4973375</data>
       <data key="d5">-2.6828411</data>
       <data key="d6">305907</data>
+      <data key="d7">3</data>
+      <data key="d8">10.5734</data>
     </node>
     <node id="305910">
       <data key="d4">51.4966991</data>
       <data key="d5">-2.6839023</data>
       <data key="d6">305910</data>
+      <data key="d7">2</data>
+      <data key="d8">11.26244</data>
     </node>
     <node id="21029782">
       <data key="d4">51.4991271</data>
       <data key="d5">-2.6754226</data>
       <data key="d6">21029782</data>
+      <data key="d7">2</data>
+      <data key="d8">9.96898</data>
     </node>
     <node id="31463717">
       <data key="d4">51.4997862</data>
       <data key="d5">-2.6838926</data>
       <data key="d6">31463717</data>
+      <data key="d7">3</data>
+      <data key="d8">8.53881</data>
     </node>
     <node id="1953103655">
       <data key="d4">51.4986057</data>
       <data key="d5">-2.6799943</data>
       <data key="d6">1953103655</data>
+      <data key="d7">2</data>
+      <data key="d8">7.54855</data>
     </node>
     <node id="2106411818">
       <data key="d4">51.4999292</data>
       <data key="d5">-2.6852883</data>
       <data key="d6">2106411818</data>
+      <data key="d7">2</data>
+      <data key="d8">8.15141</data>
     </node>
     <node id="2106411820">
       <data key="d4">51.4998288</data>
       <data key="d5">-2.684775</data>
       <data key="d6">2106411820</data>
+      <data key="d7">2</data>
+      <data key="d8">8.53396</data>
     </node>
     <node id="31463728">
       <data key="d4">51.5000566</data>
       <data key="d5">-2.6863126</data>
       <data key="d6">31463728</data>
+      <data key="d7">2</data>
+      <data key="d8">8.6024</data>
     </node>
     <node id="991949107">
       <data key="d4">51.4959588</data>
       <data key="d5">-2.6849442</data>
       <data key="d6">991949107</data>
+      <data key="d7">1</data>
+      <data key="d8">9.32565</data>
     </node>
     <node id="31463731">
       <data key="d4">51.4996335</data>
       <data key="d5">-2.6808334</data>
       <data key="d6">31463731</data>
+      <data key="d7">2</data>
+      <data key="d8">12.9767</data>
     </node>
     <node id="31463733">
       <data key="d4">51.4996864</data>
       <data key="d5">-2.6799817</data>
       <data key="d6">31463733</data>
+      <data key="d7">2</data>
+      <data key="d8">13.15257</data>
     </node>
     <node id="31463734">
       <data key="d4">51.4998158</data>
       <data key="d5">-2.6792882</data>
       <data key="d6">31463734</data>
+      <data key="d7">1</data>
+      <data key="d8">12.02636</data>
     </node>
     <node id="991949113">
       <data key="d4">51.4962214</data>
       <data key="d5">-2.6845834</data>
       <data key="d6">991949113</data>
+      <data key="d7">2</data>
+      <data key="d8">9.08152</data>
     </node>
     <node id="1468922197">
       <data key="d4">51.4996599</data>
       <data key="d5">-2.6823824</data>
       <data key="d6">1468922197</data>
-      <data key="d7">motorway_junction</data>
-      <data key="d8">18</data>
+      <data key="d9">motorway_junction</data>
+      <data key="d10">18</data>
+      <data key="d7">3</data>
+      <data key="d8">9.58136</data>
     </node>
     <node id="1468922198">
       <data key="d4">51.4994456</data>
       <data key="d5">-2.6800409</data>
       <data key="d6">1468922198</data>
+      <data key="d7">2</data>
+      <data key="d8">12.53386</data>
     </node>
     <node id="2104842643">
       <data key="d4">51.4981773</data>
       <data key="d5">-2.6810912</data>
       <data key="d6">2104842643</data>
+      <data key="d7">2</data>
+      <data key="d8">8.86006</data>
     </node>
     <node id="2104842644">
       <data key="d4">51.4984845</data>
       <data key="d5">-2.6803554</data>
       <data key="d6">2104842644</data>
+      <data key="d7">2</data>
+      <data key="d8">7.88602</data>
     </node>
     <node id="2104842646">
       <data key="d4">51.4988114</data>
       <data key="d5">-2.6791197</data>
       <data key="d6">2104842646</data>
+      <data key="d7">2</data>
+      <data key="d8">9.0909</data>
     </node>
     <node id="21029783">
       <data key="d4">51.4994798</data>
       <data key="d5">-2.6741659</data>
       <data key="d6">21029783</data>
+      <data key="d7">2</data>
+      <data key="d8">8.00181</data>
     </node>
     <node id="2104842648">
       <data key="d4">51.4988572</data>
       <data key="d5">-2.6788089</data>
       <data key="d6">2104842648</data>
+      <data key="d7">1</data>
+      <data key="d8">9.55244</data>
     </node>
     <node id="21029785">
       <data key="d4">51.5005879</data>
       <data key="d5">-2.6743164</data>
       <data key="d6">21029785</data>
+      <data key="d7">2</data>
+      <data key="d8">7.93593</data>
     </node>
     <node id="2104842650">
       <data key="d4">51.4986901</data>
       <data key="d5">-2.6796876</data>
       <data key="d6">2104842650</data>
+      <data key="d7">2</data>
+      <data key="d8">7.97313</data>
     </node>
     <node id="21029786">
       <data key="d4">51.5007989</data>
       <data key="d5">-2.6755743</data>
       <data key="d6">21029786</data>
+      <data key="d7">2</data>
+      <data key="d8">7.55357</data>
     </node>
     <node id="21029784">
       <data key="d4">51.5000958</data>
       <data key="d5">-2.673914</data>
       <data key="d6">21029784</data>
+      <data key="d7">2</data>
+      <data key="d8">7.84999</data>
     </node>
     <node id="21029787">
       <data key="d4">51.4991331</data>
       <data key="d5">-2.6751891</data>
       <data key="d6">21029787</data>
+      <data key="d7">2</data>
+      <data key="d8">9.64828</data>
     </node>
     <node id="2106398106">
       <data key="d4">51.499997</data>
       <data key="d5">-2.6868072</data>
       <data key="d6">2106398106</data>
+      <data key="d7">2</data>
+      <data key="d8">8.74776</data>
     </node>
     <node id="2106398108">
       <data key="d4">51.5001198</data>
       <data key="d5">-2.687929</data>
       <data key="d6">2106398108</data>
+      <data key="d7">2</data>
+      <data key="d8">8.80521</data>
     </node>
     <node id="2106398111">
       <data key="d4">51.500233</data>
       <data key="d5">-2.6886483</data>
       <data key="d6">2106398111</data>
+      <data key="d7">2</data>
+      <data key="d8">8.95871</data>
     </node>
     <node id="2106398113">
       <data key="d4">51.5001162</data>
       <data key="d5">-2.6865814</data>
       <data key="d6">2106398113</data>
+      <data key="d7">2</data>
+      <data key="d8">8.7162</data>
     </node>
     <node id="21029796">
       <data key="d4">51.5000388</data>
       <data key="d5">-2.6872479</data>
       <data key="d6">21029796</data>
+      <data key="d7">2</data>
+      <data key="d8">8.52151</data>
     </node>
     <node id="21029797">
       <data key="d4">51.500169</data>
       <data key="d5">-2.6882804</data>
       <data key="d6">21029797</data>
+      <data key="d7">2</data>
+      <data key="d8">8.94512</data>
     </node>
     <node id="2106398117">
       <data key="d4">51.5002841</data>
       <data key="d5">-2.6888863</data>
       <data key="d6">2106398117</data>
+      <data key="d7">2</data>
+      <data key="d8">8.99735</data>
     </node>
     <node id="21029798">
       <data key="d4">51.5003498</data>
       <data key="d5">-2.6891594</data>
       <data key="d6">21029798</data>
+      <data key="d7">1</data>
+      <data key="d8">9.08625</data>
     </node>
     <node id="1591662562">
       <data key="d4">51.4991721</data>
       <data key="d5">-2.6763069</data>
       <data key="d6">1591662562</data>
+      <data key="d7">2</data>
+      <data key="d8">11.28467</data>
     </node>
     <node id="1591662563">
       <data key="d4">51.4991941</data>
       <data key="d5">-2.6747517</data>
       <data key="d6">1591662563</data>
+      <data key="d7">2</data>
+      <data key="d8">9.13726</data>
     </node>
     <node id="1591662567">
       <data key="d4">51.4993387</data>
       <data key="d5">-2.6743712</data>
       <data key="d6">1591662567</data>
+      <data key="d7">2</data>
+      <data key="d8">8.31144</data>
     </node>
     <node id="331760">
       <data key="d4">51.4983788</data>
       <data key="d5">-2.6806332</data>
       <data key="d6">331760</data>
+      <data key="d7">2</data>
+      <data key="d8">8.45264</data>
     </node>
     <node id="331761">
       <data key="d4">51.4987464</data>
       <data key="d5">-2.6794473</data>
       <data key="d6">331761</data>
+      <data key="d7">2</data>
+      <data key="d8">8.32841</data>
     </node>
     <node id="1591662579">
       <data key="d4">51.4998636</data>
       <data key="d5">-2.6739152</data>
       <data key="d6">1591662579</data>
+      <data key="d7">2</data>
+      <data key="d8">7.85093</data>
     </node>
     <node id="1591662581">
       <data key="d4">51.5003573</data>
       <data key="d5">-2.6740456</data>
       <data key="d6">1591662581</data>
+      <data key="d7">2</data>
+      <data key="d8">7.89926</data>
     </node>
     <node id="1591662583">
       <data key="d4">51.5007085</data>
       <data key="d5">-2.6759668</data>
       <data key="d6">1591662583</data>
+      <data key="d7">2</data>
+      <data key="d8">7.49823</data>
     </node>
     <node id="1591662585">
       <data key="d4">51.5007484</data>
       <data key="d5">-2.6746896</data>
       <data key="d6">1591662585</data>
+      <data key="d7">2</data>
+      <data key="d8">7.35916</data>
     </node>
     <node id="1591662587">
       <data key="d4">51.5008198</data>
       <data key="d5">-2.6751174</data>
       <data key="d6">1591662587</data>
+      <data key="d7">2</data>
+      <data key="d8">7.30729</data>
     </node>
     <node id="331775">
       <data key="d4">51.499665</data>
       <data key="d5">-2.6739949</data>
       <data key="d6">331775</data>
+      <data key="d7">2</data>
+      <data key="d8">8.14129</data>
     </node>
-    <edge id="0" source="331782" target="1759524452">
-      <data key="d9">0</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d12">M5</data>
-      <data key="d13">2</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">59.775</data>
-      <data key="d16">4002534</data>
-      <data key="d17">97.4</data>
-      <data key="d18">112.7</data>
-      <data key="d19">1.9</data>
+    <edge source="331782" target="1759524452" id="0">
+      <data key="d11">0</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d14">M5</data>
+      <data key="d15">2</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">59.775</data>
+      <data key="d18">4002534</data>
+      <data key="d19">97.4</data>
+      <data key="d20">112.7</data>
+      <data key="d21">1.9</data>
+      <data key="d22">-0.006</data>
+      <data key="d23">0.006</data>
     </edge>
-    <edge id="0" source="2106389512" target="2106389518">
-      <data key="d9">1</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">9.653</data>
-      <data key="d16">4002537</data>
-      <data key="d17">268.4</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.3</data>
+    <edge source="2106389512" target="2106389518" id="0">
+      <data key="d11">1</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">9.653</data>
+      <data key="d18">4002537</data>
+      <data key="d19">268.4</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.3</data>
+      <data key="d22">0.024</data>
+      <data key="d23">0.024</data>
     </edge>
-    <edge id="0" source="2106389513" target="21029782">
-      <data key="d9">2</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">30.411</data>
-      <data key="d16">4002537</data>
-      <data key="d17">93.7</data>
-      <data key="d18">112.7</data>
-      <data key="d19">1.0</data>
+    <edge source="2106389513" target="21029782" id="0">
+      <data key="d11">2</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">30.411</data>
+      <data key="d18">4002537</data>
+      <data key="d19">93.7</data>
+      <data key="d20">112.7</data>
+      <data key="d21">1.0</data>
+      <data key="d22">-0.016</data>
+      <data key="d23">0.016</data>
     </edge>
-    <edge id="0" source="127498" target="305910">
-      <data key="d9">3</data>
-      <data key="d10">motorway</data>
-      <data key="d11">True</data>
-      <data key="d12">M5</data>
-      <data key="d13">4</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">61.516</data>
-      <data key="d16">132609687</data>
-      <data key="d17">225.6</data>
-      <data key="d18">112.7</data>
-      <data key="d19">2.0</data>
+    <edge source="127498" target="305910" id="0">
+      <data key="d11">3</data>
+      <data key="d12">motorway</data>
+      <data key="d13">True</data>
+      <data key="d14">M5</data>
+      <data key="d15">4</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">61.516</data>
+      <data key="d18">132609687</data>
+      <data key="d19">225.6</data>
+      <data key="d20">112.7</data>
+      <data key="d21">2.0</data>
+      <data key="d22">0.0</data>
+      <data key="d23">0.0</data>
     </edge>
-    <edge id="0" source="2106389514" target="1591662583">
-      <data key="d9">4</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">14.163</data>
-      <data key="d16">4002537</data>
-      <data key="d17">246.1</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.5</data>
+    <edge source="2106389514" target="1591662583" id="0">
+      <data key="d11">4</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">14.163</data>
+      <data key="d18">4002537</data>
+      <data key="d19">246.1</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.5</data>
+      <data key="d22">0.005</data>
+      <data key="d23">0.005</data>
     </edge>
-    <edge id="0" source="2106389515" target="2106389532">
-      <data key="d9">5</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">10.603</data>
-      <data key="d16">4002537</data>
-      <data key="d17">344.1</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.3</data>
+    <edge source="2106389515" target="2106389532" id="0">
+      <data key="d11">5</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">10.603</data>
+      <data key="d18">4002537</data>
+      <data key="d19">344.1</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.3</data>
+      <data key="d22">0.005</data>
+      <data key="d23">0.005</data>
     </edge>
-    <edge id="0" source="2106389517" target="2106389524">
-      <data key="d9">6</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">9.555</data>
-      <data key="d16">4002537</data>
-      <data key="d17">57.7</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.3</data>
+    <edge source="2106389517" target="2106389524" id="0">
+      <data key="d11">6</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">9.555</data>
+      <data key="d18">4002537</data>
+      <data key="d19">57.7</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.3</data>
+      <data key="d22">-0.033</data>
+      <data key="d23">0.033</data>
     </edge>
-    <edge id="0" source="2106389518" target="21029786">
-      <data key="d9">7</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">11.421</data>
-      <data key="d16">4002537</data>
-      <data key="d17">258.9</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.4</data>
+    <edge source="2106389518" target="21029786" id="0">
+      <data key="d11">7</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">11.421</data>
+      <data key="d18">4002537</data>
+      <data key="d19">258.9</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.4</data>
+      <data key="d22">-0.002</data>
+      <data key="d23">0.002</data>
     </edge>
-    <edge id="0" source="2106389519" target="331775">
-      <data key="d9">8</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">11.758</data>
-      <data key="d16">4002537</data>
-      <data key="d17">26.1</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.4</data>
+    <edge source="2106389519" target="331775" id="0">
+      <data key="d11">8</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">11.758</data>
+      <data key="d18">4002537</data>
+      <data key="d19">26.1</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.4</data>
+      <data key="d22">0.007</data>
+      <data key="d23">0.007</data>
     </edge>
-    <edge id="0" source="2106389520" target="2106393654">
-      <data key="d9">9</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">82.651</data>
-      <data key="d16">4002537</data>
-      <data key="d17">233.3</data>
-      <data key="d18">112.7</data>
-      <data key="d19">2.6</data>
+    <edge source="2106389520" target="2106393654" id="0">
+      <data key="d11">9</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">82.651</data>
+      <data key="d18">4002537</data>
+      <data key="d19">233.3</data>
+      <data key="d20">112.7</data>
+      <data key="d21">2.6</data>
+      <data key="d22">0.014</data>
+      <data key="d23">0.014</data>
     </edge>
-    <edge id="0" source="331786" target="1591662562">
-      <data key="d9">10</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">141.387</data>
-      <data key="d16">4002537</data>
-      <data key="d17">96.1</data>
-      <data key="d18">112.7</data>
+    <edge source="331786" target="1591662562" id="0">
+      <data key="d11">10</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">141.387</data>
+      <data key="d18">4002537</data>
+      <data key="d19">96.1</data>
+      <data key="d20">112.7</data>
+      <data key="d21">4.5</data>
+      <data key="d22">0.004</data>
+      <data key="d23">0.004</data>
+    </edge>
+    <edge source="2106389522" target="21029783" id="0">
+      <data key="d11">11</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">9.585</data>
+      <data key="d18">4002537</data>
+      <data key="d19">37.9</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.3</data>
+      <data key="d22">-0.02</data>
+      <data key="d23">0.02</data>
+    </edge>
+    <edge source="2106389523" target="2106389533" id="0">
+      <data key="d11">12</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">10.766</data>
+      <data key="d18">4002537</data>
+      <data key="d19">324.8</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.3</data>
+      <data key="d22">0.018</data>
+      <data key="d23">0.018</data>
+    </edge>
+    <edge source="2106389524" target="1591662567" id="0">
+      <data key="d11">13</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">10.232</data>
+      <data key="d18">4002537</data>
+      <data key="d19">53.7</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.3</data>
+      <data key="d22">-0.018</data>
+      <data key="d23">0.018</data>
+    </edge>
+    <edge source="2106389525" target="2106389527" id="0">
+      <data key="d11">14</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">10.695</data>
+      <data key="d18">4002537</data>
+      <data key="d19">284.0</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.3</data>
+      <data key="d22">0.016</data>
+      <data key="d23">0.016</data>
+    </edge>
+    <edge source="2106389521" target="1591662563" id="0">
+      <data key="d11">15</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">15.565</data>
+      <data key="d18">4002537</data>
+      <data key="d19">74.0</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.5</data>
+      <data key="d22">-0.02</data>
+      <data key="d23">0.02</data>
+    </edge>
+    <edge source="2106389527" target="1591662587" id="0">
+      <data key="d11">16</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">10.718</data>
+      <data key="d18">4002537</data>
+      <data key="d19">278.8</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.3</data>
+      <data key="d22">-0.014</data>
+      <data key="d23">0.014</data>
+    </edge>
+    <edge source="2106389528" target="1591662585" id="0">
+      <data key="d11">17</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">11.785</data>
+      <data key="d18">4002537</data>
+      <data key="d19">299.1</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.4</data>
+      <data key="d22">-0.014</data>
+      <data key="d23">0.014</data>
+    </edge>
+    <edge source="2106389529" target="2106389520" id="0">
+      <data key="d11">18</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">88.306</data>
+      <data key="d18">4002537</data>
+      <data key="d19">232.8</data>
+      <data key="d20">112.7</data>
+      <data key="d21">2.8</data>
+      <data key="d22">0.004</data>
+      <data key="d23">0.004</data>
+    </edge>
+    <edge source="2106389530" target="1591662579" id="0">
+      <data key="d11">19</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">9.948</data>
+      <data key="d18">4002537</data>
+      <data key="d19">10.0</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.3</data>
+      <data key="d22">-0.009</data>
+      <data key="d23">0.009</data>
+    </edge>
+    <edge source="2106389531" target="21029784" id="0">
+      <data key="d11">20</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">12.679</data>
+      <data key="d18">4002537</data>
+      <data key="d19">355.6</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.4</data>
+      <data key="d22">0.0</data>
+      <data key="d23">0.0</data>
+    </edge>
+    <edge source="2106389532" target="1591662581" id="0">
+      <data key="d11">21</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">10.858</data>
+      <data key="d18">4002537</data>
+      <data key="d19">336.3</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.3</data>
+      <data key="d22">-0.004</data>
+      <data key="d23">0.004</data>
+    </edge>
+    <edge source="2106389533" target="21029785" id="0">
+      <data key="d11">22</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">12.22</data>
+      <data key="d18">4002537</data>
+      <data key="d19">318.1</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.4</data>
+      <data key="d22">0.004</data>
+      <data key="d23">0.004</data>
+    </edge>
+    <edge source="2106389534" target="2106389528" id="0">
+      <data key="d11">23</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">10.409</data>
+      <data key="d18">4002537</data>
+      <data key="d19">305.5</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.3</data>
+      <data key="d22">-0.015</data>
+      <data key="d23">0.015</data>
+    </edge>
+    <edge source="2106393630" target="31463731" id="0">
+      <data key="d11">24</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d14">M5</data>
+      <data key="d15">2</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">30.538</data>
+      <data key="d18">4873069</data>
+      <data key="d19">86.0</data>
+      <data key="d20">112.7</data>
+      <data key="d21">1.0</data>
+      <data key="d22">0.004</data>
+      <data key="d23">0.004</data>
+    </edge>
+    <edge source="2106393624" target="2106411818" id="0">
+      <data key="d11">25</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">2</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">49.045</data>
+      <data key="d18">4873067</data>
+      <data key="d19">101.0</data>
+      <data key="d20">112.7</data>
+      <data key="d21">1.6</data>
+      <data key="d22">-0.009</data>
+      <data key="d23">0.009</data>
+    </edge>
+    <edge source="2106393640" target="1468922198" id="0">
+      <data key="d11">26</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">2</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">100.739</data>
+      <data key="d18">133451914</data>
+      <data key="d19">98.2</data>
+      <data key="d20">112.7</data>
+      <data key="d21">3.2</data>
+      <data key="d22">0.004</data>
+      <data key="d23">0.004</data>
+    </edge>
+    <edge source="2106393642" target="31463733" id="0">
+      <data key="d11">27</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d14">M5</data>
+      <data key="d15">2</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">17.915</data>
+      <data key="d18">4873069</data>
+      <data key="d19">81.0</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.6</data>
+      <data key="d22">0.003</data>
+      <data key="d23">0.003</data>
+    </edge>
+    <edge source="2106393646" target="2106393642" id="0">
+      <data key="d11">28</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d14">M5</data>
+      <data key="d15">2</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">18.668</data>
+      <data key="d18">4873069</data>
+      <data key="d19">84.8</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.6</data>
+      <data key="d22">-0.007</data>
+      <data key="d23">0.007</data>
+    </edge>
+    <edge source="2106393648" target="31463734" id="0">
+      <data key="d11">29</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d14">M5</data>
+      <data key="d15">2</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">23.939</data>
+      <data key="d18">4873069</data>
+      <data key="d19">70.8</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.8</data>
+      <data key="d22">-0.026</data>
+      <data key="d23">0.026</data>
+    </edge>
+    <edge source="2106393654" target="305903" id="0">
+      <data key="d11">30</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">90.596</data>
+      <data key="d18">4002537</data>
+      <data key="d19">236.0</data>
+      <data key="d20">112.7</data>
+      <data key="d21">2.9</data>
+      <data key="d22">0.012</data>
+      <data key="d23">0.012</data>
+    </edge>
+    <edge source="4129955400" target="4129955405" id="0">
+      <data key="d11">31</data>
+      <data key="d12">motorway_link</data>
+      <data key="d24">yes</data>
+      <data key="d13">True</data>
+      <data key="d15">2</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">16.212</data>
+      <data key="d18">4873066</data>
+      <data key="d19">66.4</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.5</data>
+      <data key="d22">-0.007</data>
+      <data key="d23">0.007</data>
+    </edge>
+    <edge source="4129955401" target="4129955406" id="0">
+      <data key="d11">32</data>
+      <data key="d12">motorway_link</data>
+      <data key="d24">yes</data>
+      <data key="d13">True</data>
+      <data key="d15">2</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">18.274</data>
+      <data key="d18">4873066</data>
+      <data key="d19">95.7</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.6</data>
+      <data key="d22">0.003</data>
+      <data key="d23">0.003</data>
+    </edge>
+    <edge source="4129955403" target="4129955414" id="0">
+      <data key="d11">33</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">2</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">26.969</data>
+      <data key="d18">4873067</data>
+      <data key="d19">118.3</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.9</data>
+      <data key="d22">-0.001</data>
+      <data key="d23">0.001</data>
+    </edge>
+    <edge source="4129955404" target="4129955415" id="0">
+      <data key="d11">34</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">2</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">13.916</data>
+      <data key="d18">4873067</data>
+      <data key="d19">112.9</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.4</data>
+      <data key="d22">-0.004</data>
+      <data key="d23">0.004</data>
+    </edge>
+    <edge source="4129955405" target="4129955417" id="0">
+      <data key="d11">35</data>
+      <data key="d12">motorway_link</data>
+      <data key="d24">yes</data>
+      <data key="d13">True</data>
+      <data key="d15">2</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">14.913</data>
+      <data key="d18">4873066</data>
+      <data key="d19">71.1</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.5</data>
+      <data key="d22">0.001</data>
+      <data key="d23">0.001</data>
+    </edge>
+    <edge source="4129955406" target="4129955413" id="0">
+      <data key="d11">36</data>
+      <data key="d12">motorway_link</data>
+      <data key="d24">yes</data>
+      <data key="d13">True</data>
+      <data key="d15">2</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">15.018</data>
+      <data key="d18">4873066</data>
+      <data key="d19">102.3</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.5</data>
+      <data key="d22">0.001</data>
+      <data key="d23">0.001</data>
+    </edge>
+    <edge source="4129955407" target="2106398113" id="0">
+      <data key="d11">37</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">2</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">14.152</data>
+      <data key="d18">4873067</data>
+      <data key="d19">115.5</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.5</data>
+      <data key="d22">-0.039</data>
+      <data key="d23">0.039</data>
+    </edge>
+    <edge source="4129955411" target="4129955401" id="0">
+      <data key="d11">38</data>
+      <data key="d12">motorway_link</data>
+      <data key="d24">yes</data>
+      <data key="d13">True</data>
+      <data key="d15">2</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">15.977</data>
+      <data key="d18">4873066</data>
+      <data key="d19">89.5</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.5</data>
+      <data key="d22">0.004</data>
+      <data key="d23">0.004</data>
+    </edge>
+    <edge source="4129955413" target="4129955404" id="0">
+      <data key="d11">39</data>
+      <data key="d12">motorway_link</data>
+      <data key="d24">yes</data>
+      <data key="d13">True</data>
+      <data key="d15">2</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">11.262</data>
+      <data key="d18">4873066</data>
+      <data key="d19">107.1</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.4</data>
+      <data key="d22">-0.001</data>
+      <data key="d23">0.001</data>
+    </edge>
+    <edge source="4129955414" target="4129955407" id="0">
+      <data key="d11">40</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">2</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">22.84</data>
+      <data key="d18">4873067</data>
+      <data key="d19">116.6</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.7</data>
+      <data key="d22">0.008</data>
+      <data key="d23">0.008</data>
+    </edge>
+    <edge source="4129955415" target="4129955403" id="0">
+      <data key="d11">41</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">2</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">12.124</data>
+      <data key="d18">4873067</data>
+      <data key="d19">115.4</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.4</data>
+      <data key="d22">-0.005</data>
+      <data key="d23">0.005</data>
+    </edge>
+    <edge source="4129955417" target="4129955411" id="0">
+      <data key="d11">42</data>
+      <data key="d12">motorway_link</data>
+      <data key="d24">yes</data>
+      <data key="d13">True</data>
+      <data key="d15">2</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">19.23</data>
+      <data key="d18">4873066</data>
+      <data key="d19">80.0</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.6</data>
+      <data key="d22">0.003</data>
+      <data key="d23">0.003</data>
+    </edge>
+    <edge source="1759524452" target="2106411820" id="0">
+      <data key="d11">43</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d14">M5</data>
+      <data key="d15">2</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">38.461</data>
+      <data key="d18">4002534</data>
+      <data key="d19">97.3</data>
+      <data key="d20">112.7</data>
+      <data key="d21">1.2</data>
+      <data key="d22">0.009</data>
+      <data key="d23">0.009</data>
+    </edge>
+    <edge source="1759524459" target="31463717" id="0">
+      <data key="d11">44</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">2</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">35.929</data>
+      <data key="d18">4873067</data>
+      <data key="d19">100.5</data>
+      <data key="d20">112.7</data>
+      <data key="d21">1.1</data>
+      <data key="d22">-0.003</data>
+      <data key="d23">0.003</data>
+    </edge>
+    <edge source="305903" target="305905" id="0">
+      <data key="d11">45</data>
+      <data key="d12">motorway</data>
+      <data key="d13">True</data>
+      <data key="d14">M5</data>
+      <data key="d15">4</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">55.402</data>
+      <data key="d18">132609687</data>
+      <data key="d19">231.0</data>
+      <data key="d20">112.7</data>
+      <data key="d21">1.8</data>
+      <data key="d22">-0.039</data>
+      <data key="d23">0.039</data>
+    </edge>
+    <edge source="305905" target="2983641842" id="0">
+      <data key="d11">46</data>
+      <data key="d12">motorway</data>
+      <data key="d13">True</data>
+      <data key="d14">M5</data>
+      <data key="d15">4</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">161.244</data>
+      <data key="d18">132609687</data>
+      <data key="d19">230.6</data>
+      <data key="d20">112.7</data>
+      <data key="d21">5.2</data>
+      <data key="d22">0.011</data>
+      <data key="d23">0.011</data>
+    </edge>
+    <edge source="2983641842" target="305907" id="0">
+      <data key="d11">47</data>
+      <data key="d12">motorway</data>
+      <data key="d13">True</data>
+      <data key="d14">M5</data>
+      <data key="d15">4</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">114.703</data>
+      <data key="d18">132609687</data>
+      <data key="d19">227.6</data>
+      <data key="d20">112.7</data>
+      <data key="d21">3.7</data>
+      <data key="d22">0.008</data>
+      <data key="d23">0.008</data>
+    </edge>
+    <edge source="305907" target="127498" id="0">
+      <data key="d11">48</data>
+      <data key="d12">motorway</data>
+      <data key="d13">True</data>
+      <data key="d14">M5</data>
+      <data key="d15">4</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">40.644</data>
+      <data key="d18">132609687</data>
+      <data key="d19">226.6</data>
+      <data key="d20">112.7</data>
+      <data key="d21">1.3</data>
+      <data key="d22">0.017</data>
+      <data key="d23">0.017</data>
+    </edge>
+    <edge source="305910" target="991949113" id="0">
+      <data key="d11">49</data>
+      <data key="d12">motorway</data>
+      <data key="d13">True</data>
+      <data key="d14">M5</data>
+      <data key="d15">4</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">71.025</data>
+      <data key="d18">132609687</data>
+      <data key="d19">221.6</data>
+      <data key="d20">112.7</data>
+      <data key="d21">2.3</data>
+      <data key="d22">-0.031</data>
+      <data key="d23">0.031</data>
+    </edge>
+    <edge source="21029782" target="21029787" id="0">
+      <data key="d11">50</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">16.177</data>
+      <data key="d18">4002537</data>
+      <data key="d19">87.6</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.5</data>
+      <data key="d22">-0.02</data>
+      <data key="d23">0.02</data>
+    </edge>
+    <edge source="31463717" target="1468922197" id="0">
+      <data key="d11">51</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d14">M5</data>
+      <data key="d15">4</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">105.477</data>
+      <data key="d18">133451913</data>
+      <data key="d19">97.7</data>
+      <data key="d20">112.7</data>
+      <data key="d21">3.4</data>
+      <data key="d22">0.01</data>
+      <data key="d23">0.01</data>
+    </edge>
+    <edge source="1953103655" target="2104842644" id="0">
+      <data key="d11">52</data>
+      <data key="d12">motorway</data>
+      <data key="d13">True</data>
+      <data key="d14">M49</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">28.398</data>
+      <data key="d18">4314741</data>
+      <data key="d19">241.7</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.9</data>
+      <data key="d22">0.012</data>
+      <data key="d23">0.012</data>
+    </edge>
+    <edge source="2106411818" target="1759524459" id="0">
+      <data key="d11">53</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">2</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">61.994</data>
+      <data key="d18">4873067</data>
+      <data key="d19">98.7</data>
+      <data key="d20">112.7</data>
+      <data key="d21">2.0</data>
+      <data key="d22">0.008</data>
+      <data key="d23">0.008</data>
+    </edge>
+    <edge source="2106411820" target="31463717" id="0">
+      <data key="d11">54</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d14">M5</data>
+      <data key="d15">2</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">61.264</data>
+      <data key="d18">4002534</data>
+      <data key="d19">94.4</data>
+      <data key="d20">112.7</data>
+      <data key="d21">2.0</data>
+      <data key="d22">0.0</data>
+      <data key="d23">0.0</data>
+    </edge>
+    <edge source="31463728" target="2106393624" id="0">
+      <data key="d11">55</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">2</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">23.261</data>
+      <data key="d18">4873067</data>
+      <data key="d19">101.9</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.7</data>
+      <data key="d22">-0.001</data>
+      <data key="d23">0.001</data>
+    </edge>
+    <edge source="31463731" target="2106393646" id="0">
+      <data key="d11">56</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d14">M5</data>
+      <data key="d15">2</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">22.712</data>
+      <data key="d18">4873069</data>
+      <data key="d19">86.5</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.7</data>
+      <data key="d22">0.01</data>
+      <data key="d23">0.01</data>
+    </edge>
+    <edge source="31463733" target="2106393648" id="0">
+      <data key="d11">57</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d14">M5</data>
+      <data key="d15">2</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">26.22</data>
+      <data key="d18">4873069</data>
+      <data key="d19">75.6</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.8</data>
+      <data key="d22">-0.019</data>
+      <data key="d23">0.019</data>
+    </edge>
+    <edge source="991949113" target="991949107" id="0">
+      <data key="d11">58</data>
+      <data key="d12">motorway</data>
+      <data key="d24">yes</data>
+      <data key="d13">True</data>
+      <data key="d14">M5</data>
+      <data key="d15">4</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">38.425</data>
+      <data key="d18">85525225</data>
+      <data key="d19">220.5</data>
+      <data key="d20">112.7</data>
+      <data key="d21">1.2</data>
+      <data key="d22">0.006</data>
+      <data key="d23">0.006</data>
+    </edge>
+    <edge source="1468922197" target="2106393630" id="0">
+      <data key="d11">59</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d14">M5</data>
+      <data key="d15">2</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">76.926</data>
+      <data key="d18">4873069</data>
+      <data key="d19">93.8</data>
+      <data key="d20">112.7</data>
+      <data key="d21">2.5</data>
+      <data key="d22">0.043</data>
+      <data key="d23">0.043</data>
+    </edge>
+    <edge source="1468922197" target="2106393640" id="0">
+      <data key="d11">60</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">2</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">63.087</data>
+      <data key="d18">133451914</data>
+      <data key="d19">98.7</data>
+      <data key="d20">112.7</data>
+      <data key="d21">2.0</data>
+      <data key="d22">0.04</data>
+      <data key="d23">0.04</data>
+    </edge>
+    <edge source="1468922198" target="331786" id="0">
+      <data key="d11">61</data>
+      <data key="d12">motorway_link</data>
+      <data key="d24">yes</data>
+      <data key="d13">True</data>
+      <data key="d15">2</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">118.885</data>
+      <data key="d18">4323945</data>
+      <data key="d19">97.4</data>
+      <data key="d20">112.7</data>
+      <data key="d21">3.8</data>
+      <data key="d22">-0.015</data>
+      <data key="d23">0.015</data>
+    </edge>
+    <edge source="2104842643" target="305907" id="0">
+      <data key="d11">62</data>
+      <data key="d12">motorway</data>
+      <data key="d13">True</data>
+      <data key="d14">M49</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">152.95</data>
+      <data key="d18">4314741</data>
+      <data key="d19">232.4</data>
+      <data key="d20">112.7</data>
+      <data key="d21">4.9</data>
+      <data key="d22">0.011</data>
+      <data key="d23">0.011</data>
+    </edge>
+    <edge source="2104842644" target="331760" id="0">
+      <data key="d11">63</data>
+      <data key="d12">motorway</data>
+      <data key="d13">True</data>
+      <data key="d14">M49</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">22.537</data>
+      <data key="d18">4314741</data>
+      <data key="d19">238.6</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.7</data>
+      <data key="d22">0.025</data>
+      <data key="d23">0.025</data>
+    </edge>
+    <edge source="2104842646" target="331761" id="0">
+      <data key="d11">64</data>
+      <data key="d12">motorway</data>
+      <data key="d13">True</data>
+      <data key="d14">M49</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">23.801</data>
+      <data key="d18">4314741</data>
+      <data key="d19">252.3</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.8</data>
+      <data key="d22">-0.032</data>
+      <data key="d23">0.032</data>
+    </edge>
+    <edge source="21029783" target="2106389519" id="0">
+      <data key="d11">65</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">12.047</data>
+      <data key="d18">4002537</data>
+      <data key="d19">33.6</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.4</data>
+      <data key="d22">0.005</data>
+      <data key="d23">0.005</data>
+    </edge>
+    <edge source="2104842648" target="2104842646" id="0">
+      <data key="d11">66</data>
+      <data key="d12">motorway</data>
+      <data key="d13">True</data>
+      <data key="d14">M49</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">22.109</data>
+      <data key="d18">4314741</data>
+      <data key="d19">256.7</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.7</data>
+      <data key="d22">-0.021</data>
+      <data key="d23">0.021</data>
+    </edge>
+    <edge source="21029785" target="2106389534" id="0">
+      <data key="d11">67</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">9.314</data>
+      <data key="d18">4002537</data>
+      <data key="d19">310.8</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.3</data>
+      <data key="d22">-0.028</data>
+      <data key="d23">0.028</data>
+    </edge>
+    <edge source="2104842650" target="1953103655" id="0">
+      <data key="d11">68</data>
+      <data key="d12">motorway</data>
+      <data key="d13">True</data>
+      <data key="d14">M49</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">23.212</data>
+      <data key="d18">4314741</data>
+      <data key="d19">246.2</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.7</data>
+      <data key="d22">-0.018</data>
+      <data key="d23">0.018</data>
+    </edge>
+    <edge source="21029786" target="2106389514" id="0">
+      <data key="d11">69</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">14.861</data>
+      <data key="d18">4002537</data>
+      <data key="d19">253.2</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.5</data>
+      <data key="d22">-0.008</data>
+      <data key="d23">0.008</data>
+    </edge>
+    <edge source="21029784" target="2106389515" id="0">
+      <data key="d11">70</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">9.126</data>
+      <data key="d18">4002537</data>
+      <data key="d19">348.4</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.3</data>
+      <data key="d22">0.005</data>
+      <data key="d23">0.005</data>
+    </edge>
+    <edge source="21029787" target="2106389521" id="0">
+      <data key="d11">71</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">15.518</data>
+      <data key="d18">4002537</data>
+      <data key="d19">80.8</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.5</data>
+      <data key="d22">-0.013</data>
+      <data key="d23">0.013</data>
+    </edge>
+    <edge source="2106398106" target="331782" id="0">
+      <data key="d11">72</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d14">M5</data>
+      <data key="d15">2</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">43.673</data>
+      <data key="d18">4002534</data>
+      <data key="d19">98.0</data>
+      <data key="d20">112.7</data>
+      <data key="d21">1.4</data>
+      <data key="d22">-0.005</data>
+      <data key="d23">0.005</data>
+    </edge>
+    <edge source="2106398108" target="21029796" id="0">
+      <data key="d11">73</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d14">M5</data>
+      <data key="d15">2</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">47.999</data>
+      <data key="d18">4002534</data>
+      <data key="d19">100.8</data>
+      <data key="d20">112.7</data>
+      <data key="d21">1.5</data>
+      <data key="d22">-0.006</data>
+      <data key="d23">0.006</data>
+    </edge>
+    <edge source="2106398111" target="21029797" id="0">
+      <data key="d11">74</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d14">M5</data>
+      <data key="d15">2</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">26.442</data>
+      <data key="d18">4002534</data>
+      <data key="d19">105.6</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.8</data>
+      <data key="d22">-0.001</data>
+      <data key="d23">0.001</data>
+    </edge>
+    <edge source="2106398113" target="31463728" id="0">
+      <data key="d11">75</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">2</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">19.751</data>
+      <data key="d18">4873067</data>
+      <data key="d19">109.6</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.6</data>
+      <data key="d22">-0.006</data>
+      <data key="d23">0.006</data>
+    </edge>
+    <edge source="21029796" target="2106398106" id="0">
+      <data key="d11">76</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d14">M5</data>
+      <data key="d15">2</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">30.858</data>
+      <data key="d18">4002534</data>
+      <data key="d19">98.7</data>
+      <data key="d20">112.7</data>
+      <data key="d21">1.0</data>
+      <data key="d22">0.007</data>
+      <data key="d23">0.007</data>
+    </edge>
+    <edge source="21029797" target="2106398108" id="0">
+      <data key="d11">77</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d14">M5</data>
+      <data key="d15">2</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">24.932</data>
+      <data key="d18">4002534</data>
+      <data key="d19">102.7</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.8</data>
+      <data key="d22">-0.006</data>
+      <data key="d23">0.006</data>
+    </edge>
+    <edge source="2106398117" target="2106398111" id="0">
+      <data key="d11">78</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d14">M5</data>
+      <data key="d15">2</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">17.427</data>
+      <data key="d18">4002534</data>
+      <data key="d19">109.0</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.6</data>
+      <data key="d22">-0.002</data>
+      <data key="d23">0.002</data>
+    </edge>
+    <edge source="21029798" target="2106398117" id="0">
+      <data key="d11">79</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d14">M5</data>
+      <data key="d15">2</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">20.267</data>
+      <data key="d18">4002534</data>
+      <data key="d19">111.1</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.6</data>
+      <data key="d22">-0.004</data>
+      <data key="d23">0.004</data>
+    </edge>
+    <edge source="1591662562" target="2106389513" id="0">
+      <data key="d11">80</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">31.014</data>
+      <data key="d18">4002537</data>
+      <data key="d19">95.6</data>
+      <data key="d20">112.7</data>
+      <data key="d21">1.0</data>
+      <data key="d22">-0.026</data>
+      <data key="d23">0.026</data>
+    </edge>
+    <edge source="1591662563" target="2106389517" id="0">
+      <data key="d11">81</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">11.157</data>
+      <data key="d18">4002537</data>
+      <data key="d19">63.9</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.4</data>
+      <data key="d22">-0.03</data>
+      <data key="d23">0.03</data>
+    </edge>
+    <edge source="1591662567" target="2106389522" id="0">
+      <data key="d11">82</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">11.632</data>
+      <data key="d18">4002537</data>
+      <data key="d19">45.7</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.4</data>
+      <data key="d22">-0.01</data>
+      <data key="d23">0.01</data>
+    </edge>
+    <edge source="331760" target="2104842643" id="0">
+      <data key="d11">83</data>
+      <data key="d12">motorway</data>
+      <data key="d13">True</data>
+      <data key="d14">M49</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">38.822</data>
+      <data key="d18">4314741</data>
+      <data key="d19">234.8</data>
+      <data key="d20">112.7</data>
+      <data key="d21">1.2</data>
+      <data key="d22">0.01</data>
+      <data key="d23">0.01</data>
+    </edge>
+    <edge source="331761" target="2104842650" id="0">
+      <data key="d11">84</data>
+      <data key="d12">motorway</data>
+      <data key="d13">True</data>
+      <data key="d14">M49</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">17.773</data>
+      <data key="d18">4314741</data>
+      <data key="d19">249.4</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.6</data>
+      <data key="d22">-0.02</data>
+      <data key="d23">0.02</data>
+    </edge>
+    <edge source="1591662579" target="2106389531" id="0">
+      <data key="d11">85</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">13.218</data>
+      <data key="d18">4002537</data>
       <data key="d19">4.5</data>
-    </edge>
-    <edge id="0" source="2106389522" target="21029783">
-      <data key="d9">11</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">9.585</data>
-      <data key="d16">4002537</data>
-      <data key="d17">37.9</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.3</data>
-    </edge>
-    <edge id="0" source="2106389523" target="2106389533">
-      <data key="d9">12</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">10.766</data>
-      <data key="d16">4002537</data>
-      <data key="d17">324.8</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.3</data>
-    </edge>
-    <edge id="0" source="2106389524" target="1591662567">
-      <data key="d9">13</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">10.232</data>
-      <data key="d16">4002537</data>
-      <data key="d17">53.7</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.3</data>
-    </edge>
-    <edge id="0" source="2106389525" target="2106389527">
-      <data key="d9">14</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">10.695</data>
-      <data key="d16">4002537</data>
-      <data key="d17">284.0</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.3</data>
-    </edge>
-    <edge id="0" source="2106389521" target="1591662563">
-      <data key="d9">15</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">15.565</data>
-      <data key="d16">4002537</data>
-      <data key="d17">74.0</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.5</data>
-    </edge>
-    <edge id="0" source="2106389527" target="1591662587">
-      <data key="d9">16</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">10.718</data>
-      <data key="d16">4002537</data>
-      <data key="d17">278.8</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.3</data>
-    </edge>
-    <edge id="0" source="2106389528" target="1591662585">
-      <data key="d9">17</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">11.785</data>
-      <data key="d16">4002537</data>
-      <data key="d17">299.1</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.4</data>
-    </edge>
-    <edge id="0" source="2106389529" target="2106389520">
-      <data key="d9">18</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">88.306</data>
-      <data key="d16">4002537</data>
-      <data key="d17">232.8</data>
-      <data key="d18">112.7</data>
-      <data key="d19">2.8</data>
-    </edge>
-    <edge id="0" source="2106389530" target="1591662579">
-      <data key="d9">19</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">9.948</data>
-      <data key="d16">4002537</data>
-      <data key="d17">10.0</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.3</data>
-    </edge>
-    <edge id="0" source="2106389531" target="21029784">
-      <data key="d9">20</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">12.679</data>
-      <data key="d16">4002537</data>
-      <data key="d17">355.6</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.4</data>
-    </edge>
-    <edge id="0" source="2106389532" target="1591662581">
-      <data key="d9">21</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">10.858</data>
-      <data key="d16">4002537</data>
-      <data key="d17">336.3</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.3</data>
-    </edge>
-    <edge id="0" source="2106389533" target="21029785">
-      <data key="d9">22</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">12.22</data>
-      <data key="d16">4002537</data>
-      <data key="d17">318.1</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.4</data>
-    </edge>
-    <edge id="0" source="2106389534" target="2106389528">
-      <data key="d9">23</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">10.409</data>
-      <data key="d16">4002537</data>
-      <data key="d17">305.5</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.3</data>
-    </edge>
-    <edge id="0" source="2106393630" target="31463731">
-      <data key="d9">24</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d12">M5</data>
-      <data key="d13">2</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">30.538</data>
-      <data key="d16">4873069</data>
-      <data key="d17">86.0</data>
-      <data key="d18">112.7</data>
-      <data key="d19">1.0</data>
-    </edge>
-    <edge id="0" source="2106393624" target="2106411818">
-      <data key="d9">25</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">2</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">49.045</data>
-      <data key="d16">4873067</data>
-      <data key="d17">101.0</data>
-      <data key="d18">112.7</data>
-      <data key="d19">1.6</data>
-    </edge>
-    <edge id="0" source="2106393640" target="1468922198">
-      <data key="d9">26</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">2</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">100.739</data>
-      <data key="d16">133451914</data>
-      <data key="d17">98.2</data>
-      <data key="d18">112.7</data>
-      <data key="d19">3.2</data>
-    </edge>
-    <edge id="0" source="2106393642" target="31463733">
-      <data key="d9">27</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d12">M5</data>
-      <data key="d13">2</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">17.915</data>
-      <data key="d16">4873069</data>
-      <data key="d17">81.0</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.6</data>
-    </edge>
-    <edge id="0" source="2106393646" target="2106393642">
-      <data key="d9">28</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d12">M5</data>
-      <data key="d13">2</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">18.668</data>
-      <data key="d16">4873069</data>
-      <data key="d17">84.8</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.6</data>
-    </edge>
-    <edge id="0" source="2106393648" target="31463734">
-      <data key="d9">29</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d12">M5</data>
-      <data key="d13">2</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">23.939</data>
-      <data key="d16">4873069</data>
-      <data key="d17">70.8</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.8</data>
-    </edge>
-    <edge id="0" source="2106393654" target="305903">
-      <data key="d9">30</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">90.596</data>
-      <data key="d16">4002537</data>
-      <data key="d17">236.0</data>
-      <data key="d18">112.7</data>
-      <data key="d19">2.9</data>
-    </edge>
-    <edge id="0" source="4129955400" target="4129955405">
-      <data key="d9">31</data>
-      <data key="d10">motorway_link</data>
-      <data key="d20">yes</data>
-      <data key="d11">True</data>
-      <data key="d13">2</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">16.212</data>
-      <data key="d16">4873066</data>
-      <data key="d17">66.4</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.5</data>
-    </edge>
-    <edge id="0" source="4129955401" target="4129955406">
-      <data key="d9">32</data>
-      <data key="d10">motorway_link</data>
-      <data key="d20">yes</data>
-      <data key="d11">True</data>
-      <data key="d13">2</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">18.274</data>
-      <data key="d16">4873066</data>
-      <data key="d17">95.7</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.6</data>
-    </edge>
-    <edge id="0" source="4129955403" target="4129955414">
-      <data key="d9">33</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">2</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">26.969</data>
-      <data key="d16">4873067</data>
-      <data key="d17">118.3</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.9</data>
-    </edge>
-    <edge id="0" source="4129955404" target="4129955415">
-      <data key="d9">34</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">2</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">13.916</data>
-      <data key="d16">4873067</data>
-      <data key="d17">112.9</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.4</data>
-    </edge>
-    <edge id="0" source="4129955405" target="4129955417">
-      <data key="d9">35</data>
-      <data key="d10">motorway_link</data>
-      <data key="d20">yes</data>
-      <data key="d11">True</data>
-      <data key="d13">2</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">14.913</data>
-      <data key="d16">4873066</data>
-      <data key="d17">71.1</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.5</data>
-    </edge>
-    <edge id="0" source="4129955406" target="4129955413">
-      <data key="d9">36</data>
-      <data key="d10">motorway_link</data>
-      <data key="d20">yes</data>
-      <data key="d11">True</data>
-      <data key="d13">2</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">15.018</data>
-      <data key="d16">4873066</data>
-      <data key="d17">102.3</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.5</data>
-    </edge>
-    <edge id="0" source="4129955407" target="2106398113">
-      <data key="d9">37</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">2</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">14.152</data>
-      <data key="d16">4873067</data>
-      <data key="d17">115.5</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.5</data>
-    </edge>
-    <edge id="0" source="4129955411" target="4129955401">
-      <data key="d9">38</data>
-      <data key="d10">motorway_link</data>
-      <data key="d20">yes</data>
-      <data key="d11">True</data>
-      <data key="d13">2</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">15.977</data>
-      <data key="d16">4873066</data>
-      <data key="d17">89.5</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.5</data>
-    </edge>
-    <edge id="0" source="4129955413" target="4129955404">
-      <data key="d9">39</data>
-      <data key="d10">motorway_link</data>
-      <data key="d20">yes</data>
-      <data key="d11">True</data>
-      <data key="d13">2</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">11.262</data>
-      <data key="d16">4873066</data>
-      <data key="d17">107.1</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.4</data>
-    </edge>
-    <edge id="0" source="4129955414" target="4129955407">
-      <data key="d9">40</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">2</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">22.84</data>
-      <data key="d16">4873067</data>
-      <data key="d17">116.6</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.7</data>
-    </edge>
-    <edge id="0" source="4129955415" target="4129955403">
-      <data key="d9">41</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">2</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">12.124</data>
-      <data key="d16">4873067</data>
-      <data key="d17">115.4</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.4</data>
-    </edge>
-    <edge id="0" source="4129955417" target="4129955411">
-      <data key="d9">42</data>
-      <data key="d10">motorway_link</data>
-      <data key="d20">yes</data>
-      <data key="d11">True</data>
-      <data key="d13">2</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">19.23</data>
-      <data key="d16">4873066</data>
-      <data key="d17">80.0</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.6</data>
-    </edge>
-    <edge id="0" source="1759524452" target="2106411820">
-      <data key="d9">43</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d12">M5</data>
-      <data key="d13">2</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">38.461</data>
-      <data key="d16">4002534</data>
-      <data key="d17">97.3</data>
-      <data key="d18">112.7</data>
-      <data key="d19">1.2</data>
-    </edge>
-    <edge id="0" source="1759524459" target="31463717">
-      <data key="d9">44</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">2</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">35.929</data>
-      <data key="d16">4873067</data>
-      <data key="d17">100.5</data>
-      <data key="d18">112.7</data>
-      <data key="d19">1.1</data>
-    </edge>
-    <edge id="0" source="305903" target="305905">
-      <data key="d9">45</data>
-      <data key="d10">motorway</data>
-      <data key="d11">True</data>
-      <data key="d12">M5</data>
-      <data key="d13">4</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">55.402</data>
-      <data key="d16">132609687</data>
-      <data key="d17">231.0</data>
-      <data key="d18">112.7</data>
-      <data key="d19">1.8</data>
-    </edge>
-    <edge id="0" source="305905" target="2983641842">
-      <data key="d9">46</data>
-      <data key="d10">motorway</data>
-      <data key="d11">True</data>
-      <data key="d12">M5</data>
-      <data key="d13">4</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">161.244</data>
-      <data key="d16">132609687</data>
-      <data key="d17">230.6</data>
-      <data key="d18">112.7</data>
-      <data key="d19">5.2</data>
-    </edge>
-    <edge id="0" source="2983641842" target="305907">
-      <data key="d9">47</data>
-      <data key="d10">motorway</data>
-      <data key="d11">True</data>
-      <data key="d12">M5</data>
-      <data key="d13">4</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">114.703</data>
-      <data key="d16">132609687</data>
-      <data key="d17">227.6</data>
-      <data key="d18">112.7</data>
-      <data key="d19">3.7</data>
-    </edge>
-    <edge id="0" source="305907" target="127498">
-      <data key="d9">48</data>
-      <data key="d10">motorway</data>
-      <data key="d11">True</data>
-      <data key="d12">M5</data>
-      <data key="d13">4</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">40.644</data>
-      <data key="d16">132609687</data>
-      <data key="d17">226.6</data>
-      <data key="d18">112.7</data>
-      <data key="d19">1.3</data>
-    </edge>
-    <edge id="0" source="305910" target="991949113">
-      <data key="d9">49</data>
-      <data key="d10">motorway</data>
-      <data key="d11">True</data>
-      <data key="d12">M5</data>
-      <data key="d13">4</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">71.025</data>
-      <data key="d16">132609687</data>
-      <data key="d17">221.6</data>
-      <data key="d18">112.7</data>
-      <data key="d19">2.3</data>
-    </edge>
-    <edge id="0" source="21029782" target="21029787">
-      <data key="d9">50</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">16.177</data>
-      <data key="d16">4002537</data>
-      <data key="d17">87.6</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.5</data>
-    </edge>
-    <edge id="0" source="31463717" target="1468922197">
-      <data key="d9">51</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d12">M5</data>
-      <data key="d13">4</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">105.477</data>
-      <data key="d16">133451913</data>
-      <data key="d17">97.7</data>
-      <data key="d18">112.7</data>
-      <data key="d19">3.4</data>
-    </edge>
-    <edge id="0" source="1953103655" target="2104842644">
-      <data key="d9">52</data>
-      <data key="d10">motorway</data>
-      <data key="d11">True</data>
-      <data key="d12">M49</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">28.398</data>
-      <data key="d16">4314741</data>
-      <data key="d17">241.7</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.9</data>
-    </edge>
-    <edge id="0" source="2106411818" target="1759524459">
-      <data key="d9">53</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">2</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">61.994</data>
-      <data key="d16">4873067</data>
-      <data key="d17">98.7</data>
-      <data key="d18">112.7</data>
-      <data key="d19">2.0</data>
-    </edge>
-    <edge id="0" source="2106411820" target="31463717">
-      <data key="d9">54</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d12">M5</data>
-      <data key="d13">2</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">61.264</data>
-      <data key="d16">4002534</data>
-      <data key="d17">94.4</data>
-      <data key="d18">112.7</data>
-      <data key="d19">2.0</data>
-    </edge>
-    <edge id="0" source="31463728" target="2106393624">
-      <data key="d9">55</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">2</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">23.261</data>
-      <data key="d16">4873067</data>
-      <data key="d17">101.9</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.7</data>
-    </edge>
-    <edge id="0" source="31463731" target="2106393646">
-      <data key="d9">56</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d12">M5</data>
-      <data key="d13">2</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">22.712</data>
-      <data key="d16">4873069</data>
-      <data key="d17">86.5</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.7</data>
-    </edge>
-    <edge id="0" source="31463733" target="2106393648">
-      <data key="d9">57</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d12">M5</data>
-      <data key="d13">2</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">26.22</data>
-      <data key="d16">4873069</data>
-      <data key="d17">75.6</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.8</data>
-    </edge>
-    <edge id="0" source="991949113" target="991949107">
-      <data key="d9">58</data>
-      <data key="d10">motorway</data>
-      <data key="d20">yes</data>
-      <data key="d11">True</data>
-      <data key="d12">M5</data>
-      <data key="d13">4</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">38.425</data>
-      <data key="d16">85525225</data>
-      <data key="d17">220.5</data>
-      <data key="d18">112.7</data>
-      <data key="d19">1.2</data>
-    </edge>
-    <edge id="0" source="1468922197" target="2106393630">
-      <data key="d9">59</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d12">M5</data>
-      <data key="d13">2</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">76.926</data>
-      <data key="d16">4873069</data>
-      <data key="d17">93.8</data>
-      <data key="d18">112.7</data>
-      <data key="d19">2.5</data>
-    </edge>
-    <edge id="0" source="1468922197" target="2106393640">
-      <data key="d9">60</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">2</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">63.087</data>
-      <data key="d16">133451914</data>
-      <data key="d17">98.7</data>
-      <data key="d18">112.7</data>
-      <data key="d19">2.0</data>
-    </edge>
-    <edge id="0" source="1468922198" target="331786">
-      <data key="d9">61</data>
-      <data key="d10">motorway_link</data>
-      <data key="d20">yes</data>
-      <data key="d11">True</data>
-      <data key="d13">2</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">118.885</data>
-      <data key="d16">4323945</data>
-      <data key="d17">97.4</data>
-      <data key="d18">112.7</data>
-      <data key="d19">3.8</data>
-    </edge>
-    <edge id="0" source="2104842643" target="305907">
-      <data key="d9">62</data>
-      <data key="d10">motorway</data>
-      <data key="d11">True</data>
-      <data key="d12">M49</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">152.95</data>
-      <data key="d16">4314741</data>
-      <data key="d17">232.4</data>
-      <data key="d18">112.7</data>
-      <data key="d19">4.9</data>
-    </edge>
-    <edge id="0" source="2104842644" target="331760">
-      <data key="d9">63</data>
-      <data key="d10">motorway</data>
-      <data key="d11">True</data>
-      <data key="d12">M49</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">22.537</data>
-      <data key="d16">4314741</data>
-      <data key="d17">238.6</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.7</data>
-    </edge>
-    <edge id="0" source="2104842646" target="331761">
-      <data key="d9">64</data>
-      <data key="d10">motorway</data>
-      <data key="d11">True</data>
-      <data key="d12">M49</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">23.801</data>
-      <data key="d16">4314741</data>
-      <data key="d17">252.3</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.8</data>
-    </edge>
-    <edge id="0" source="21029783" target="2106389519">
-      <data key="d9">65</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">12.047</data>
-      <data key="d16">4002537</data>
-      <data key="d17">33.6</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.4</data>
-    </edge>
-    <edge id="0" source="2104842648" target="2104842646">
-      <data key="d9">66</data>
-      <data key="d10">motorway</data>
-      <data key="d11">True</data>
-      <data key="d12">M49</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">22.109</data>
-      <data key="d16">4314741</data>
-      <data key="d17">256.7</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.7</data>
-    </edge>
-    <edge id="0" source="21029785" target="2106389534">
-      <data key="d9">67</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">9.314</data>
-      <data key="d16">4002537</data>
-      <data key="d17">310.8</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.3</data>
-    </edge>
-    <edge id="0" source="2104842650" target="1953103655">
-      <data key="d9">68</data>
-      <data key="d10">motorway</data>
-      <data key="d11">True</data>
-      <data key="d12">M49</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">23.212</data>
-      <data key="d16">4314741</data>
-      <data key="d17">246.2</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.7</data>
-    </edge>
-    <edge id="0" source="21029786" target="2106389514">
-      <data key="d9">69</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">14.861</data>
-      <data key="d16">4002537</data>
-      <data key="d17">253.2</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.5</data>
-    </edge>
-    <edge id="0" source="21029784" target="2106389515">
-      <data key="d9">70</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">9.126</data>
-      <data key="d16">4002537</data>
-      <data key="d17">348.4</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.3</data>
-    </edge>
-    <edge id="0" source="21029787" target="2106389521">
-      <data key="d9">71</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">15.518</data>
-      <data key="d16">4002537</data>
-      <data key="d17">80.8</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.5</data>
-    </edge>
-    <edge id="0" source="2106398106" target="331782">
-      <data key="d9">72</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d12">M5</data>
-      <data key="d13">2</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">43.673</data>
-      <data key="d16">4002534</data>
-      <data key="d17">98.0</data>
-      <data key="d18">112.7</data>
-      <data key="d19">1.4</data>
-    </edge>
-    <edge id="0" source="2106398108" target="21029796">
-      <data key="d9">73</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d12">M5</data>
-      <data key="d13">2</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">47.999</data>
-      <data key="d16">4002534</data>
-      <data key="d17">100.8</data>
-      <data key="d18">112.7</data>
-      <data key="d19">1.5</data>
-    </edge>
-    <edge id="0" source="2106398111" target="21029797">
-      <data key="d9">74</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d12">M5</data>
-      <data key="d13">2</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">26.442</data>
-      <data key="d16">4002534</data>
-      <data key="d17">105.6</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.8</data>
-    </edge>
-    <edge id="0" source="2106398113" target="31463728">
-      <data key="d9">75</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">2</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">19.751</data>
-      <data key="d16">4873067</data>
-      <data key="d17">109.6</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.6</data>
-    </edge>
-    <edge id="0" source="21029796" target="2106398106">
-      <data key="d9">76</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d12">M5</data>
-      <data key="d13">2</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">30.858</data>
-      <data key="d16">4002534</data>
-      <data key="d17">98.7</data>
-      <data key="d18">112.7</data>
-      <data key="d19">1.0</data>
-    </edge>
-    <edge id="0" source="21029797" target="2106398108">
-      <data key="d9">77</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d12">M5</data>
-      <data key="d13">2</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">24.932</data>
-      <data key="d16">4002534</data>
-      <data key="d17">102.7</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.8</data>
-    </edge>
-    <edge id="0" source="2106398117" target="2106398111">
-      <data key="d9">78</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d12">M5</data>
-      <data key="d13">2</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">17.427</data>
-      <data key="d16">4002534</data>
-      <data key="d17">109.0</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.6</data>
-    </edge>
-    <edge id="0" source="21029798" target="2106398117">
-      <data key="d9">79</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d12">M5</data>
-      <data key="d13">2</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">20.267</data>
-      <data key="d16">4002534</data>
-      <data key="d17">111.1</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.6</data>
-    </edge>
-    <edge id="0" source="1591662562" target="2106389513">
-      <data key="d9">80</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">31.014</data>
-      <data key="d16">4002537</data>
-      <data key="d17">95.6</data>
-      <data key="d18">112.7</data>
-      <data key="d19">1.0</data>
-    </edge>
-    <edge id="0" source="1591662563" target="2106389517">
-      <data key="d9">81</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">11.157</data>
-      <data key="d16">4002537</data>
-      <data key="d17">63.9</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.4</data>
-    </edge>
-    <edge id="0" source="1591662567" target="2106389522">
-      <data key="d9">82</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">11.632</data>
-      <data key="d16">4002537</data>
-      <data key="d17">45.7</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.4</data>
-    </edge>
-    <edge id="0" source="331760" target="2104842643">
-      <data key="d9">83</data>
-      <data key="d10">motorway</data>
-      <data key="d11">True</data>
-      <data key="d12">M49</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">38.822</data>
-      <data key="d16">4314741</data>
-      <data key="d17">234.8</data>
-      <data key="d18">112.7</data>
-      <data key="d19">1.2</data>
-    </edge>
-    <edge id="0" source="331761" target="2104842650">
-      <data key="d9">84</data>
-      <data key="d10">motorway</data>
-      <data key="d11">True</data>
-      <data key="d12">M49</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">17.773</data>
-      <data key="d16">4314741</data>
-      <data key="d17">249.4</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.6</data>
-    </edge>
-    <edge id="0" source="1591662579" target="2106389531">
-      <data key="d9">85</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">13.218</data>
-      <data key="d16">4002537</data>
-      <data key="d17">4.5</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.4</data>
-    </edge>
-    <edge id="0" source="1591662581" target="2106389523">
-      <data key="d9">86</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">8.9</data>
-      <data key="d16">4002537</data>
-      <data key="d17">330.6</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.3</data>
-    </edge>
-    <edge id="0" source="1591662583" target="2106389529">
-      <data key="d9">87</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">13.647</data>
-      <data key="d16">4002537</data>
-      <data key="d17">240.7</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.4</data>
-    </edge>
-    <edge id="0" source="1591662585" target="2106389525">
-      <data key="d9">88</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">9.405</data>
-      <data key="d16">4002537</data>
-      <data key="d17">293.2</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.3</data>
-    </edge>
-    <edge id="0" source="1591662587" target="2106389512">
-      <data key="d9">89</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">10.771</data>
-      <data key="d16">4002537</data>
-      <data key="d17">270.8</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.3</data>
-    </edge>
-    <edge id="0" source="331775" target="2106389530">
-      <data key="d9">90</data>
-      <data key="d10">motorway_link</data>
-      <data key="d11">True</data>
-      <data key="d13">1</data>
-      <data key="d14">70 mph</data>
-      <data key="d15">12.857</data>
-      <data key="d16">4002537</data>
-      <data key="d17">17.1</data>
-      <data key="d18">112.7</data>
-      <data key="d19">0.4</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.4</data>
+      <data key="d22">-0.0</data>
+      <data key="d23">0.0</data>
+    </edge>
+    <edge source="1591662581" target="2106389523" id="0">
+      <data key="d11">86</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">8.9</data>
+      <data key="d18">4002537</data>
+      <data key="d19">330.6</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.3</data>
+      <data key="d22">-0.023</data>
+      <data key="d23">0.023</data>
+    </edge>
+    <edge source="1591662583" target="2106389529" id="0">
+      <data key="d11">87</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">13.647</data>
+      <data key="d18">4002537</data>
+      <data key="d19">240.7</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.4</data>
+      <data key="d22">-0.002</data>
+      <data key="d23">0.002</data>
+    </edge>
+    <edge source="1591662585" target="2106389525" id="0">
+      <data key="d11">88</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">9.405</data>
+      <data key="d18">4002537</data>
+      <data key="d19">293.2</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.3</data>
+      <data key="d22">-0.008</data>
+      <data key="d23">0.008</data>
+    </edge>
+    <edge source="1591662587" target="2106389512" id="0">
+      <data key="d11">89</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">10.771</data>
+      <data key="d18">4002537</data>
+      <data key="d19">270.8</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.3</data>
+      <data key="d22">0.004</data>
+      <data key="d23">0.004</data>
+    </edge>
+    <edge source="331775" target="2106389530" id="0">
+      <data key="d11">90</data>
+      <data key="d12">motorway_link</data>
+      <data key="d13">True</data>
+      <data key="d15">1</data>
+      <data key="d16">70 mph</data>
+      <data key="d17">12.857</data>
+      <data key="d18">4002537</data>
+      <data key="d19">17.1</data>
+      <data key="d20">112.7</data>
+      <data key="d21">0.4</data>
+      <data key="d22">-0.015</data>
+      <data key="d23">0.015</data>
     </edge>
     <data key="d0">2021-01-13 11:25:05</data>
     <data key="d1">OSMnx 0.16.2</data>
