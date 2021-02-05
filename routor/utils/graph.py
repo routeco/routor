@@ -130,6 +130,9 @@ def download_graph(
         logger.info("> Adding elevation")
         osmnx.add_node_elevations(graph, api_key, precision=5)
 
+        logger.info("> Add edge grades")
+        osmnx.elevation.add_edge_grades(graph)
+
     logger.info("> Adding bearing")
     osmnx.bearing.add_edge_bearings(graph)
 
