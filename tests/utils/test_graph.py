@@ -65,11 +65,11 @@ def test_tag_roundabout_nodes__keep_circular() -> None:
 
 @pytest.mark.default_cassette("download_nailsea.yaml")
 @pytest.mark.vcr
-def test_download_graph() -> None:
+def test_download_map() -> None:
     """
     Make sure we can download a map.
     """
-    graph = graph_utils.download_graph("Nailsea, North Somerset, England")
+    graph = graph_utils.download_map("Nailsea, North Somerset, England")
     assert isinstance(graph, networkx.DiGraph)
 
     # make sure some specific attributes/tags are available
@@ -98,7 +98,7 @@ def test_download_graph__custom_node_tags(tag: str) -> None:
     """
     Make sure additional node tags have been fetched.
     """
-    graph = graph_utils.download_graph(
+    graph = graph_utils.download_map(
         "Nailsea, North Somerset, England", node_tags=[tag]
     )
     nodes, _ = osmnx.utils_graph.graph_to_gdfs(graph)
@@ -112,7 +112,7 @@ def test_download_graph__custom_edge_tags(tag: str) -> None:
     """
     Make sure additional node tags have been fetched.
     """
-    graph = graph_utils.download_graph(
+    graph = graph_utils.download_map(
         "Nailsea, North Somerset, England", edge_tags=[tag]
     )
     _, edges = osmnx.utils_graph.graph_to_gdfs(graph)
@@ -125,7 +125,7 @@ def test_download_graph__add_elevation() -> None:
     """
     Make sure elevation is attached once an Google API key has been provided.
     """
-    graph = graph_utils.download_graph(
+    graph = graph_utils.download_map(
         "Nailsea, North Somerset, England", api_key="some_random_api_key"
     )
     nodes, _ = osmnx.utils_graph.graph_to_gdfs(graph)
@@ -138,7 +138,7 @@ def test_download_graph__add_grades() -> None:
     """
     Make sure grades are attached once an Google API key has been provided.
     """
-    graph = graph_utils.download_graph(
+    graph = graph_utils.download_map(
         "Nailsea, North Somerset, England", api_key="some_random_api_key"
     )
     _, edges = osmnx.utils_graph.graph_to_gdfs(graph)

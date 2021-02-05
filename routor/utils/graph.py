@@ -97,7 +97,7 @@ def tag_roundabout_nodes(graph: networkx.DiGraph) -> None:
 
 
 @timeit
-def download_graph(
+def download_map(
     location: str,
     node_tags: Optional[List[str]] = None,
     edge_tags: Optional[List[str]] = None,
@@ -146,7 +146,7 @@ def download_graph(
 
 
 @timeit
-def save_graph(graph: networkx.DiGraph, target: Path) -> None:
+def save_map(graph: networkx.DiGraph, target: Path) -> None:
     """
     Save graph as .graphml file.
     """

@@ -51,10 +51,10 @@ def download(
     """
     set_log_level(log_level)
 
-    graph = graph_utils.download_graph(
+    graph = graph_utils.download_map(
         location, node_tags=list(node_tags), edge_tags=list(edge_tags), api_key=api_key
     )
-    graph_utils.save_graph(graph, target)
+    graph_utils.save_map(graph, target)
 
 
 @main.command()
