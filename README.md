@@ -1,8 +1,8 @@
 # routor
 
 ![PyPI](https://img.shields.io/pypi/v/routor?style=flat-square)
-![GitHub Workflow Status (master)](https://img.shields.io/github/workflow/status/escaped/routor/Test%20&%20Lint/master?style=flat-square)
-![Coveralls github branch](https://img.shields.io/coveralls/github/escaped/routor/master?style=flat-square)
+![GitHub Workflow Status (main)](https://img.shields.io/github/workflow/status/escaped/routor/Test%20&%20Lint/main?style=flat-square)
+![Coveralls github branch](https://img.shields.io/coveralls/github/escaped/routor/main?style=flat-square)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/routor?style=flat-square)
 ![PyPI - License](https://img.shields.io/pypi/l/routor?style=flat-square)
 
