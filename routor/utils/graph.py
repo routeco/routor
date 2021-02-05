@@ -1,7 +1,7 @@
-import copy
+import contextlib
 import logging
 from pathlib import Path
-from typing import Tuple
+from typing import Generator, List, Optional
 
 import networkx
 import osmnx
@@ -22,92 +22,124 @@ def load_map(map_path: Path) -> networkx.DiGraph:
     return graph
 
 
-def is_oneway(edge: Tuple[int, int, dict]) -> bool:
+@contextlib.contextmanager
+def osmnx_config(
+    node_tags: List[str], edge_tags: List[str]
+) -> Generator[None, None, None]:
     """
-    Return whether edge is a oneway.
+    Prepare osmnx config for downloading data.
     """
-    _, _, data = edge
-    return data.get('oneway', False) == 'yes'
+    # aggregate default tags
+    useful_node_tags = set(
+        osmnx.settings.useful_tags_node
+        + osmnx.settings.osm_xml_node_attrs
+        + osmnx.settings.osm_xml_node_tags
+        + ["junction"]  # additional useful tags
+        + ["street_count"]  # custom enhancements
+        + node_tags
+    )
+    useful_edge_tags = set(
+        osmnx.settings.useful_tags_way
+        + osmnx.settings.osm_xml_way_attrs
+        + osmnx.settings.osm_xml_way_tags
+        + ["junction"]  # additional useful tags
+        + ["bearing", "speed_kph", "travel_time"]  # custom enhancements
+        + edge_tags
+    )
 
-
-def is_twoway(edge: Tuple[int, int, dict]) -> bool:
-    """
-    Return whether edge is a two way.
-    """
-    return not is_oneway(edge)
+    original_settings = {
+        "all_oneway": osmnx.settings.all_oneway,
+        "useful_tags_node": osmnx.settings.useful_tags_node,
+        "useful_tags_way": osmnx.settings.useful_tags_node,
+    }
+    new_settings = {
+        "all_oneway": False,  # we need digraph, an edge for each direction
+        "useful_tags_node": useful_node_tags,
+        "useful_tags_way": useful_edge_tags,
+    }
+    try:
+        logger.debug("Update osmnx configuration", extra=new_settings)
+        osmnx.config(**new_settings)
+        yield
+    finally:
+        logger.debug("Resetting osmnx configuration", extra=original_settings)
+        osmnx.config(**original_settings)
 
 
 @timeit
-def convert_to_oneways(graph: networkx.DiGraph) -> networkx.DiGraph:
+def tag_roundabout_nodes(graph: networkx.DiGraph) -> None:
     """
-    Convert all two ways to two one ways and reset osmids.
+    Tag nodes within a roundabout as junction=roundabout.
+
+    Not every node within a roundabout is always tagged accordingly. Let's fix that.
+    More information:
+    * https://wiki.openstreetmap.org/wiki/Key:junction
+    * https://wiki.openstreetmap.org/wiki/Tag:junction%3Droundabout
     """
-    logger.info("Converting two ways to one ways")
-    graph = graph.copy()  # create a new graph
+    for u, v, edge_data in graph.edges(data=True):
+        if edge_data.get("junction", None) != "roundabout":
+            continue
 
-    # rewrite osmid
-    all_edges = graph.edges(data=True)
-    twoways = list(filter(is_twoway, all_edges))
+        for node_id in (u, v):
+            node_data = graph.nodes[node_id]
+            if node_data.get("junction", None) == "circular":
+                # no need to do anything as this is a "roundabout"
+                # https://wiki.openstreetmap.org/wiki/Tag:junction%3Dcircular?
+                continue
 
-    # convert all ways to one ways and reset the osmid
-    new_osmid = 0
-    for new_osmid, (_, _, edge_data) in enumerate(all_edges):
-        edge_data['original_osmid'] = edge_data['osmid']
-        edge_data['osmid'] = new_osmid
-        edge_data['oneway'] = True
-
-    # add reverse edge for two ways
-    for osmid, (u, v, original_data) in enumerate(twoways, start=new_osmid + 1):
-        edge_data = copy.deepcopy(original_data)
-        edge_data['osmid'] = osmid
-        graph.add_edge(v, u, **edge_data)
-
-    # make sure we only have unique edge ids
-    edge_ids = []
-    for _, _, edge_data in graph.edges(data=True):
-        edge_ids.append(edge_data['osmid'])
-
-    if len(edge_ids) != len(set(edge_ids)):
-        raise RuntimeError("Duplicate edges found.")
-
-    return graph
+            if "junction" in node_data and node_data["junction"] != "roundabout":
+                logger.warning(
+                    "Node %s was already tagged with `junction='%s'`.",
+                    node_id,
+                    node_data["junction"],
+                )
+            node_data["junction"] = "roundabout"
 
 
 @timeit
-def download_graph(location: str, as_oneways: bool = False) -> networkx.DiGraph:
+def download_graph(
+    location: str,
+    node_tags: Optional[List[str]] = None,
+    edge_tags: Optional[List[str]] = None,
+    api_key: Optional[str] = None,
+) -> networkx.DiGraph:
+    """
+    Download map from OSM.
+    """
     logger.info(f"Download map for {location}")
-    # set attributs/tags which should be downloaded from osm
-    osmnx.config(
-        useful_tags_node=list(
-            set(
-                osmnx.settings.useful_tags_node
-                + osmnx.settings.osm_xml_node_attrs
-                + osmnx.settings.osm_xml_node_tags
-            )
-        ),
-        useful_tags_way=list(
-            set(
-                osmnx.settings.useful_tags_way
-                + osmnx.settings.osm_xml_way_attrs
-                + osmnx.settings.osm_xml_way_tags
-            )
-        ),
-    )
-    graph = osmnx.graph_from_place(
-        location,
-        network_type="drive",
-        retain_all=False,  # only keep biggest connected network
-        truncate_by_edge=True,  # Keep entirety of edges, rather than cropping at distance limit
-        simplify=False,  # Do not correct and simplify street network topology
-    )
-
-    if as_oneways:
-        graph = convert_to_oneways(graph)
+    with osmnx_config(node_tags or [], edge_tags or []):
+        graph = osmnx.graph_from_place(
+            location,
+            network_type="drive",
+            retain_all=False,  # only keep biggest connected network
+            truncate_by_edge=True,  # Keep entirety of edges, rather than cropping at distance limit
+            simplify=False,  # Do not correct and simplify street network topology
+        )
 
     # add additional attributes
     logger.info("Enhance map with additional attributes")
+    logger.info("> Tag node as roundabout")
+    tag_roundabout_nodes(graph)
+
+    logger.info("> Adding street count to nodes")
+    street_count_data = osmnx.utils_graph.count_streets_per_node(graph)
+    for node_id, street_count in street_count_data.items():
+        graph.nodes[node_id]["street_count"] = street_count
+
+    if api_key:
+        logger.info("> Adding elevation")
+        osmnx.add_node_elevations(graph, api_key, precision=5)
+
+        logger.info("> Add edge grades")
+        osmnx.elevation.add_edge_grades(graph)
+
+    logger.info("> Adding bearing")
     osmnx.bearing.add_edge_bearings(graph)
+
+    logger.info("> Adding edge speeds")
     osmnx.speed.add_edge_speeds(graph, hwy_speeds=None, fallback=30)
+
+    logger.info("> Adding travel time")
     osmnx.speed.add_edge_travel_times(graph)
 
     return graph
@@ -118,7 +150,7 @@ def save_graph(graph: networkx.DiGraph, target: Path) -> None:
     """
     Save graph as .graphml file.
     """
-    logger.info("Saving graph as {target}.")
+    logger.info(f"Saving graph as {target.absolute()}.")
     osmnx.save_graphml(
         graph,
         filepath=str(target),

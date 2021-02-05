@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+* ability to include more edge/node tags into the graph
+* automatically tag nodes part of a roundabout as junction=roundabout
+* add elevation to nodes when a Google API key is provided
+* add edge grades when a Google API key is provided
+
+### Changed
+
+* dropped unused oneway conversion
+
 ## [0.1.0] - 2020-01-18
 
 ### Added

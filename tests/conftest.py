@@ -7,6 +7,23 @@ from networkx import DiGraph
 from routor.engine import Engine
 
 
+@pytest.fixture(autouse=True, scope="session")
+def vcr_cassette_dir() -> str:
+    """
+    Use one single cassettes dir.
+    """
+    tests_dir = Path(__file__).parent
+    return str(tests_dir / "cassettes")
+
+
+@pytest.fixture(autouse=True, scope="session")
+def vcr_config():
+    """
+    Filter the google API key.
+    """
+    return {"filter_query_parameters": ["key"]}
+
+
 @pytest.fixture()
 def graph_path() -> Path:
     """
