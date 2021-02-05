@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.0] - 2021-02-05
+
 ### Added
 
 * ability to include more edge/node tags into the graph
@@ -25,5 +27,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * basic routing CLI
 * basic API
 
-[Unreleased]: https://github.com/escaped/routor/tree/master
+[Unreleased]: https://github.com/escaped/routor/compare/0.2.0...HEAD
+[0.2.0]: https://github.com/escaped/routor/compare/0.1.0...0.2.0
 [0.1.0]: https://github.com/escaped/routor/tree/0.1.0
