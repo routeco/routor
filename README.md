@@ -32,6 +32,26 @@ Downloads a compatible map from OSM, eg.
 routor download "Bristol, England" ./bristol.graphml
 ```
 
+By default it only adds a handful of tags ([nodes](https://github.com/gboeing/osmnx/blob/77b2535776b4397ae0deda402398609b3a4694a6/osmnx/settings.py#L5), [edge](https://github.com/gboeing/osmnx/blob/77b2535776b4397ae0deda402398609b3a4694a6/osmnx/settings.py#L49)) to the graph.
+Use `-n` or `-e` to add other available tags ([edge](https://github.com/gboeing/osmnx/blob/77b2535776b4397ae0deda402398609b3a4694a6/osmnx/settings.py#L29), [node](https://github.com/gboeing/osmnx/blob/77b2535776b4397ae0deda402398609b3a4694a6/osmnx/settings.py#L28)) as well.
+Additionally, you can download multiple regions at once:
+
+```sh
+routor download -n junction -n traffic_signals -e surface -e lanes "Bristol, England" "Somerset, England" ./bristol_somerset.graphml
+```
+
+By default, each downloaded map is enhanced with
+
+* `street_count` - how many physical segments are connected to a node
+* `bearing` - angle of each edge
+* `speed_kph` - free-flow travel speed based on `maxspeed`, fallback is set to `30` kph
+* `travel_time` - Travel time based on `speed_kph` and `length`
+
+If you provide a [Google API](https://developers.google.com/maps/documentation/javascript/get-api-key) (using --api-key), the following additional attributes are available:
+
+* `elevation` - elevation above sea level
+* `grade`/`grade_abs` - grade of an endge
+
 #### Calculate route
 
 Determine the optimal route between two points using the given weight function and print the route as `JSON` to `stdout`.
