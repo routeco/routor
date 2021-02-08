@@ -36,10 +36,10 @@ def main() -> None:
 @click.option(
     '-e', '--edge-tags', multiple=True, type=str, help="Additional edge tags to fetch."
 )
-@click.argument('location', type=str)
+@click.argument('regions', nargs=-1, type=str)
 @click.argument('target', type=click_utils.Path(exists=False, dir_okay=False))
 def download(
-    location: str,
+    regions: Tuple[str],
     target: Path,
     log_level: Optional[str],
     node_tags: Tuple[str],
@@ -52,7 +52,10 @@ def download(
     set_log_level(log_level)
 
     graph = graph_utils.download_map(
-        location, node_tags=list(node_tags), edge_tags=list(edge_tags), api_key=api_key
+        list(regions),
+        node_tags=list(node_tags),
+        edge_tags=list(edge_tags),
+        api_key=api_key,
     )
     graph_utils.save_map(graph, target)
 

@@ -98,7 +98,7 @@ def tag_roundabout_nodes(graph: networkx.DiGraph) -> None:
 
 @timeit
 def download_map(
-    location: str,
+    location: List[str],
     node_tags: Optional[List[str]] = None,
     edge_tags: Optional[List[str]] = None,
     api_key: Optional[str] = None,
