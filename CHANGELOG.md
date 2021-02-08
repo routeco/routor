@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+* download multiple regions into a single file
+
 ## [0.3.0] - 2021-02-05
 
 ### Added
