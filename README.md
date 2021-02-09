@@ -78,31 +78,6 @@ uvicorn routor.api:app
 
 The API will be available at http://127.0.0.1:8000 and the docs at http://127.0.0.1:8000/docs.
 
-#### Register a new weight function
-
-Existing weight functions are defined in [routor/weights.py](routor/weights.py).
-To add a new weight functon, you have to create a new project and add `routor` as dependency.
-Create a new file, eg. `main.py` and add the following content, which will become the entrypoint for `uvicorn`.
-
-```python
-# main.py
-from typing import Optional
-
-from routor.api.main import app  # noqa
-from routor.weights import register
-from routor import models
-
-
-def my_weight_func(prev_edge: Optional[models.Edge], edge: models.Edge) -> float:
-    ...
-    return ...
-
-
-register(my_weight_func, "weight_func")
-```
-
-Start the server with `uvicorn main:app` and the weight function will be available as `weight_func` when calling the api.
-
 ### As library
 
 You can also use the engine as a library.
@@ -131,6 +106,33 @@ Calculates the shortest path from A to B, only the length of an edge is taken in
 ### `"travel_time"` / `routor.weight.travel_time`
 
 Calculates the fastest route based on [travel time](https://osmnx.readthedocs.io/en/stable/osmnx.html#osmnx.speed.add_edge_travel_times).
+
+## Plugins
+
+`routor` implements a simple plugin mechanism.
+Simply create a new module with the prefix `routor_`, make it available (install it, `sys.path` hack or similar) and it will be automatically discovered and loaded.
+Depending on how you structure your module/plugin, you have to do the registration of the additional functionality in either `routor_YOUR_MODULE/__init__.py` or `routor_YOUR_MODULE.py`.
+
+### Register a new weight function
+
+Existing weight functions are defined in [routor/weights.py](routor/weights.py) and can be taken as reference.
+To register a new function in your plugin, you have to implement something similar to
+
+```python
+# __init__.py
+from typing import Optional
+
+from routor.weights import register
+from routor import models
+
+
+def my_weight_func(prev_edge: Optional[models.Edge], edge: models.Edge) -> float:
+    ...
+    return ...
+
+
+register(my_weight_func, "weight_func")
+```
 
 ## Development
 
