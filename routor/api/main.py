@@ -1,3 +1,5 @@
+import logging
+from functools import lru_cache
 from typing import List
 
 from fastapi import Depends, FastAPI
@@ -5,15 +7,35 @@ from fastapi import Depends, FastAPI
 from .. import engine
 from .. import models as engine_models
 from .. import weights
-from . import models
-from .config import settings
+from . import config, models
 
+logger = logging.getLogger()
 app = FastAPI()
 
 
-class PersistentEngine(engine.Engine):
-    def __init__(self):
-        super().__init__(settings.map_path)
+@lru_cache()
+def get_settings() -> config.Settings:
+    """
+    Return application settings.
+    """
+    logger.debug("initialise settings")
+    return config.Settings()
+
+
+def get_engine(
+    settings: config.Settings = Depends(get_settings),  # noqa: B008
+) -> engine.Engine:
+    """
+    Return an initialised routing engine.
+
+    This is a singletone and the engine is only initialised once.
+    """
+    cached_value = getattr(get_engine, "__cache", None)
+    if not cached_value:
+        logger.debug("initialise engine")
+        cached_value = engine.Engine(settings.map_path)
+        get_engine.__cache = cached_value  # type: ignore
+    return cached_value
 
 
 @app.get("/weights", response_model=List[str])
@@ -27,7 +49,7 @@ def read_weights() -> List[str]:
 @app.get("/route", response_model=engine_models.Route)
 def read_route(
     data: models.RouteRequest,
-    engine: PersistentEngine = Depends(),  # noqa: B008
+    engine: engine.Engine = Depends(get_engine),  # noqa: B008
 ) -> engine_models.Route:
     """
     Calculate a route from A to B.
