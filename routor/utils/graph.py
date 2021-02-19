@@ -102,19 +102,23 @@ def download_map(
     node_tags: Optional[List[str]] = None,
     edge_tags: Optional[List[str]] = None,
     api_key: Optional[str] = None,
+    verbose: bool = False,
 ) -> networkx.DiGraph:
     """
     Download map from OSM.
     """
     logger.info(f"Download map for {location}")
+    from . import hacks
+
     with osmnx_config(node_tags or [], edge_tags or []):
-        graph = osmnx.graph_from_place(
-            location,
-            network_type="drive",
-            retain_all=False,  # only keep biggest connected network
-            truncate_by_edge=True,  # Keep entirety of edges, rather than cropping at distance limit
-            simplify=False,  # Do not correct and simplify street network topology
-        )
+        with hacks.progressbar_for_requests("post"):
+            graph = osmnx.graph_from_place(
+                location,
+                network_type="drive",
+                retain_all=False,  # only keep biggest connected network
+                truncate_by_edge=True,  # Keep entirety of edges, rather than cropping at distance limit
+                simplify=False,  # Do not correct and simplify street network topology
+            )
 
     # add additional attributes
     logger.info("Enhance map with additional attributes")
@@ -128,7 +132,8 @@ def download_map(
 
     if api_key:
         logger.info("> Adding elevation")
-        osmnx.add_node_elevations(graph, api_key, precision=5)
+        with hacks.progressbar_for_requests("get"):
+            osmnx.add_node_elevations(graph, api_key, precision=5)
 
         logger.info("> Add edge grades")
         osmnx.elevation.add_edge_grades(graph)
