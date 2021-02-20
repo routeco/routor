@@ -84,6 +84,8 @@ You can also use the engine as a library.
 To calculate a route from A to B you can do
 
 ```python
+from pathlib import Path
+
 from routor.engine import Engine
 from routor import models, weights
 
