@@ -73,7 +73,7 @@ The api is served using [uvicorn](https://www.uvicorn.org/).
 To start the server run
 
 ```sh
-uvicorn routor.api:app
+uvicorn routor.api.main:app
 ```
 
 The API will be available at http://127.0.0.1:8000 and the docs at http://127.0.0.1:8000/docs.
