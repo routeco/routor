@@ -5,11 +5,10 @@ from typing import Optional, Tuple
 
 import click
 
-from routor.weights import WeightFunction
-
 from . import models
 from .engine import Engine
 from .utils import click as click_utils
+from .utils import core as core_utils
 from .utils import graph as graph_utils
 
 
@@ -90,24 +89,11 @@ def route(
     set_log_level(log_level)
 
     # load weight functions
-    weight_func = import_weight_function(weight)
-    travel_time_func = import_weight_function(travel_time)
+    weight_func = core_utils.import_weight_function(weight)
+    travel_time_func = core_utils.import_weight_function(travel_time)
 
     # do routing
     engine = Engine(map_path)
     data = engine.route(origin, destination, weight_func, travel_time_func)
 
     print(json.dumps(data.dict(), indent=2))
-
-
-def import_weight_function(path: str) -> WeightFunction:
-    """
-    Imports a weight function from a string.
-    """
-    from importlib import import_module
-
-    module_path, func_name = path.rsplit('.', 1)
-    module = import_module(module_path)
-    weight_func = getattr(module, func_name)
-
-    return weight_func
