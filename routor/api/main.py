@@ -56,5 +56,7 @@ def read_route(
     """
     weight_func = weights.get_function(data.weight)
 
-    route = engine.route(data.origin, data.destination, weight_func)
+    route = engine.route(
+        data.origin, data.destination, weight_func, weights.travel_time
+    )
     return route

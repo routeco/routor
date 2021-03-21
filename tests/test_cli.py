@@ -62,7 +62,14 @@ def test_main(graph_path: Path):
     destination = f"{test_engine.DESTINATION_LOCATION.latitude},{test_engine.DESTINATION_LOCATION.longitude}"
 
     result = runner.invoke(
-        cli.route, [str(graph_path), origin, destination, "routor.weights.travel_time"]
+        cli.route,
+        [
+            str(graph_path),
+            origin,
+            destination,
+            "routor.weights.travel_time",
+            "routor.weights.travel_time",
+        ],
     )
     assert result.exit_code == 0
 
