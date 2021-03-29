@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.5.0] - 2021-03-29
+
 ### Changed
 
 * travel time calculation can now be customized using a weight function
@@ -52,6 +54,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * basic API
 
 [Unreleased]: https://github.com/escaped/routor/compare/0.4.0...HEAD
+[0.5.0]: https://github.com/escaped/routor/compare/0.4.0...0.5.0
 [0.4.0]: https://github.com/escaped/routor/compare/0.3.0...0.4.0
 [0.3.0]: https://github.com/escaped/routor/compare/0.2.1...0.3.0
 [0.2.1]: https://github.com/escaped/routor/compare/0.2.0...0.2.1
