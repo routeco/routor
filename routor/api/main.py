@@ -50,11 +50,14 @@ def read_weights() -> List[str]:
 def read_route(
     data: models.RouteRequest,
     engine: engine.Engine = Depends(get_engine),  # noqa: B008
+    settings: config.Settings = Depends(get_settings),  # noqa: B008
 ) -> engine_models.Route:
     """
     Calculate a route from A to B.
     """
     weight_func = weights.get_function(data.weight)
 
-    route = engine.route(data.origin, data.destination, weight_func)
+    route = engine.route(
+        data.origin, data.destination, weight_func, settings.get_travel_time_func()
+    )
     return route

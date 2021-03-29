@@ -44,7 +44,7 @@ By default, each downloaded map is enhanced with
 
 * `street_count` - how many physical segments are connected to a node
 * `bearing` - angle of each edge
-* `speed_kph` - free-flow travel speed based on `maxspeed`, fallback is set to `30` kph
+* `speed_kph` - free-flow travel speed based on `maxspeed`, fallback is set to `30` kph (see [osmnx](https://osmnx.readthedocs.io/en/stable/osmnx.html#osmnx.speed.add_edge_speeds) for more information)
 * `travel_time` - Travel time based on `speed_kph` and `length`
 
 If you provide a [Google API](https://developers.google.com/maps/documentation/javascript/get-api-key) (using --api-key), the following additional attributes are available:
@@ -96,7 +96,7 @@ engine = Engine(map_path)
 origin = models.Location(latitude=51.47967237816338, longitude=-2.6174926757812496)
 destination = models.Location(latitude=51.45422084861252, longitude=-2.564105987548828)
 
-route = engine.route(origin, destination, weights.length)  # shortest distance
+route = engine.route(origin, destination, weight_func=weights.length, travel_time_func=weights.travel_time)  # shortest distance
 ```
 
 ## Available weight-functions

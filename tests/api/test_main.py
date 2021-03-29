@@ -50,5 +50,5 @@ def test_read_route(
         },
     )
     assert response.status_code == 200, response.content
-    engine.Engine.route.assert_called_with(origin, destination, weight_func)  # type: ignore
+    engine.Engine.route.assert_called_with(origin, destination, weight_func, weights.travel_time)  # type: ignore
     assert response.json() == expected_data

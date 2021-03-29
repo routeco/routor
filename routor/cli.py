@@ -8,6 +8,7 @@ import click
 from . import models
 from .engine import Engine
 from .utils import click as click_utils
+from .utils import core as core_utils
 from .utils import graph as graph_utils
 
 
@@ -66,11 +67,13 @@ def download(
 @click.argument('origin', type=click_utils.LocationParamType())
 @click.argument('destination', type=click_utils.LocationParamType())
 @click.argument('weight', type=str)
+@click.argument('travel_time', type=str)
 def route(
     map_path: Path,
     origin: models.Location,
     destination: models.Location,
     weight: str,
+    travel_time: str,
     log_level: Optional[str],
 ) -> None:
     """
@@ -81,18 +84,16 @@ def route(
     ORIGIN GPS location. Format: latitude,longitude
     DESTINATION GPS location. Format: latitude,longitude
     WEIGHT Module path to weight function, eg. "routor.weights.length"
+    TRAVEL_TIME Module path to weight function, which returns the travel time for an edge, eg. "routor.weights.travel_time"
     """
     set_log_level(log_level)
 
-    # load weight function
-    from importlib import import_module
-
-    module_path, func_name = weight.rsplit('.', 1)
-    module = import_module(module_path)
-    weight_func = getattr(module, func_name)
+    # load weight functions
+    weight_func = core_utils.import_weight_function(weight)
+    travel_time_func = core_utils.import_weight_function(travel_time)
 
     # do routing
     engine = Engine(map_path)
-    data = engine.route(origin, destination, weight_func)
+    data = engine.route(origin, destination, weight_func, travel_time_func)
 
     print(json.dumps(data.dict(), indent=2))

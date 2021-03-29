@@ -7,10 +7,9 @@ import osmnx
 from more_itertools import pairwise
 from networkx_astar_path import astar_path
 
-from . import exceptions, models
+from . import exceptions, models, weights
 from .utils.debug import timeit
 from .utils.graph import load_map
-from .weights import WeightFunction
 
 logger = logging.getLogger()
 
@@ -28,7 +27,10 @@ class Engine:
 
     @timeit
     def find_path(
-        self, origin: models.Node, destination: models.Node, weight: WeightFunction
+        self,
+        origin: models.Node,
+        destination: models.Node,
+        weight: weights.WeightFunction,
     ) -> List[models.Node]:
         """
         Calculate a route using the given weight.
@@ -64,7 +66,8 @@ class Engine:
         self,
         origin: models.Location,
         destination: models.Location,
-        weight: WeightFunction,
+        weight_func: weights.WeightFunction,
+        travel_time_func: weights.WeightFunction,
     ) -> models.Route:
         """
         Calculate a shortest path.
@@ -72,10 +75,10 @@ class Engine:
         origin_node = self.get_closest_node(origin)
         destination_node = self.get_closest_node(destination)
 
-        path = self.find_path(origin_node, destination_node, weight=weight)
-        costs = self.costs_for_path(path, weight=weight)
+        path = self.find_path(origin_node, destination_node, weight_func)
+        costs = self.costs_for_path(path, weight_func)
         length = self.length_of_path(path)
-        travel_time = self.travel_time_of_path(path)
+        travel_time = self.travel_time_of_path(path, func=travel_time_func)
 
         route = models.Route(
             costs=round(costs, 2),
@@ -86,7 +89,9 @@ class Engine:
         return route
 
     @timeit
-    def costs_for_path(self, path: List[models.Node], weight: WeightFunction) -> float:
+    def costs_for_path(
+        self, path: List[models.Node], func: weights.WeightFunction
+    ) -> float:
         """
         Calculate the costs for a given path.
         """
@@ -98,9 +103,9 @@ class Engine:
         costs: float = 0
         for index, (prev_edge, edge) in enumerate(pairwise(edges)):
             if index == 0:
-                costs = weight(None, prev_edge)
+                costs = func(None, prev_edge)
 
-            costs += weight(prev_edge, edge)
+            costs += func(prev_edge, edge)
 
         return costs
 
@@ -117,16 +122,13 @@ class Engine:
         return sum(edge.length for edge in edges)
 
     @timeit
-    def travel_time_of_path(self, path: List[models.Node]) -> float:
+    def travel_time_of_path(
+        self, path: List[models.Node], func: weights.WeightFunction
+    ) -> float:
         """
         Calculate the travel time of a given path.
         """
-        edges = (
-            models.Edge.from_nodes(self.graph, start, end)
-            for start, end in pairwise(path)
-        )
-
-        return sum(edge.travel_time for edge in edges)
+        return self.costs_for_path(path, func)
 
     @timeit
     def get_closest_node(self, location: models.Location) -> models.Node:

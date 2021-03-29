@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+* travel time calculation can now be customized using a weight function
+
 ## [0.4.0] - 2021-02-09
 
 ### Added
