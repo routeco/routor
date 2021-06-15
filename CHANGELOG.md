@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.5.1] - 2021-06-15
+
 ### Changed
 
 * extended internal API to be able to use different functions to download a graph from OSM
