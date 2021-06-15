@@ -1,7 +1,7 @@
 import contextlib
 import logging
 from pathlib import Path
-from typing import Generator, List, Optional
+from typing import Any, Callable, Generator, List, Optional
 
 import networkx
 import osmnx
@@ -16,9 +16,7 @@ def load_map(map_path: Path) -> networkx.DiGraph:
     """
     Load graph from a .graphml file.
     """
-    graph = osmnx.io.load_graphml(
-        map_path,
-    )
+    graph = osmnx.io.load_graphml(map_path)
     return graph
 
 
@@ -104,12 +102,27 @@ def download_map(
     api_key: Optional[str] = None,
 ) -> networkx.DiGraph:
     """
-    Download map from OSM.
+    Download map from OSM for specific locations.
     """
     logger.info(f"Download map for {location}")
+    return custom_graph_from_x(
+        location, node_tags=node_tags, edge_tags=edge_tags, api_key=api_key
+    )
+
+
+def custom_graph_from_x(
+    *args: List[Any],
+    graph_from_x: Callable = osmnx.graph_from_place,
+    node_tags: Optional[List[str]] = None,
+    edge_tags: Optional[List[str]] = None,
+    api_key: Optional[str] = None,
+) -> networkx.DiGraph:
+    """
+    Download map from OSM.
+    """
     with osmnx_config(node_tags or [], edge_tags or []):
-        graph = osmnx.graph_from_place(
-            location,
+        graph = graph_from_x(
+            *args,
             network_type="drive",
             retain_all=False,  # only keep biggest connected network
             truncate_by_edge=True,  # Keep entirety of edges, rather than cropping at distance limit
@@ -151,7 +164,4 @@ def save_map(graph: networkx.DiGraph, target: Path) -> None:
     Save graph as .graphml file.
     """
     logger.info(f"Saving graph as {target.absolute()}.")
-    osmnx.save_graphml(
-        graph,
-        filepath=str(target),
-    )
+    osmnx.save_graphml(graph, filepath=str(target))
