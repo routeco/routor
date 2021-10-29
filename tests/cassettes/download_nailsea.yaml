@@ -57,7 +57,7 @@ interactions:
       referer:
       - OSMnx Python package (https://github.com/gboeing/osmnx)
     method: GET
-    uri: http://overpass-api.de/api/status
+    uri: https://overpass-api.de/api/status
   response:
     body:
       string: !!binary |
@@ -106,7 +106,7 @@ interactions:
       referer:
       - OSMnx Python package (https://github.com/gboeing/osmnx)
     method: POST
-    uri: http://overpass-api.de/api/interpreter
+    uri: https://overpass-api.de/api/interpreter
   response:
     body:
       string: !!binary |
