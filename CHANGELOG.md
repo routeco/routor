@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.6.0] - 2021-11-01
+
 ### changed
 
 * compatibility with osmnx 1.1.x
@@ -63,7 +65,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * basic routing CLI
 * basic API
 
-[Unreleased]: https://github.com/escaped/routor/compare/0.4.0...HEAD
+[Unreleased]: https://github.com/escaped/routor/compare/0.6.0...HEAD
+[0.6.0]: https://github.com/escaped/routor/compare/0.5.1...0.6.0
+[0.5.1]: https://github.com/escaped/routor/compare/0.5.0...0.5.1
 [0.5.0]: https://github.com/escaped/routor/compare/0.4.0...0.5.0
 [0.4.0]: https://github.com/escaped/routor/compare/0.3.0...0.4.0
 [0.3.0]: https://github.com/escaped/routor/compare/0.2.1...0.3.0

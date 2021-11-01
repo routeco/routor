@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "routor"
-version = "0.5.1"
+version = "0.6.0"
 description = "Simple osm routing engine."
 authors = [
     "Alexander Frenzel <alex@relatedworks.com>",
