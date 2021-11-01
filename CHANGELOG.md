@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### changed
+
+* compatibility with osmnx 1.1.x
+
 ## [0.5.1] - 2021-06-15
 
 ### Changed
