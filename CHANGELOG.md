@@ -7,11 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [0.6.0] - 2021-11-01
+## [0.7.0] - 2021-12-13
 
 ### Changed
 
 * update all dependencies and be compatible with more versions
+
+## [0.6.0] - 2021-11-01
+
 
 ### Changed
 
@@ -69,7 +72,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * basic routing CLI
 * basic API
 
-[Unreleased]: https://github.com/escaped/routor/compare/0.6.0...HEAD
+[Unreleased]: https://github.com/escaped/routor/compare/0.7.0...HEAD
+[0.7.0]: https://github.com/escaped/routor/compare/0.6.0...0.7.0
 [0.6.0]: https://github.com/escaped/routor/compare/0.5.1...0.6.0
 [0.5.1]: https://github.com/escaped/routor/compare/0.5.0...0.5.1
 [0.5.0]: https://github.com/escaped/routor/compare/0.4.0...0.5.0
