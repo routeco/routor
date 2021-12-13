@@ -9,7 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.6.0] - 2021-11-01
 
-### changed
+### Changed
+
+* update all dependencies and be compatible with more versions
+
+### Changed
 
 * compatibility with osmnx 1.1.x
 
