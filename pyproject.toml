@@ -36,7 +36,7 @@ packages = [
 [tool.poetry.dependencies]
 python = ">=3.6.1, <4.0"
 
-click = "^7.1.2"
+click = "*"
 fastapi = "*"
 more-itertools = ">8.0.0"
 networkx = ">2.5"

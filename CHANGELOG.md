@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+* be compatible with more versions of click
+
+
 ## [0.7.0] - 2021-12-13
 
 ### Changed
