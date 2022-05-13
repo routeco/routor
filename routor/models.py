@@ -1,3 +1,4 @@
+from dataclasses import dataclass
 from typing import Any, List, Optional
 
 import networkx
@@ -9,6 +10,9 @@ from routor import exceptions
 class Location(BaseModel):
     latitude: float  # alias: y
     longitude: float  # alias: x
+
+    class Config:
+        frozen = True
 
     @validator("latitude")
     def validate_latitude(cls, value: float) -> float:  # noqa: N805
@@ -33,6 +37,7 @@ class Node(Location):
     class Config:
         allow_population_by_field_name = True
         extra = Extra.allow
+        frozen = True
 
     @classmethod
     def from_graph(cls, graph: networkx.Graph, node_id: int) -> "Node":
@@ -65,6 +70,7 @@ class Edge(BaseModel):
     class Config:
         allow_population_by_field_name = True
         extra = Extra.allow
+        frozen = True
 
     @classmethod
     def from_graph(cls, graph: networkx.Graph, start_id: int, end_id: int) -> "Edge":
@@ -82,6 +88,7 @@ class Edge(BaseModel):
         return cls(start=start, end=end, **edge_data)
 
 
+@dataclass(frozen=True)
 class Route(BaseModel):
     costs: float
     length: float
