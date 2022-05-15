@@ -25,7 +25,7 @@ class Location(BaseModel):
 
 class Node(Location):
     node_id: int
-    osm_id: int = Field(alias="osmid")
+    osm_id: int
     street_count: int
 
     elevation: Optional[float] = None  # only set if an API key was set during download
@@ -43,6 +43,7 @@ class Node(Location):
 
         return cls(
             node_id=node_id,
+            osm_id=node_id,  # it's the same :shrug:
             latitude=node_data["y"],
             longitude=node_data["x"],
             **node_data,
