@@ -10,7 +10,7 @@ Simple routing engine for OpenStreetMaps with easy to customize profiles/weight-
 
 ## Requirements
 
-* Python 3.6.1 or newer
+* Python 3.7 or newer
 
 ## Installation
 
