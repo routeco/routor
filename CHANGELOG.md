@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+* performance enhancement by avoiding revalidating all nodes/edges over and over again
+
 ## [0.7.1] - 2022-02-04
 
 ### Changed

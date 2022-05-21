@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "project": "routor",
+    "project_url": "https://github.com/routeco/routor",
+
+    "repo": ".",
+    "environment_type": "virtualenv",
+
+
+    "install_command": ["in-dir={env_dir} python -mpip install {wheel_file}"],
+    "uninstall_command": ["return-code=any python -mpip uninstall -y {project}"],
+    "build_command": ["python -mpip install poetry", "PIP_NO_BUILD_ISOLATION=false python -mpip wheel --no-deps --no-index -w {build_cache_dir} {build_dir}"],
+
+    "branches": ["main"],
+    "show_commit_url": "https://github.com/routeco/routor/commit/",
+
+    "benchmark_dir": "benchmarks",
+
+    "env_dir": ".asv/env",
+    "results_dir": ".asv/results",
+    "html_dir": ".asv/html"
+}

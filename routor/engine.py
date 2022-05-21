@@ -1,6 +1,6 @@
 import logging
 from pathlib import Path
-from typing import Any, List, Optional, Tuple
+from typing import Any, Dict, List, Optional, Tuple
 
 import networkx
 import osmnx
@@ -14,16 +14,45 @@ from .utils.graph import load_map
 logger = logging.getLogger()
 
 
+class NodeEdgeCache:
+    nodes: Dict[str, models.Node]
+    edges: Dict[Tuple[int, int], models.Edge]
+
+    def __init__(self) -> None:
+        self.nodes = {}
+        self.edges = {}
+
+
 class Engine:
-    graph: networkx.DiGraph
+    graph: networkx.MultiDiGraph
+    cache: NodeEdgeCache
 
     @timeit
     def __init__(self, map_path: Path) -> None:
         logger.info("Initialise engine")
+        self.cache = NodeEdgeCache()
         self.graph = load_map(map_path)
+        self._cache_graph()
         logger.info(
             f"Map loaded (edges: {len(self.graph.edges)}, nodes: {len(self.graph.nodes)})"
         )
+
+    def _cache_graph(self) -> None:
+        """
+        Preload and validate nodes and edges.
+
+        Validation is rather expensive and takes up to 30% of the time.
+        """
+        for node_id in self.graph.nodes:
+            node = models.Node.from_graph(self.graph, node_id)
+            self.cache.nodes[node_id] = node
+
+        for u, v, _ in self.graph.edges:
+            u_node = self.cache.nodes[v]
+            v_node = self.cache.nodes[u]
+
+            edge = models.Edge.from_nodes(self.graph, v_node, u_node)
+            self.cache.edges[(u, v)] = edge
 
     @timeit
     def find_path(
@@ -47,8 +76,8 @@ class Engine:
         ) -> float:
             prev_edge: Optional[models.Edge] = None
             if prev_edge_nodes:
-                prev_edge = models.Edge.from_graph(self.graph, *prev_edge_nodes)
-            edge = models.Edge.from_graph(self.graph, *edge_nodes)
+                prev_edge = self.cache.edges[prev_edge_nodes]
+            edge = self.cache.edges[edge_nodes]
 
             return weight(prev_edge, edge)
 
@@ -96,7 +125,7 @@ class Engine:
         Calculate the costs for a given path.
         """
         edges = (
-            models.Edge.from_nodes(self.graph, start, end)
+            self.cache.edges[(start.node_id, end.node_id)]
             for start, end in pairwise(path)
         )
 
@@ -115,7 +144,7 @@ class Engine:
         Calculate the length of a given path.
         """
         edges = (
-            models.Edge.from_nodes(self.graph, start, end)
+            self.cache.edges[(start.node_id, end.node_id)]
             for start, end in pairwise(path)
         )
 
@@ -138,6 +167,6 @@ class Engine:
         node_id = osmnx.get_nearest_node(
             self.graph, (location.latitude, location.longitude)
         )
-        node = models.Node.from_graph(self.graph, node_id)
+        node = self.cache.nodes[node_id]
         logger.info(f"Found closest node for {location} is {node.osm_id}")
         return node
